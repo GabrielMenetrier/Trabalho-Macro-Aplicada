@@ -1,0 +1,555 @@
+# Guia de estudo e fala
+
+Câmbio real, termos de troca e carry trade
+
+18 slides principais, 17 min 15s de roteiro. 7 slides de apoio.
+
+## Slide 01: Câmbio real, termos de troca e carry trade
+
+Tempo: 25 segundos.
+
+core: Separar capacidade de previsão de valor econômico em carteiras.
+
+concepts: Há três objetos diferentes ao longo da apresentação. A replicação procura reproduzir uma relação econômica do artigo. A previsão avalia erros em observações futuras. O backtest calcula o resultado de uma regra de investimento, incluindo juros e câmbio. Um sucesso no primeiro objeto não implica sucesso nos seguintes. O projeto percorreu essas etapas e encontrou tanto fracassos quanto resultados históricos promissores.
+
+reading: A capa apenas apresenta a pergunta e a referência. Não tente antecipar todos os resultados ou explicar todas as extensões aqui.
+
+training: 
+
+speech: O trabalho parte da previsão de câmbio nominal a partir do câmbio real. Primeiro verifico o que consigo reproduzir. Depois testo se termos de troca ajudam a previsão e se essa informação melhora carteiras de carry, comparando decisões anuais e de cinco anos.
+
+caution: Distinguir replicação parcial da relação preditiva e regras de investimento próprias. Os resultados posteriores de carteira são referências exploratórias.
+
+qa: Qual é a pergunta central? A informação do câmbio real ajuda a prever o câmbio nominal e, separadamente, a decidir como assumir risco cambial?
+
+transition: Começo pela hipótese econômica do artigo.
+
+Fontes: Artigo EJR, introdução, synthesis/README.md
+
+## Slide 02: A ideia econômica do artigo
+
+Tempo: 60 segundos.
+
+core: Uma diferença persistente de preços relativos pode se ajustar pelo câmbio nominal ou pela inflação relativa.
+
+concepts: Câmbio nominal S é o preço do dólar em moeda local. No Brasil, S = 5 significa R$ 5 por US$ 1. O câmbio real Q = S × P_US / P_local ajusta essa cotação pelos níveis de preços das duas economias. Trabalhamos com o logaritmo q. Quando q sobe, a moeda local sofre depreciação real, ficando relativamente barata. Essa classificação depende da referência histórica, não de um valor justo conhecido. A identidade implica que a mudança real soma a mudança nominal à inflação americana menos a inflação local. Se a inflação relativa responde pouco, o ajuste tende a aparecer mais no nominal.
+
+reading: Explique a relação entre câmbio real e nominal. A seção 3.3 do artigo encontra ganho agregado fora da amostra em horizontes acima de dois anos, destacando quatro e seis anos. Isso não demonstra previsão do caminho mensal. O artigo não propõe as regras de carteira posteriores deste trabalho.
+
+training: 
+
+speech: Câmbio nominal é a cotação que vemos no mercado. Câmbio real também considera o que os preços fizeram nos dois países. Por exemplo, se os preços brasileiros sobem relativamente aos americanos e a cotação não muda, o real fica mais caro em termos reais. O artigo pergunta como esse tipo de diferença se ajusta. Nos países com metas de inflação estudados, o câmbio real ajuda a prever o nominal futuro, mas prevê pouco a inflação. A intuição é que, quando os preços estão mais ancorados, parte maior do ajuste pode aparecer na cotação. O artigo também estima um modelo estrutural. Meu exercício reproduz a parte preditiva e o exemplo da aula, sem reestimar esse modelo completo.
+
+caution: A identidade contábil não prova reversão à média nem identifica o efeito causal das metas de inflação. Não diga que toda moeda barata necessariamente valoriza.
+
+qa: Câmbio real é a cotação descontada do IPCA brasileiro? Não. Ele envolve preços relativos entre duas economias, com uma convenção definida para a cotação.
+
+transition: A primeira verificação foi reproduzir a relação mostrada na aula.
+
+Fontes: Artigo EJR, resumo e introdução, src/models.py: features
+
+## Slide 03: A relação da aula aparece na replicação
+
+Tempo: 60 segundos.
+
+core: A replicação brasileira recupera a inclinação de oito anos da aula, aproximadamente −1,808.
+
+concepts: Cada ponto relaciona o desvio do câmbio real em um mês à mudança do log da cotação nos oito anos seguintes. O eixo horizontal usa q menos sua média no exercício histórico. O eixo vertical usa log(S daqui a oito anos / S hoje). Um valor vertical negativo representa apreciação nominal da moeda local. A inclinação negativa indica que meses de real mais depreciado se associaram a apreciação posterior. O R² mede a fração da variação do alvo explicada pelo ajuste dentro da amostra. Não é a probabilidade de acertar uma previsão nem uma medida de rentabilidade.
+
+reading: Comece pelos eixos. Aponte a inclinação descendente. Só então diga que o coeficiente de −1,808 praticamente coincide com o valor da aula e que o R² é 0,883. Há 280 origens mensais, de janeiro de 1995 a abril de 2018, com resultados até abril de 2026. As observações compartilham muitos dos mesmos meses futuros.
+
+training: Ajuste descritivo: jan/1995–abr/2026. Sem divisão entre treino e teste. Origens de oito anos até abr/2018.
+
+speech: Neste gráfico, cada ponto é um mês brasileiro. À direita estão momentos de maior depreciação real. Para baixo estão apreciações nominais nos oito anos seguintes. A relação é claramente negativa, e a inclinação de menos 1,808 praticamente reproduz o número da aula. O R² é alto, cerca de 88%. Mas esse resultado descreve o ajuste da relação na amostra histórica. Não significa que o modelo acerta 88% das operações. Além disso, previsões feitas em dois meses vizinhos usam quase os mesmos oito anos seguintes, então os pontos não são evidências independentes. A próxima etapa é perguntar se essa relação ajuda quando eu realmente escondo o futuro do modelo.
+
+caution: Este gráfico usa ajuste dentro da amostra. Não o apresente como uma previsão produzida em tempo real ou como replicação integral do artigo.
+
+qa: Por que o coeficiente é menor que −1? A regressão permite esse valor no horizonte longo. Isso não significa retorno mensal de 180% ou convergência garantida. É uma relação entre mudanças e desvios em log.
+
+transition: Reproduzir a relação histórica e prever dados futuros são testes diferentes.
+
+Fontes: output/tables/classroom_replication.csv, data/processed/classroom.csv, Macro_Aplicada_2026_shared/Slides/Macro_Aplicada_aula_8.pdf
+
+## Slide 04: A previsão varia por país e horizonte
+
+Tempo: 75 segundos.
+
+core: O Brasil melhora em todos os seis horizontes. O painel agrupado perde para nenhuma mudança nas janelas completas de cada horizonte.
+
+concepts: Em cada origem t, estimamos a mudança futura do log da cotação a partir do desvio real. A inclinação é comum a seis moedas, e a média histórica de q é específica de cada moeda. A janela de treinamento se expande desde outubro de 1999. Exigimos pelo menos 60 origens de treinamento por moeda cujos alvos já tenham terminado até t−1. O CPI entra com dois meses de defasagem. Repetimos a estimação a cada mês, prevemos e avaliamos o erro quando o horizonte termina. O RMSE relativo compara esse erro com nenhuma mudança. O teste de Clark–West usa correção para dependência temporal. O resultado agregado de cinco anos não estabelece superioridade estatística. Dados revisados limitam o caráter estritamente em tempo real.
+
+reading: A tabela mostra cada moeda e o agregado das seis moedas, usando a mesma especificação EJR agrupada. BRL é real, EUR euro, JPY iene, GBP libra, CAD dólar canadense e SEK coroa sueca. Todas são avaliadas contra USD. Valores abaixo de 1 aparecem em verde e indicam menor RMSE que prever nenhuma mudança. O agregado reúne os erros do painel; não é uma soma nem uma média simples das razões individuais. Em cinco anos, o Brasil tem 0,792 e o agregado 1,037. Em oito anos, 0,816 e 1,115. Os períodos de origem de cada horizonte estão no rodapé e são diferentes entre as linhas.
+
+training: Treino expansivo desde out/1999; mínimo de 60 origens maduras por moeda e alvos de treino até t−1. Origens avaliadas: 1 ano jan/2010–ago/2025; 2 anos jan/2010–ago/2024; 3 anos jan/2010–ago/2023; 5 anos jan/2010–ago/2021; 7 anos nov/2011–ago/2019; 8 anos nov/2012–ago/2018. Alvos realizados até ago/2026.
+
+speech: O teste fora da amostra não diz que a regressão falha em todo lugar. O Brasil melhora em todos os horizontes mostrados. Em cinco anos, seu erro é cerca de 21% menor que o de prever nenhuma mudança. Mas o resultado agregado das seis moedas é pior que essa referência. Essa heterogeneidade é central. Também não estamos comparando exatamente a regressão brasileira do slide anterior: agora a inclinação é comum às moedas e muda conforme novas observações ficam disponíveis. As janelas indicadas no rodapé são diferentes. Quando uso as mesmas datas de origem, o painel melhora em um, dois e três anos. Portanto, a conclusão depende do país, horizonte e período.
+
+caution: Não conclua que câmbio é imprevisível em qualquer horizonte. As linhas têm períodos distintos. O ganho de erro não basta, sozinho, para demonstrar significância estatística ou valor de investimento.
+
+qa: E se estimarmos só para o Brasil? A regressão brasileira com intercepto e inclinação próprios tem erro relativo 0,596 em oito anos. É outro modelo e um resultado favorável, mas com forte sobreposição dos alvos. No painel com origens comuns de nov/2012 a ago/2018, os erros são 0,958, 0,950 e 0,964 em um, dois e três anos.
+
+transition: A heterogeneidade preditiva motivou testar se a previsão ajuda na escolha das posições de carry.
+
+Fontes: output/tables/forecast_accuracy.csv, output/tables/forecast_common_origins.csv, output/tables/timing_audit.csv
+
+## Slide 05: A proposta inicial para o carry
+
+Tempo: 55 segundos.
+
+core: Comparar escolher posições pelo diferencial de juros com escolher pelo diferencial de juros mais a valorização cambial prevista.
+
+concepts: Carry ou carrego é a remuneração associada ao diferencial de juros de uma posição financiada em outra moeda. Comprar uma moeda envolve um ativo nessa moeda, como um depósito, enquanto a outra ponta financia a operação. O projeto usa proxies de aplicações de curto prazo, não retornos de bolsa ou títulos longos. Quem compra a moeda de juros altos ganha com apreciação dessa moeda e perde com sua depreciação. No painel, cada regra compra as duas moedas de maior sinal e vende as duas de menor sinal, com 25% de notional em cada ponta. A soma dos valores absolutos é 100% e a exposição líquida é zero. Há caixa em dólar como colateral. Nos testes finais, a expectativa é formada diretamente em 60 meses. O retorno de cada mês usa os juros e o câmbio realizados, com caixa USD e custos.
+
+reading: Leia a aproximação de retorno: diferencial de juros mais valorização da moeda comprada, menos custos. O exemplo é hipotético: ativo rende 10%, financiamento custa 3% e a moeda comprada cai 8% em dólar. O resultado exato antes de custos é 1,10 × 0,92 − 1,03 = −1,8% sobre o notional. A soma simples daria −1%, pois ignora a interação entre juros e câmbio.
+
+training: 
+
+speech: Eu comparei duas formas de escolher as posições. A primeira olha apenas para quais moedas pagam mais juros. A segunda acrescenta a valorização cambial prevista pelo modelo. Nas duas, o retorno realizado inclui tanto os juros quanto a mudança do câmbio. O que muda é a informação usada para escolher a carteira. O risco é que a desvalorização da moeda consuma o juro recebido. Neste exemplo, ganhar 10% no ativo e pagar 3% no financiamento parece oferecer uma folga de 7%, mas uma queda de 8% da moeda já produz perda. No backtest, calculo o retorno combinado de forma exata, incluindo a interação e os custos. A previsão de cinco anos apenas orienta a decisão, sem garantir o caminho mensal.
+
+caution: Aplicação própria: convertemos a previsão de 60 meses em ritmo mensal dividindo por 60. Isso não estima uma trajetória mensal nem replica uma estratégia de investimento do artigo.
+
+qa: A estratégia compra dólar ou bolsa americana? Aqui o dólar é o numerário e o caixa de colateral. As posições cambiais usam aplicações curtas e financiamento nas moedas. Ações americanas seriam outro risco e outro exercício.
+
+transition: A primeira tentativa foi simples, e o resultado foi pior que o carry original.
+
+Fontes: src/models.py: run_book e rank_weights, report/relatorio.tex
+
+## Slide 06: Aplicação mensal de uma previsão de cinco anos
+
+Tempo: 55 segundos.
+
+core: O ranking mensal com sinal de cinco anos perdeu para o carry. Esse resultado avalia esta implementação, não rejeita a previsibilidade de longo prazo.
+
+concepts: Não usamos a otimização média-variância de Markowitz. Ordenamos seis moedas por um sinal e compramos as duas de maior sinal, vendendo as duas de menor sinal. Cada ponta recebe 25% do patrimônio em notional: 100% bruto e zero líquido. O carry usa diferencial de juros. O ranking alternativo soma apreciação prevista, aproximada como −previsão de Δs em 60 meses/60. Reavaliamos mensalmente, sem compromisso de manter cada moeda por cinco anos. O caixa em dólar serve de colateral. Retorno anual composto é crescimento do patrimônio, volatilidade é dispersão anualizada, Sharpe usa excesso sobre o caixa e queda máxima mede a perda desde o pico.
+
+reading: Compare retorno anual de 4,11% e 2,73%, e Sharpe de 0,60 e 0,31. Depois leia o rodapé: backtest de março de 2010 a agosto de 2026, sinal de cinco anos, revisão mensal e treinamento expansivo. Os custos de negociação por notional transacionado são 10 pontos-base para BRL, 3 para SEK e 2 para as outras moedas. Há também spread de financiamento de 50 pontos-base ao ano na ponta vendida. Um ponto-base é 0,01 ponto percentual. Entrada, rebalanceamento e liquidação final pagam os custos assumidos.
+
+training: Primeiro sinal: jan/2010. Treino EJR: origens out/1999–dez/2004 (63 meses por moeda), alvos até dez/2009. A janela se expande mensalmente. Previsão: 60 meses. Sinal t, execução t+1 e retorno t+2. Backtest: mar/2010–ago/2026.
+
+speech: Esta é uma aplicação própria, não uma carteira do artigo. Usamos previsão cambial de cinco anos, dividida por sessenta para formar um sinal mensal. Compramos duas moedas e vendemos duas, com pesos iguais, revistos mensalmente. Não houve Markowitz. O resultado foi pior que o carry por juros. Isso não prova que a previsão de longo prazo falhou: o backtest testa uma tradução específica da previsão em decisões mensais, sem manter obrigatoriamente as posições até o horizonte previsto.
+
+caution: Não diga Markowitz, otimização de pesos ou posição fixa de cinco anos. Os custos são hipóteses agregadas de negociação e financiamento, não uma lista de tarifas executadas por corretora. Não incluem uma tributação específica do investidor.
+
+qa: Qual prazo foi usado? Previsão de 60 meses, revisão mensal e nenhum prazo máximo de permanência no ranking. A dispersão da aula usa oito anos. São objetos distintos. A rotina inicial também calculou coortes de 60 meses, ausentes deste gráfico, mas não uma otimização de Markowitz.
+
+transition: Esse fracasso motivou duas revisões: acrescentar termos de troca à previsão e testar carteiras que mantêm a escolha por doze ou sessenta meses.
+
+Fontes: output/tables/portfolio_metrics.csv
+
+## Slide 07: Termos de troca na previsão nominal
+
+Tempo: 65 segundos.
+
+core: A extensão pergunta se preços de exportação e importação acrescentam informação ao câmbio real.
+
+concepts: Termos de troca são preços de exportação divididos pelos de importação. Uma melhora permite importar mais com a mesma quantidade exportada. Pode alterar renda externa e demanda pela moeda, mas não fixa um sinal causal universal. O modelo base prevê a mudança do log da cotação nominal usando o desvio do log do câmbio real. A extensão acrescenta log do índice de TT e sua mudança anual, centrados com história disponível. Não se prevê o próprio câmbio real.
+
+reading: Leia primeiro a variável dependente. Depois identifique o regressor EJR e os dois termos adicionais. O exemplo 120/110 mostra que TT sobe 9,1%, não 10%.
+
+training: Previsão nominal de 60 meses. Treino inicial: origens out/1999–dez/2004, alvos até dez/2009. Treino expansivo com j+60 <= t−1. Origens avaliadas jan/2010–ago/2021, alvos jan/2015–ago/2026. TT anual do ano Y−2, CPI com dois meses de atraso. Séries revisadas, sem vintages históricos.
+
+speech: A previsão continua sendo a variação do câmbio nominal em cinco anos. Acrescentei preços relativos do comércio: quanto o país recebe pelo que exporta em relação ao que paga para importar. Testo o nível e a mudança anual dessa relação. A ideia é verificar se o câmbio real parece barato porque vai se corrigir, ou porque as condições econômicas do país mudaram.
+
+caution: TT agregado vem dos deflatores de bens e serviços das contas nacionais. Não confundir com cesta de commodities. Para o euro, os dados comerciais usam Alemanha como aproximação.
+
+qa: É efeito causal? Não. É ganho preditivo condicionado às outras variáveis.
+
+transition: Primeiro mostro o que acontece com o painel completo.
+
+Fontes: ejr_trade/run.py, ejr_trade_selected/run.py, ejr_trade_selected/tables/metrics.csv
+
+## Slide 08: Seis moedas: termos de troca não melhoram o painel
+
+Tempo: 55 segundos.
+
+core: No painel original, TT não recupera a previsão agregada em cinco anos.
+
+concepts: RMSE é a raiz da média do erro quadrático. Dividir pelo erro de nenhuma mudança produz uma referência igual a 1. Abaixo de 1 é melhora pontual na amostra avaliada, sem significância estatística automática. A coluna TT usa o mesmo conjunto de países para estimar os coeficientes. BRL, EUR e CAD apresentam EJR abaixo de 1 em cinco anos.
+
+reading: Compare horizontalmente EJR e EJR+TT. Depois compare cada número com 1. Mostre a linha agregada apenas depois das moedas.
+
+training: Previsão nominal de 60 meses. Treino inicial: origens out/1999–dez/2004, alvos até dez/2009. Treino expansivo com j+60 <= t−1. Origens avaliadas jan/2010–ago/2021, alvos jan/2015–ago/2026.
+
+speech: Nas seis moedas, o erro agregado passa de 1,037 para 1,092 quando incluo termos de troca. Portanto, a adição não resolve o problema do painel completo. Brasil, euro e Canadá são os casos em que a previsão EJR supera a referência de nenhuma mudança. Essa observação motiva o próximo recorte.
+
+caution: A escolha do trio usa esta avaliação inteira e é retrospectiva. Não era uma seleção conhecida no início do backtest.
+
+qa: Por que um número maior que 1? Porque, nesse país ou agregado e nessa avaliação, a previsão errou mais do que supor cotação constante.
+
+transition: 
+
+Fontes: ejr_trade/run.py, ejr_trade_selected/run.py, ejr_trade_selected/tables/metrics.csv
+
+## Slide 09: O ganho com termos de troca se concentra no Brasil
+
+Tempo: 65 segundos.
+
+core: No trio reestimado, o erro agregado cai, mas euro e Canadá pioram com TT.
+
+concepts: Reestimar no trio muda o coeficiente comum do EJR. Por isso 0,802 não é o mesmo objeto que o agregado de seis moedas 1,037. O comparativo correto da adição é EJR e EJR+TT estimados no mesmo trio. O agregado usual soma erros quadráticos em log antes de tirar a raiz, e o Brasil pesa bastante por ter movimentos maiores. As formas comparadas são log centrado, desvio percentual da média e log com sinal. Todas usam nível mais mudança.
+
+reading: Leia as três moedas antes do agregado. Na pequena tabela de transformações, compare as variantes em cinco anos. Log do desvio negativo puro não é definido nos reais.
+
+training: Previsão nominal de 60 meses. Treino inicial: origens out/1999–dez/2004, alvos até dez/2009. Treino expansivo com j+60 <= t−1. Origens avaliadas jan/2010–ago/2021, alvos jan/2015–ago/2026.
+
+speech: Quando reestimo EJR nos três países, o agregado é 0,802. Com termos de troca em log e mudança anual, cai para 0,628. Parece um ganho forte, mas ele está concentrado no Brasil: 0,804 para 0,544. Euro e Canadá pioram. Então vou testar tanto TT nas três moedas quanto TT apenas no Brasil.
+
+caution: A transformação vencedora foi escolhida na mesma história. A agregação que normaliza o erro por país muda a conclusão: EJR 0,810 e TT 0,844.
+
+qa: Isso prova que TT ajuda todos os países? Não. O ganho agregado padrão é dominado pelo Brasil.
+
+transition: 
+
+Fontes: ejr_trade/run.py, ejr_trade_selected/run.py, ejr_trade_selected/tables/metrics.csv, ejr_trade_selected/tables/pooling_diagnostics.csv
+
+## Slide 10: Ajuste histórico das regressões, por país
+
+Tempo: 45 segundos.
+
+core: O ajuste dentro da amostra melhora especialmente no Brasil e no Canadá.
+
+concepts: Cada ponto compara a variação nominal ajustada pela regressão com a observada nos cinco anos seguintes. Pontos na diagonal correspondem a ajuste perfeito. Azul é EJR, laranja é EJR+TT. Aqui há intercepto e regressão individual por país para diagnóstico, estimada usando a amostra inteira. É diferente da regressão agrupada recursiva do teste seguinte.
+
+reading: Eixo horizontal: valor ajustado. Vertical: valor realizado. Compare a distância da nuvem azul e da laranja à diagonal. Mostre R² ajustado, que penaliza regressoras adicionais.
+
+training: Ajuste individual na amostra: origens out/1999–ago/2021, alvos out/2004–ago/2026. Horizonte 60m. Sem avaliação fora da amostra neste slide.
+
+speech: Aqui estou olhando o ajuste histórico, não uma previsão que eu poderia ter feito naquela data. A adição aproxima bastante os pontos da diagonal no Brasil e no Canadá. O passo essencial é perguntar se esse ajuste também funciona quando o modelo só conhece o passado.
+
+caution: Não chamar R² alto de prova de previsão. As regressões deste diagnóstico usam toda a amostra, com intercepto por país.
+
+qa: 
+
+transition: 
+
+Fontes: ejr_trade_selected/figures.py, ejr_trade_selected/tables/in_sample.csv
+
+## Slide 11: Previsões com informação passada, por país
+
+Tempo: 55 segundos.
+
+core: O ganho fora da amostra permanece no Brasil e não se generaliza ao trio.
+
+concepts: A diagonal agora representa uma previsão perfeita. Cada ponto é uma origem mensal, mas horizontes sobrepostos tornam os erros dependentes. Os coeficientes são agrupados no trio e reestimados a cada origem com alvos encerrados. O contraste com o slide anterior envolve tanto a avaliação fora da amostra quanto a especificação agrupada.
+
+reading: Horizontal: previsão formada na origem. Vertical: resultado cinco anos depois. As cores continuam azul EJR e laranja EJR+TT. Leia os RMSE relativos abaixo de cada país.
+
+training: Previsão nominal de 60 meses. Treino inicial: origens out/1999–dez/2004, alvos até dez/2009. Treino expansivo com j+60 <= t−1. Origens avaliadas jan/2010–ago/2021, alvos jan/2015–ago/2026.
+
+speech: Ao exigir informação disponível no momento da previsão, o resultado fica menos uniforme. Brasil melhora, euro e Canadá pioram. Este é o ponto que a comparação de ajuste histórico não revelava. Esses são os sinais que passam para a aplicação de carteira.
+
+caution: As origens se sobrepõem. Um ganho pontual de RMSE não estabelece significância nem lucro de mercado.
+
+qa: 
+
+transition: 
+
+Fontes: ejr_trade/run.py, ejr_trade_selected/run.py, ejr_trade_selected/tables/metrics.csv
+
+## Slide 12: Carteiras com escolha a cada 12 ou 60 meses
+
+Tempo: 75 segundos.
+
+core: Comparar os mesmos sinais, métodos, custos e datas, mudando o intervalo entre escolhas.
+
+concepts: Ranking compra as maiores expectativas e vende as menores. Máximo Sharpe considera retorno esperado e covariância dos retornos acumulados em 60 meses. O objetivo usa juros correntes extrapolados por cinco anos menos depreciação nominal prevista. As posições têm 50% comprado e 50% vendido. Com seis moedas, ranking usa duas em cada lado a 25%. Com três, usa uma em cada lado a 50%. O otimizador pode distribuir os pesos dentro desses limites. A covariância usa só resultados encerrados até t−1, com 20% de regularização diagonal.
+
+reading: Diferencie horizonte previsto de intervalo de decisão. Janeiro de 2010 escolhe a carteira. No caso anual, nova escolha em janeiro de 2011. No caso 60m, nova escolha em janeiro de 2015. Os pesos-alvo recebem manutenção mensal.
+
+training: Backtest mar/2010–fev/2025, 180 retornos. Sinal inicial jan/2010, execução fev/2010. Treino cambial inicial out/1999–dez/2004, alvos até dez/2009. Expansivo, somente alvos encerrados até t−1.
+
+speech: Agora faço a comparação que faltava: escolher a carteira por um ano ou por cinco anos. A previsão é de cinco anos nos dois casos. O risco do otimizador também vem de retornos acumulados em cinco anos. Líquida zero significa compras e vendas de mesmo tamanho em dólares, mas não significa risco zero.
+
+caution: Manutenção mensal dos pesos não é congelar quantidades. Com atraso de execução, a última realização de uma posição de 60 meses ocorre em t+61, enquanto a previsão aponta t+60. Há só três blocos de cinco anos.
+
+qa: O resultado inclui juros? Sim. Caixa USD, juros locais, variação cambial, custos e financiamento. O retorno mensal usa a composição exata de juros e câmbio.
+
+transition: 
+
+Fontes: horizon_tests/run.py, horizon_tests/add_terms_of_trade.py, horizon_tests/restricted_countries.py, src/models.py
+
+## Slide 13: Patrimônio das carteiras: seis moedas
+
+Tempo: 75 segundos.
+
+core: Carry puro tem retorno maior que EJR e TT nas alternativas exibidas. Escolher pesos por cinco anos não produz vantagem geral.
+
+concepts: No universo de seis moedas, EJR original foi estimado nas seis. O controle substitui as previsões do trio por EJR reestimado no trio. A linha TT substitui essas mesmas três previsões por EJR+TT. JPY, GBP e SEK mantêm EJR original. Logo, TT não significa uma carteira restrita ao trio. Patrimônio começa em 100 antes do primeiro retorno comum e acumula retornos líquidos. Cada painel fixa método e prazo. Cor representa sinal. Caixa USD é referência, não outra moeda escolhida pelo otimizador.
+
+reading: Leia primeiro os títulos dos quatro painéis. Colunas: escolhas a cada 12 ou 60 meses. Linhas: ranking ou máximo Sharpe com risco 60m. Compare cores dentro de um painel e depois o mesmo sinal entre os prazos.
+
+training: Backtest mar/2010–fev/2025, 180 retornos. Sinal inicial jan/2010, execução fev/2010. Treino cambial inicial out/1999–dez/2004, alvos até dez/2009. Expansivo, somente alvos encerrados até t−1.
+
+speech: Nas seis moedas, somar a previsão ao carry não melhora o retorno das carteiras mostradas. A comparação laranja versus violeta isola adicionar termos de troca ao controle com o mesmo trio de estimação. A curva cinza é apenas o caixa americano.
+
+caution: A seleção de países e da forma de TT usa a avaliação inteira. Retrospectivo, sem teste independente. Não comparar seis e três como se o teto por moeda fosse igual.
+
+qa: A curva mostra retorno cambial puro? Não. É patrimônio em USD após juros, câmbio, financiamento e custos.
+
+transition: 
+
+Fontes: horizon_tests/run.py, horizon_tests/add_terms_of_trade.py, horizon_tests/restricted_countries.py, src/models.py
+
+## Slide 14: Retorno e risco: seis moedas
+
+Tempo: 45 segundos.
+
+core: Carry puro tem retorno maior que EJR e TT nas alternativas exibidas. Escolher pesos por cinco anos não produz vantagem geral.
+
+concepts: No universo de seis moedas, EJR original foi estimado nas seis. O controle substitui as previsões do trio por EJR reestimado no trio. A linha TT substitui essas mesmas três previsões por EJR+TT. JPY, GBP e SEK mantêm EJR original. Logo, TT não significa uma carteira restrita ao trio. Cada célula informa retorno anual composto / Sharpe anualizado / queda máxima. Sharpe é o excesso ao caixa USD dividido pelo desvio padrão desse excesso, anualizado. A queda máxima é a pior perda desde o pico da curva.
+
+reading: Leia só uma linha inteira para explicar a tripla. Compare laranja contra o EJR correspondente. O sinal de queda máxima é negativo. 12m/60m se refere às escolhas, não ao período de cálculo do CAGR.
+
+training: Backtest mar/2010–fev/2025, 180 retornos. Sinal inicial jan/2010, execução fev/2010. Treino cambial inicial out/1999–dez/2004, alvos até dez/2009. Expansivo, somente alvos encerrados até t−1.
+
+speech: A tabela dá os números exatos das curvas anteriores. Cada tripla é retorno anual, Sharpe e queda máxima. O Sharpe aqui é uma medida realizada para resumir o backtest. O risco utilizado na escolha dos pesos continua sendo a covariância em sessenta meses.
+
+caution: Não interpretar a maior célula entre várias alternativas exploradas como evidência estatística de vantagem persistente.
+
+qa: 
+
+transition: 
+
+Fontes: horizon_tests/run.py, horizon_tests/add_terms_of_trade.py, horizon_tests/restricted_countries.py, src/models.py
+
+## Slide 15: Patrimônio das carteiras: BRL, EUR e CAD
+
+Tempo: 75 segundos.
+
+core: EJR com risco de 60 meses e escolha anual apresenta retorno 3,29% a.a. e Sharpe 0,393. TT, inclusive só no BRL, piora frente ao EJR nas quatro comparações exibidas de método e prazo.
+
+concepts: No universo selecionado, só BRL, EUR e CAD entram nas posições. EJR é estimado no trio. TT nas três usa a extensão em todas. Combinado usa TT apenas no BRL, mantendo EJR no EUR/CAD. O teto por moeda sobe de 25% para 50%, necessário para manter exposição bruta de 100%. Patrimônio começa em 100 antes do primeiro retorno comum e acumula retornos líquidos. Cada painel fixa método e prazo. Cor representa sinal. Caixa USD é referência, não outra moeda escolhida pelo otimizador.
+
+reading: Leia primeiro os títulos dos quatro painéis. Colunas: escolhas a cada 12 ou 60 meses. Linhas: ranking ou máximo Sharpe com risco 60m. Compare cores dentro de um painel e depois o mesmo sinal entre os prazos.
+
+training: Backtest mar/2010–fev/2025, 180 retornos. Sinal inicial jan/2010, execução fev/2010. Treino cambial inicial out/1999–dez/2004, alvos até dez/2009. Expansivo, somente alvos encerrados até t−1.
+
+speech: Agora só negocio nas moedas em que EJR melhorou a previsão. A carteira azul com máximo Sharpe e escolha anual tem o maior retorno deste quadro. A informação de termos de troca, em laranja, não transforma o ganho de previsão brasileiro em melhor carteira. Mesmo usar TT só no Brasil, em verde, não resolve isso.
+
+caution: A seleção de países e da forma de TT usa a avaliação inteira. Retrospectivo, sem teste independente. Não comparar seis e três como se o teto por moeda fosse igual.
+
+qa: A curva mostra retorno cambial puro? Não. É patrimônio em USD após juros, câmbio, financiamento e custos.
+
+transition: 
+
+Fontes: horizon_tests/run.py, horizon_tests/add_terms_of_trade.py, horizon_tests/restricted_countries.py, src/models.py
+
+## Slide 16: Retorno e risco: BRL, EUR e CAD
+
+Tempo: 45 segundos.
+
+core: EJR com risco de 60 meses e escolha anual apresenta retorno 3,29% a.a. e Sharpe 0,393. TT, inclusive só no BRL, piora frente ao EJR nas quatro comparações exibidas de método e prazo.
+
+concepts: No universo selecionado, só BRL, EUR e CAD entram nas posições. EJR é estimado no trio. TT nas três usa a extensão em todas. Combinado usa TT apenas no BRL, mantendo EJR no EUR/CAD. O teto por moeda sobe de 25% para 50%, necessário para manter exposição bruta de 100%. Cada célula informa retorno anual composto / Sharpe anualizado / queda máxima. Sharpe é o excesso ao caixa USD dividido pelo desvio padrão desse excesso, anualizado. A queda máxima é a pior perda desde o pico da curva.
+
+reading: Leia só uma linha inteira para explicar a tripla. Compare laranja contra o EJR correspondente. O sinal de queda máxima é negativo. 12m/60m se refere às escolhas, não ao período de cálculo do CAGR.
+
+training: Backtest mar/2010–fev/2025, 180 retornos. Sinal inicial jan/2010, execução fev/2010. Treino cambial inicial out/1999–dez/2004, alvos até dez/2009. Expansivo, somente alvos encerrados até t−1.
+
+speech: A tabela dá os números exatos das curvas anteriores. Cada tripla é retorno anual, Sharpe e queda máxima. O Sharpe aqui é uma medida realizada para resumir o backtest. O risco utilizado na escolha dos pesos continua sendo a covariância em sessenta meses.
+
+caution: Não interpretar a maior célula entre várias alternativas exploradas como evidência estatística de vantagem persistente.
+
+qa: 
+
+transition: 
+
+Fontes: horizon_tests/run.py, horizon_tests/add_terms_of_trade.py, horizon_tests/restricted_countries.py, src/models.py
+
+## Slide 17: O ganho com EJR permanece sob custos maiores
+
+Tempo: 50 segundos.
+
+core: No trio, a carteira EJR com escolha anual ainda supera o carry sob os custos de estresse assumidos.
+
+concepts: Custos básicos: BRL 10pb, SEK 3pb, demais 2pb por negociação. Spread adicional de 50pb a.a. sobre o notional vendido, além dos juros. Estresse multiplica negociação por quatro e eleva spread para 150pb. Os pesos são os mesmos. A comparação apresentada fixa trio, máximo Sharpe com risco de 60 meses e escolha anual.
+
+reading: Compare a mudança de cada sinal entre custos básicos e estresse. Em seguida, olhe volatilidade e queda máxima da alternativa EJR. Não conclua que os custos são executáveis só porque o resultado resiste ao cenário.
+
+training: Backtest mar/2010–fev/2025, 180 retornos. Sinal inicial jan/2010, execução fev/2010. Treino cambial inicial out/1999–dez/2004, alvos até dez/2009. Expansivo, somente alvos encerrados até t−1.
+
+speech: No caso selecionado, o retorno do EJR cai de 3,29 para 2,65 por cento ao ano quando aumento os custos. O carry cai de 2,86 para 2,25. A vantagem histórica permanece, mas ainda falta conferir spreads realmente negociáveis e testar a regra em dados novos.
+
+caution: Custos assumidos, não cotações executáveis. Testar estresse não remove seleção retrospectiva, revisões dos dados ou incerteza estatística.
+
+qa: 
+
+transition: 
+
+Fontes: horizon_tests/run.py, horizon_tests/add_terms_of_trade.py, horizon_tests/restricted_countries.py, src/models.py
+
+## Slide 18: O que os testes permitem concluir
+
+Tempo: 55 segundos.
+
+core: Há evidência preditiva localizada e um resultado de carteira exploratório com EJR.
+
+concepts: O projeto separa quatro objetos: relação histórica da aula, previsão fora da amostra, extensão por termos de troca e tradução da previsão em pesos de carteira. O ganho de TT no RMSE individual do Brasil não impõe que a classificação relativa das moedas ou o resultado de juros+câmbio melhore. O recorte de países e os parâmetros foram escolhidos na história já avaliada. Três blocos de cinco anos limitam conclusões sobre o prazo de manutenção.
+
+reading: Feche com a distinção entre o que funcionou na previsão e o que funcionou nas carteiras. As referências sobre regras de exposição ficam depois deste fechamento, para perguntas.
+
+training: Previsões: origens jan/2010–ago/2021 para 60m. Carteiras finais: mar/2010–fev/2025. Seleção informada por alvos até ago/2026.
+
+speech: Consegui reproduzir parte da relação preditiva, principalmente em Brasil, euro e Canadá no horizonte de cinco anos. Termos de troca melhoram bastante a previsão brasileira, mas não melhoram as carteiras testadas. O resultado econômico mais interessante é EJR com escolha anual no trio selecionado. É um resultado histórico que merece validação futura, não uma prova de arbitragem ou de retorno garantido.
+
+caution: Amostra usada para escolher e avaliar. Não chamar esta seleção retrospectiva de carteira fora da amostra independente.
+
+qa: 
+
+transition: 
+
+Fontes: ejr_trade/run.py, ejr_trade_selected/run.py, ejr_trade_selected/tables/metrics.csv, horizon_tests/run.py, horizon_tests/add_terms_of_trade.py, horizon_tests/restricted_countries.py, src/models.py
+
+## Slide 19: Apoio: transformações e horizontes dos termos de troca
+
+Tempo: 0 segundos.
+
+core: O ganho depende do horizonte e da forma de entrada dos termos de troca.
+
+concepts: As três extensões usam nível e mudança anual. Log usa log do índice centrado; desvio usa índice dividido pela média passada menos um; log com sinal aplica sinal(desvio) vezes log(1+abs(desvio)). Log(1+desvio), quando centrado, coincide com log centrado e não é um quarto candidato independente.
+
+reading: Compare cada variante com EJR no mesmo horizonte. Os calendários diferem porque horizontes longos precisam de treino e alvos completos mais longos.
+
+training: Treino expansivo desde out/1999. Mínimo 60 origens maduras. Origens 12m: jan/2010–ago/2025; 24m até ago/2024; 36m até ago/2023; 60m até ago/2021; 84m nov/2011–ago/2019; 96m nov/2012–ago/2018.
+
+speech: Estas são as variações que testei. A especificação que levei às carteiras usa log e mudança anual em log, escolhida no teste de cinco anos. Esta tabela ajuda a ver que a escolha depende do horizonte.
+
+caution: Escolha da forma na mesma amostra. Não é teste independente do vencedor.
+
+qa: 
+
+transition: 
+
+Fontes: ejr_trade/run.py, ejr_trade_selected/run.py, ejr_trade_selected/tables/metrics.csv
+
+## Slide 20: Apoio: o agregado depende do peso do Brasil
+
+Tempo: 0 segundos.
+
+core: Uma média mais equilibrada entre os países enfraquece o ganho agregado de TT.
+
+concepts: Agregado padrão calcula RMSE com todas as observações em log. Erros maiores no Brasil pesam mais. A medida normalizada por país divide cada erro pelo RMSE de nenhuma mudança do país antes de agregar. O teste sem BRL reestima nos dois países restantes. São comparações distintas, identificadas na tabela.
+
+reading: Na primeira linha, TT melhora. Na segunda, a mudança na normalização inverte a ordem. Na terceira, retirar o Brasil também elimina a melhora.
+
+training: Previsão nominal de 60 meses. Treino inicial: origens out/1999–dez/2004, alvos até dez/2009. Treino expansivo com j+60 <= t−1. Origens avaliadas jan/2010–ago/2021, alvos jan/2015–ago/2026.
+
+speech: O ganho agregado de termos de troca não é uniforme. Ele depende muito do Brasil. Isso explica por que examinei cada país e também tentei TT só no Brasil, embora essa escolha não tenha melhorado a carteira.
+
+caution: Normalização do diagnóstico usa a avaliação completa. Sem BRL também muda os coeficientes estimados.
+
+qa: 
+
+transition: 
+
+Fontes: ejr_trade_selected/tables/pooling_diagnostics.csv
+
+## Slide 21: Referência: regras de exposição
+
+Tempo: 0 segundos.
+
+core: Referência exploratória de uma regra própria; não valida a captura do ajuste cambial de longo prazo.
+
+concepts: O módulo A reduz o tamanho do carry quando o retorno previsto é baixo em relação à referência passada e elimina pares com mudança comercial observada muito alta. O módulo B só entra se o retorno previsto anualizado, suavizado por seis meses, superar 2%, e evita pares com movimento adverso forte dos preços comerciais. O módulo C distribui entradas mensais em parcelas, cada uma com duração máxima de 12 meses, e antecipa a saída quando o modelo com composição comercial indica aumento relevante do risco de o câmbio consumir os juros, relativamente ao modelo base. Os limites de eventos extremos usam o percentil 80 da história passada. A combinação usa um terço dos pesos de cada módulo e calcula custos após agregar as posições.
+
+reading: Explique cada linha como uma decisão concreta: quanto comprar, quando entrar, quando sair. Dê mais tempo ao terceiro módulo. Uma ‘coorte’ é simplesmente o lote de posições aberto em um mês. Cada lote tem orçamento limitado, em vez de multiplicar a exposição ao somar vários meses. Os pares retirados saem com as duas pontas, preservando a neutralidade líquida.
+
+training: EJR: janela expansiva desde out/1999 e previsão nominal de 60 meses. Risco comercial: origens desde jan/2011, mínimo 36 datas maduras e alvo de 12 meses, mais atraso de execução. Limiares comerciais: mínimo 36 meses anteriores. Backtest comum: abr/2018–ago/2026.
+
+speech: Este bloco fica apenas como referência exploratória. Combinamos três regras próprias, com pesos iguais: ajuste de tamanho, permissão de entrada e saída de lotes. O sinal EJR olha cinco anos, mas as decisões são mensais e o modelo adicional de risco olha doze meses. Nenhuma dessas regras foi derivada como estratégia de longo prazo no artigo. O resultado serve para documentar o que testamos, sem substituir a avaliação econômica no horizonte previsto.
+
+caution: Resultado selecionado na pesquisa, mantido apenas como referência histórica. Previsão EJR de 60 meses, decisões mensais e risco de 12 meses são horizontes distintos. Não demonstra uma estratégia validada de convergência no horizonte do artigo.
+
+qa: Por que pesos iguais? É uma combinação simples, que evita otimizar os pesos para o maior Sharpe. Ainda assim, a escolha dos componentes já usa aprendizados da história examinada.
+
+transition: Material de referência para perguntas. A conclusão principal já foi apresentada.
+
+Fontes: synthesis/model.py: make_policies, synthesis/PROTOCOL.md, synthesis/EXPLORATION.md
+
+## Slide 22: Referência: resultado da combinação
+
+Tempo: 0 segundos.
+
+core: Referência exploratória de uma regra própria; não valida a captura do ajuste cambial de longo prazo.
+
+concepts: A janela comum começa quando todos os módulos já podem funcionar. Tem 101 retornos mensais. O retorno total inclui remuneração do caixa em dólar, contribuições dos ativos e financiamento, além de custos assumidos. O Sharpe usa excesso sobre o caixa. Exposição bruta é a soma do valor absoluto das posições dividida pelo patrimônio. A combinação teve exposição bruta média de 48%, contra 100% do carry. Isso explica parte da queda de risco e deve aparecer ao lado das métricas, não como ressalva escondida.
+
+reading: Leia primeiro retorno anual de 5,78% e 5,94%: são próximos. Depois destaque volatilidade de 4,11% e 2,33%, e queda máxima de 9,09% e 1,43% em magnitude. Termine obrigatoriamente na exposição de 100% e 48%. O Sharpe sobe de 0,75 para 1,37. Os sinais negativos na linha de queda máxima representam perdas em relação ao pico.
+
+training: Primeiro sinal da janela comum: fev/2018. EJR: origens out/1999–jan/2013. Risco comercial: jan/2011–dez/2016. Resultados disponíveis até jan/2018. Reestimação expansiva mensal. Backtest: abr/2018–ago/2026.
+
+speech: Na janela comum, o retorno anual ficou próximo: 5,78% no carry e 5,94% na combinação. A diferença mais visível aparece no risco: a volatilidade caiu de 4,11% para 2,33% e a queda máxima observada caiu de 9,09% para 1,43%. O Sharpe aumentou. Mas existe uma explicação importante: a combinação carregou, em média, apenas 48% de exposição bruta. Parte do resultado vem simplesmente de assumir menos risco e permanecer mais em caixa. Eu fiz controles de exposição, mas eles não eliminam toda a incerteza sobre a vantagem. O que posso mostrar é uma trajetória histórica mais estável, sem afirmar uma rentabilidade superior garantida.
+
+caution: Resultado selecionado na pesquisa, mantido apenas como referência histórica. Previsão EJR de 60 meses, decisões mensais e risco de 12 meses são horizontes distintos. Não demonstra uma estratégia validada de convergência no horizonte do artigo.
+
+qa: Bastava investir metade no carry? O controle retrospectivo com exposição média de 48% rendeu 4,18% ao ano e teve queda máxima de 4,02%, contra 5,94% e 1,43% da combinação. Isso é diagnóstico útil, mas usa a média conhecida depois e não prova superioridade futura.
+
+transition: Material de referência para perguntas. A conclusão principal já foi apresentada.
+
+Fontes: synthesis/tables/metrics.csv: common, all, synthesis/tables/exposure_controls.csv
+
+## Slide 23: Referência: trajetória da combinação
+
+Tempo: 0 segundos.
+
+core: Referência exploratória de uma regra própria; não valida a captura do ajuste cambial de longo prazo.
+
+concepts: O gráfico acumula retornos líquidos, com patrimônio inicial 100. O retorno final é semelhante, mas as trajetórias de perdas diferem. A carteira recebe novas decisões mensais e não tem uma única janela fixa de treinamento. Em fevereiro de 2018, primeiro sinal para retorno em abril, o EJR usa origens de outubro de 1999 a janeiro de 2013, com alvos terminados até janeiro de 2018. O modelo de risco comercial usa origens de janeiro de 2011 a dezembro de 2016, com resultados disponíveis até janeiro de 2018. Depois as duas janelas se expandem e os modelos são reestimados. A combinação contém também regras baseadas em preços e limiares calculados com a história passada.
+
+reading: Aponte a trajetória, sem tentar explicar cada oscilação. A queda do carry em torno de 2020 é mais visível que a da combinação. O painel de perdas mostra a profundidade em relação ao pico. Como o retorno final é semelhante, este slide reforça que o achado principal é a suavização histórica do caminho.
+
+training: Primeiro sinal: fev/2018. EJR: out/1999–jan/2013, alvos até jan/2018. Risco comercial: jan/2011–dez/2016, alvos disponíveis até jan/2018. Janelas expansivas. Backtest: abr/2018–ago/2026.
+
+speech: Aqui todas as estratégias começam em 100. O ponto final do carry e da combinação é próximo, mas o caminho é diferente. O carry atravessa uma queda mais pronunciada em torno de 2020, enquanto a combinação mantém uma trajetória mais estável nessa janela. O painel de baixo mostra a perda em relação ao pico anterior. A linha do caixa lembra que parte do retorno total vem da remuneração em dólar, mesmo quando a exposição cai. Esta figura ajuda a entender por que duas carteiras com retorno final parecido podem ter riscos bastante diferentes.
+
+caution: Resultado selecionado na pesquisa, mantido apenas como referência histórica. Previsão EJR de 60 meses, decisões mensais e risco de 12 meses são horizontes distintos. Não demonstra uma estratégia validada de convergência no horizonte do artigo.
+
+qa: A previsão foi treinada de 2018 a 2026? Não em uma única estimação que olha todo o período. A cada mês, usamos apenas a história admissível, mas a escolha dos módulos usou pesquisa sobre essa história já examinada. Para o primeiro retorno, o sinal vem de fevereiro de 2018 e a execução de março. Em junho de 2026, o EJR já usa origens até maio de 2021 e alvos até maio de 2026.
+
+transition: Material de referência para perguntas. A conclusão principal já foi apresentada.
+
+Fontes: synthesis/tables/returns.csv.gz: common, synthesis/tables/metrics.csv
+
+## Slide 24: Referência: prazo dos lotes
+
+Tempo: 0 segundos.
+
+core: Referência exploratória de uma regra própria; não valida a captura do ajuste cambial de longo prazo.
+
+concepts: A combinação tem três módulos. Os dois primeiros revêm o carry mensalmente. O terceiro abre novos lotes mensais e permite carregá-los até um prazo máximo, com saída antecipada por risco. Aqui só variamos esse máximo entre 6, 12 e 24 meses. O orçamento de entrada mensal desse módulo é 1/H, onde H é o prazo máximo, preservando o teto de exposição. As previsões permanecem as mesmas: EJR de 60 meses e risco de consumo dos juros em 12 meses. Portanto, é uma sensibilidade de política de permanência, não uma comparação de novos modelos de previsão para cada prazo.
+
+reading: A tabela mostra a combinação inteira na mesma janela de abril de 2018 a agosto de 2026, com os mesmos custos. Para 6, 12 e 24 meses, os retornos anuais são 5,96%, 5,94% e 5,77%. A exposição média cai de 51% para 48% e 44%. Essa mudança de exposição participa da diferença de risco. A saída pode ocorrer antes do máximo e a entrada é gradual.
+
+training: Backtest abr/2018–ago/2026. Primeiro sinal fev/2018: treino EJR out/1999–jan/2013, risco jan/2011–dez/2016, alvos até jan/2018. Depois, expansivo. Lotes 6, 12 ou 24m; risco comercial previsto em 12m.
+
+speech: Mesmo com uma carteira contínua, o prazo importa. Aqui mantive os outros dois módulos e alterei apenas o prazo máximo dos lotes do módulo de permanência. O retorno muda pouco entre seis e doze meses e cai um pouco em vinte e quatro. A exposição também cai conforme aumenta o prazo máximo, porque as entradas são menores e podem sair antes por risco. Isso mostra que o prazo muda a política, mas não prova que doze meses seja ótimo. E não mudamos o horizonte do modelo de risco: ele continua olhando doze meses.
+
+caution: Resultado selecionado na pesquisa, mantido apenas como referência histórica. Previsão EJR de 60 meses, decisões mensais e risco de 12 meses são horizontes distintos. Não demonstra uma estratégia validada de convergência no horizonte do artigo.
+
+qa: Por que o prazo maior reduziu a exposição? Com orçamento 1/H por entrada e saída antecipada, muitos lotes podem sair antes de completar H meses. A formação gradual e o cancelamento entre pontas também influenciam a exposição líquida por moeda. Isso deve ser considerado ao comparar o risco.
+
+transition: Material de referência para perguntas. A conclusão principal já foi apresentada.
+
+Fontes: synthesis/tables/robustness.csv: Base, Tenure6, Tenure24, synthesis/model.py: make_policies, cohorts, synthesis/robustness.py
+
+## Slide 25: Apoio: exposição, custos e interpretação
+
+Tempo: 0 segundos.
+
+core: Comparações econômicas precisam manter datas, numerário e custos consistentes, além de distinguir controle retrospectivo de estratégia executável.
+
+concepts: No controle retrospectivo, o carry é escalado pela exposição média realizada da combinação, conhecida ao final. Serve para investigar quanto da melhora decorre de menor tamanho, não como regra que poderia ser escolhida antecipadamente. O controle estimado apenas com história passada tem outra exposição média e não iguala ex post o risco. O backtest calcula o ativo local em dólar como (1+i_local) × S_anterior/S_atual − 1. Soma o caixa USD e o resultado das posições, descontando financiamento adicional e negociação. Custos por notional: 10 pontos-base para BRL, 3 para SEK e 2 para as demais moedas, além de 50 pontos-base anuais de spread na ponta vendida. Um ponto-base é 0,01 ponto percentual.
+
+reading: A tabela compara, em 2018–2026, carry a 100%, carry reduzido retrospectivamente a 48% e combinação. O calendário é sinal no fechamento de t, execução no fechamento de t+1 e primeiro retorno em t+2. As taxas curtas são proxies, não contratos a termo efetivamente negociados.
+
+training: Treino mensal expansivo da combinação, com primeiro sinal em fev/2018. Backtest comum: abr/2018–ago/2026. A exposição média do controle retrospectivo só é conhecida ao final.
+
+speech: O controle com o mesmo tamanho médio ajuda a separar exposição e seleção. Ele tem volatilidade até um pouco menor que a combinação, mas retorno menor e drawdown maior na história. Como usa a exposição média conhecida ao final, eu o trato como diagnóstico. Os retornos da simulação incluem juros, variação cambial e os custos definidos, sempre em dólar. Para execução real ainda faltariam cotações negociáveis, vintages históricas e outras fricções específicas do investidor.
+
+caution: Drawdown é uma estatística da trajetória observada, não um limite de perda futura. Custos assumidos não são custos garantidos para qualquer investidor.
+
+qa: Por que não é arbitragem? Porque há risco de perda, incerteza de convergência e custos de financiamento. Nenhum resultado positivo é garantido.
+
+transition: Material de referência para perguntas. A conclusão principal já foi apresentada.
+
+Fontes: synthesis/tables/exposure_controls.csv, src/models.py: run_book, synthesis/model.py

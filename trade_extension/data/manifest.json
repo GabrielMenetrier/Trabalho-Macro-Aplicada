@@ -1,0 +1,79 @@
+[
+  {
+    "indicator": "TX.VAL.FUEL.ZS.UN",
+    "url": "https://api.worldbank.org/v2/country/BRA;CAN;JPN;GBR;SWE;DEU/indicator/TX.VAL.FUEL.ZS.UN?format=json&date=1994:2025&per_page=5000",
+    "file": "data\\raw\\TX.VAL.FUEL.ZS.UN.json",
+    "sha256": "da93150dcee22a15a2c3fb29d81a5aef4e1615d705ae6ce89c8e9b8d368464c5",
+    "downloaded_utc": "2026-09-11T14:14:37.050964+00:00"
+  },
+  {
+    "indicator": "TX.VAL.FOOD.ZS.UN",
+    "url": "https://api.worldbank.org/v2/country/BRA;CAN;JPN;GBR;SWE;DEU/indicator/TX.VAL.FOOD.ZS.UN?format=json&date=1994:2025&per_page=5000",
+    "file": "data\\raw\\TX.VAL.FOOD.ZS.UN.json",
+    "sha256": "9adf89e6dd762adee8c852e5805ee3e550a9abf624b5c6b850c8570353dcdafc",
+    "downloaded_utc": "2026-09-11T14:14:36.815126+00:00"
+  },
+  {
+    "indicator": "TX.VAL.AGRI.ZS.UN",
+    "url": "https://api.worldbank.org/v2/country/BRA;CAN;JPN;GBR;SWE;DEU/indicator/TX.VAL.AGRI.ZS.UN?format=json&date=1994:2025&per_page=5000",
+    "file": "data\\raw\\TX.VAL.AGRI.ZS.UN.json",
+    "sha256": "5a8d0fdecd1426dde656905b4ddd3c84c00e6968d3385b67c126d9ce82710dcd",
+    "downloaded_utc": "2026-09-11T14:14:36.819557+00:00"
+  },
+  {
+    "indicator": "TX.VAL.MMTL.ZS.UN",
+    "url": "https://api.worldbank.org/v2/country/BRA;CAN;JPN;GBR;SWE;DEU/indicator/TX.VAL.MMTL.ZS.UN?format=json&date=1994:2025&per_page=5000",
+    "file": "data\\raw\\TX.VAL.MMTL.ZS.UN.json",
+    "sha256": "32cefbbe6ce96cffcca17b36ef900086adf87ed3f23085c18e07eb12a9653b6c",
+    "downloaded_utc": "2026-09-11T14:14:36.815126+00:00"
+  },
+  {
+    "indicator": "TM.VAL.FUEL.ZS.UN",
+    "url": "https://api.worldbank.org/v2/country/BRA;CAN;JPN;GBR;SWE;DEU/indicator/TM.VAL.FUEL.ZS.UN?format=json&date=1994:2025&per_page=5000",
+    "file": "data\\raw\\TM.VAL.FUEL.ZS.UN.json",
+    "sha256": "179417db6e08b91c17f662e02c8af026eb871bce3c9965b7d18c8df0a91413c6",
+    "downloaded_utc": "2026-09-11T14:14:37.630788+00:00"
+  },
+  {
+    "indicator": "TM.VAL.FOOD.ZS.UN",
+    "url": "https://api.worldbank.org/v2/country/BRA;CAN;JPN;GBR;SWE;DEU/indicator/TM.VAL.FOOD.ZS.UN?format=json&date=1994:2025&per_page=5000",
+    "file": "data\\raw\\TM.VAL.FOOD.ZS.UN.json",
+    "sha256": "360f7c57a3617fb6239bb465b9f679789db8494e30ac62eb8010a9cbe407254c",
+    "downloaded_utc": "2026-09-11T14:14:37.630788+00:00"
+  },
+  {
+    "indicator": "TM.VAL.AGRI.ZS.UN",
+    "url": "https://api.worldbank.org/v2/country/BRA;CAN;JPN;GBR;SWE;DEU/indicator/TM.VAL.AGRI.ZS.UN?format=json&date=1994:2025&per_page=5000",
+    "file": "data\\raw\\TM.VAL.AGRI.ZS.UN.json",
+    "sha256": "2a373d4d3bf9853c3cbe8faab8717556b719edfc6d965699ad13d8a3244c9e4e",
+    "downloaded_utc": "2026-09-11T14:14:37.774901+00:00"
+  },
+  {
+    "indicator": "TM.VAL.MMTL.ZS.UN",
+    "url": "https://api.worldbank.org/v2/country/BRA;CAN;JPN;GBR;SWE;DEU/indicator/TM.VAL.MMTL.ZS.UN?format=json&date=1994:2025&per_page=5000",
+    "file": "data\\raw\\TM.VAL.MMTL.ZS.UN.json",
+    "sha256": "440d3d0fe9f24117fdd2529c39fea1f2d4f4b41fa0f6b612d7c7a089fedd81c5",
+    "downloaded_utc": "2026-09-11T14:14:37.868665+00:00"
+  },
+  {
+    "indicator": "TX.VAL.MRCH.CD.WT",
+    "url": "https://api.worldbank.org/v2/country/BRA;CAN;JPN;GBR;SWE;DEU/indicator/TX.VAL.MRCH.CD.WT?format=json&date=1994:2025&per_page=5000",
+    "file": "data\\raw\\TX.VAL.MRCH.CD.WT.json",
+    "sha256": "b79a572a8a10380b42da2c604341c61a8393c56fa97791b4a76622c3665357d7",
+    "downloaded_utc": "2026-09-11T14:14:38.355008+00:00"
+  },
+  {
+    "indicator": "TM.VAL.MRCH.CD.WT",
+    "url": "https://api.worldbank.org/v2/country/BRA;CAN;JPN;GBR;SWE;DEU/indicator/TM.VAL.MRCH.CD.WT?format=json&date=1994:2025&per_page=5000",
+    "file": "data\\raw\\TM.VAL.MRCH.CD.WT.json",
+    "sha256": "c37a855e531634b23c5e6100afdf2c7e9c6e59ab0aabd6971ea4670bc755050e",
+    "downloaded_utc": "2026-09-11T14:14:38.355008+00:00"
+  },
+  {
+    "indicator": "TT.PRI.MRCH.XD.WD",
+    "url": "https://api.worldbank.org/v2/country/BRA;CAN;JPN;GBR;SWE;DEU/indicator/TT.PRI.MRCH.XD.WD?format=json&date=1994:2025&per_page=5000",
+    "file": "data\\raw\\TT.PRI.MRCH.XD.WD.json",
+    "sha256": "49bdc5ec2491d642e6d9ffd1737afaaac40d852087e81fe869f01a3df2334133",
+    "downloaded_utc": "2026-09-11T14:14:38.487043+00:00"
+  }
+]

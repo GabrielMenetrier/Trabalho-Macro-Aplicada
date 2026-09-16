@@ -1,0 +1,33 @@
+{
+  "start": "1999-10",
+  "end_fx": "2026-08",
+  "end_cpi": "2026-07",
+  "ipca_monthly_max_abs_difference": 1.0837721831080671e-09,
+  "rates_missing_after_1999_10": {
+    "BRL": 0,
+    "CAD": 0,
+    "GBP": 0,
+    "JPY": 0,
+    "EUR": 0,
+    "USD": 0,
+    "SEK": 0
+  },
+  "fx_missing_after_1999_10": {
+    "JPY": 0,
+    "SEK": 0,
+    "BRL": 0,
+    "CAD": 0,
+    "EUR": 0,
+    "GBP": 0,
+    "USD": 0
+  },
+  "cpi_missing_through_2026_07": {
+    "GBP": 0,
+    "JPY": 0,
+    "SEK": 0,
+    "EUR": 0,
+    "BRL": 0,
+    "CAD": 0,
+    "USD": 1
+  }
+}

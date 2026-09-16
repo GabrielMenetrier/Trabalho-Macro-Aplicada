@@ -1,0 +1,1491 @@
+{
+  "passed": true,
+  "count": 371,
+  "pages": 11,
+  "checks": [
+    {
+      "check": "No malformed table commands page 1",
+      "passed": true
+    },
+    {
+      "check": "No empty page 1",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 1",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 1",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 1",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 1",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 1",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 1",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 1",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 1",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 1",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 1",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 1",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 1",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 1",
+      "passed": true
+    },
+    {
+      "check": "No malformed table commands page 2",
+      "passed": true
+    },
+    {
+      "check": "No empty page 2",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 2",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 2",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 2",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 2",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 2",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 2",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 2",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 2",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 2",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 2",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 2",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 2",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 2",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 2",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 2",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 2",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 2",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 2",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 2",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 2",
+      "passed": true
+    },
+    {
+      "check": "No malformed table commands page 3",
+      "passed": true
+    },
+    {
+      "check": "No empty page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 3",
+      "passed": true
+    },
+    {
+      "check": "No malformed table commands page 4",
+      "passed": true
+    },
+    {
+      "check": "No empty page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 4",
+      "passed": true
+    },
+    {
+      "check": "No malformed table commands page 5",
+      "passed": true
+    },
+    {
+      "check": "No empty page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 5",
+      "passed": true
+    },
+    {
+      "check": "No malformed table commands page 6",
+      "passed": true
+    },
+    {
+      "check": "No empty page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 6",
+      "passed": true
+    },
+    {
+      "check": "No malformed table commands page 7",
+      "passed": true
+    },
+    {
+      "check": "No empty page 7",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 7",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 7",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 7",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 7",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 7",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 7",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 7",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 7",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 7",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 7",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 7",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 7",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 7",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 7",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 7",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 7",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 7",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 7",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 7",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 7",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 7",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 7",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 7",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 7",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 7",
+      "passed": true
+    },
+    {
+      "check": "No malformed table commands page 8",
+      "passed": true
+    },
+    {
+      "check": "No empty page 8",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 8",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 8",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 8",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 8",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 8",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 8",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 8",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 8",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 8",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 8",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 8",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 8",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 8",
+      "passed": true
+    },
+    {
+      "check": "No malformed table commands page 9",
+      "passed": true
+    },
+    {
+      "check": "No empty page 9",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 9",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 9",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 9",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 9",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 9",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 9",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 9",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 9",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 9",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 9",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 9",
+      "passed": true
+    },
+    {
+      "check": "No malformed table commands page 10",
+      "passed": true
+    },
+    {
+      "check": "No empty page 10",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 10",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 10",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 10",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 10",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 10",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 10",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 10",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 10",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 10",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 10",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 10",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 10",
+      "passed": true
+    },
+    {
+      "check": "No malformed table commands page 11",
+      "passed": true
+    },
+    {
+      "check": "No empty page 11",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 11",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 11",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 11",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 11",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 11",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 11",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 11",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 11",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 11",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 11",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 11",
+      "passed": true
+    },
+    {
+      "check": "Text contained on page 11",
+      "passed": true
+    },
+    {
+      "check": "No missing glyphs",
+      "passed": true
+    },
+    {
+      "check": "No overfull boxes",
+      "passed": true
+    },
+    {
+      "check": "Graph labels reflect RMSE BRL EJR",
+      "passed": true
+    },
+    {
+      "check": "Graph labels reflect adjusted R2 BRL EJR",
+      "passed": true
+    },
+    {
+      "check": "Graph value matches metrics BRL EJR",
+      "passed": true
+    },
+    {
+      "check": "Graph labels reflect RMSE BRL TOT_LOG_LD",
+      "passed": true
+    },
+    {
+      "check": "Graph labels reflect adjusted R2 BRL TOT_LOG_LD",
+      "passed": true
+    },
+    {
+      "check": "Graph value matches metrics BRL TOT_LOG_LD",
+      "passed": true
+    },
+    {
+      "check": "Graph labels reflect RMSE BRL COM_DEV_LD",
+      "passed": true
+    },
+    {
+      "check": "Graph labels reflect adjusted R2 BRL COM_DEV_LD",
+      "passed": true
+    },
+    {
+      "check": "Graph value matches metrics BRL COM_DEV_LD",
+      "passed": true
+    },
+    {
+      "check": "Graph labels reflect RMSE CAD EJR",
+      "passed": true
+    },
+    {
+      "check": "Graph labels reflect adjusted R2 CAD EJR",
+      "passed": true
+    },
+    {
+      "check": "Graph value matches metrics CAD EJR",
+      "passed": true
+    },
+    {
+      "check": "Graph labels reflect RMSE CAD TOT_LOG_LD",
+      "passed": true
+    },
+    {
+      "check": "Graph labels reflect adjusted R2 CAD TOT_LOG_LD",
+      "passed": true
+    },
+    {
+      "check": "Graph value matches metrics CAD TOT_LOG_LD",
+      "passed": true
+    },
+    {
+      "check": "Graph labels reflect RMSE CAD COM_DEV_LD",
+      "passed": true
+    },
+    {
+      "check": "Graph labels reflect adjusted R2 CAD COM_DEV_LD",
+      "passed": true
+    },
+    {
+      "check": "Graph value matches metrics CAD COM_DEV_LD",
+      "passed": true
+    },
+    {
+      "check": "Graph labels reflect RMSE EUR EJR",
+      "passed": true
+    },
+    {
+      "check": "Graph labels reflect adjusted R2 EUR EJR",
+      "passed": true
+    },
+    {
+      "check": "Graph value matches metrics EUR EJR",
+      "passed": true
+    },
+    {
+      "check": "Graph labels reflect RMSE EUR TOT_LOG_LD",
+      "passed": true
+    },
+    {
+      "check": "Graph labels reflect adjusted R2 EUR TOT_LOG_LD",
+      "passed": true
+    },
+    {
+      "check": "Graph value matches metrics EUR TOT_LOG_LD",
+      "passed": true
+    },
+    {
+      "check": "Graph labels reflect RMSE EUR COM_DEV_LD",
+      "passed": true
+    },
+    {
+      "check": "Graph labels reflect adjusted R2 EUR COM_DEV_LD",
+      "passed": true
+    },
+    {
+      "check": "Graph value matches metrics EUR COM_DEV_LD",
+      "passed": true
+    },
+    {
+      "check": "Input files unchanged",
+      "passed": true
+    }
+  ]
+}

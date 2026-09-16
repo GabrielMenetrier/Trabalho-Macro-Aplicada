@@ -1,0 +1,15 @@
+{
+  "ejr_trade\\run.py": "cf01f5c4c52a7a72971c04826efa0a2570fda2fb24171b6454799a71544bf041",
+  "ejr_trade\\data\\tot_national_accounts_log.csv": "dd22eb8a11bbf62515bcedaf55666a29f89fce3912bffc60cc40fa9193f476f5",
+  "third\\data\\trade_weights.csv": "b04ab40bb3abb946fb1f8dd1032d63982df6196e532cf83d1eeed96473c4e992",
+  "third\\data\\sector_logprices.csv": "3a35de5ac44eef65baf8f0763bcf197158e535fc6e160b1448406849d12780ec",
+  "data\\processed\\fx.csv": "3ef93f78880bd6bb75279c17f16719ab8a85b3e66d92046620b1297e34161f7b",
+  "data\\processed\\cpi.csv": "960d19bcc45f572ab9a5b013f88507a23c27e12b97d98a45e30b3ebc7fec0116",
+  "ejr_trade\\data\\manifest.json": "c6f70880987514ea0bd4973bf4df66c56feb394b687cd65ffc9d25ecf3ddf9ea",
+  "ejr_trade\\data\\NE.EXP.GNFS.CN.json": "62c09b763da42559807c6611b16e54ae2dd4d040ec52ecb83fbf1cf9ba5a49e4",
+  "ejr_trade\\data\\NE.EXP.GNFS.KN.json": "82b6180dcbaf9fb837e82913fbf30a6276297831f74d30dc4360408e0a940b79",
+  "ejr_trade\\data\\NE.IMP.GNFS.CN.json": "981d7c56f821fcf6b19e5d3a761bd6788dafb2e282503b5c09f72fcfef3138ee",
+  "ejr_trade\\data\\NE.IMP.GNFS.KN.json": "ea60a7b91d44c12cbc225da116d21bbaa8989c8a68b770e226a866b4ef5417e5",
+  "ejr_trade\\data\\NE.TRM.TRAD.XU.json": "118b8c5c82ffd0858ac3968ad719b36c0fb4dd72c131682e5b2e0fdf27780a5e",
+  "ejr_trade\\data\\TT.PRI.MRCH.XD.WD.json": "0ad2b9f8d6e2b5b73387189e56e185827ca92c87836c9d9f7a3c25dd37a2ef40"
+}

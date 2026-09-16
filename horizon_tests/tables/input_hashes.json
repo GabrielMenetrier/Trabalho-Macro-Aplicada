@@ -1,0 +1,7 @@
+{
+  "secondary/cache/core.npz": "02450a62ab7fe99e1e27eddaa9b18df0ad90ecd5f5a9bb6781991eefb1cea423",
+  "data/processed/fx.csv": "3ef93f78880bd6bb75279c17f16719ab8a85b3e66d92046620b1297e34161f7b",
+  "data/processed/cpi.csv": "960d19bcc45f572ab9a5b013f88507a23c27e12b97d98a45e30b3ebc7fec0116",
+  "data/processed/rates.csv": "b2a480668296d6297030a9b3af730a8edc110daec72a83753e8cbbf247e8691d",
+  "src/models.py": "3906dbf9ea2aba37b27d026f9c950248ed6eebb1e41291b592fb798fb86fe6c6"
+}

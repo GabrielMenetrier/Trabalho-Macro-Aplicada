@@ -1,0 +1,360 @@
+check,passed
+Base EJR matches restricted prior estimator h=12,True
+Base EJR matches restricted prior estimator h=24,True
+Base EJR matches restricted prior estimator h=36,True
+Base EJR matches restricted prior estimator h=48,True
+Base EJR matches restricted prior estimator h=60,True
+Base EJR matches restricted prior estimator h=72,True
+Base EJR matches restricted prior estimator h=84,True
+Base EJR matches restricted prior estimator h=96,True
+log(1+deviation) equals centered log TOT 100,True
+Unit invariance TOT LOG 100,True
+Unit invariance TOT DEV 100,True
+Unit invariance TOT SLOG 100,True
+log(1+deviation) equals centered log COM 100,True
+Unit invariance COM LOG 100,True
+Unit invariance COM DEV 100,True
+Unit invariance COM SLOG 100,True
+log(1+deviation) equals centered log TOT 180,True
+Unit invariance TOT LOG 180,True
+Unit invariance TOT DEV 180,True
+Unit invariance TOT SLOG 180,True
+log(1+deviation) equals centered log COM 180,True
+Unit invariance COM LOG 180,True
+Unit invariance COM DEV 180,True
+Unit invariance COM SLOG 180,True
+log(1+deviation) equals centered log TOT 322,True
+Unit invariance TOT LOG 322,True
+Unit invariance TOT DEV 322,True
+Unit invariance TOT SLOG 322,True
+log(1+deviation) equals centered log COM 322,True
+Unit invariance COM LOG 322,True
+Unit invariance COM DEV 322,True
+Unit invariance COM SLOG 322,True
+Prefix invariant 36 EJR,True
+Prefix invariant 36 TOT_LOG_L,True
+Prefix invariant 36 TOT_LOG_D,True
+Prefix invariant 36 TOT_LOG_LD,True
+Prefix invariant 36 TOT_DEV_L,True
+Prefix invariant 36 TOT_DEV_D,True
+Prefix invariant 36 TOT_DEV_LD,True
+Prefix invariant 36 TOT_SLOG_L,True
+Prefix invariant 36 TOT_SLOG_D,True
+Prefix invariant 36 TOT_SLOG_LD,True
+Prefix invariant 36 COM_LOG_L,True
+Prefix invariant 36 COM_LOG_D,True
+Prefix invariant 36 COM_LOG_LD,True
+Prefix invariant 36 COM_DEV_L,True
+Prefix invariant 36 COM_DEV_D,True
+Prefix invariant 36 COM_DEV_LD,True
+Prefix invariant 36 COM_SLOG_L,True
+Prefix invariant 36 COM_SLOG_D,True
+Prefix invariant 36 COM_SLOG_LD,True
+Prefix invariant 36 JOINT_LOG_LOG,True
+Prefix invariant 36 JOINT_LOG_DEV,True
+Prefix invariant 36 JOINT_LOG_SLOG,True
+Prefix invariant 36 JOINT_DEV_LOG,True
+Prefix invariant 36 JOINT_DEV_DEV,True
+Prefix invariant 36 JOINT_DEV_SLOG,True
+Prefix invariant 36 JOINT_SLOG_LOG,True
+Prefix invariant 36 JOINT_SLOG_DEV,True
+Prefix invariant 36 JOINT_SLOG_SLOG,True
+Future perturbation 36 EJR,True
+Future perturbation 36 TOT_LOG_L,True
+Future perturbation 36 TOT_LOG_D,True
+Future perturbation 36 TOT_LOG_LD,True
+Future perturbation 36 TOT_DEV_L,True
+Future perturbation 36 TOT_DEV_D,True
+Future perturbation 36 TOT_DEV_LD,True
+Future perturbation 36 TOT_SLOG_L,True
+Future perturbation 36 TOT_SLOG_D,True
+Future perturbation 36 TOT_SLOG_LD,True
+Future perturbation 36 COM_LOG_L,True
+Future perturbation 36 COM_LOG_D,True
+Future perturbation 36 COM_LOG_LD,True
+Future perturbation 36 COM_DEV_L,True
+Future perturbation 36 COM_DEV_D,True
+Future perturbation 36 COM_DEV_LD,True
+Future perturbation 36 COM_SLOG_L,True
+Future perturbation 36 COM_SLOG_D,True
+Future perturbation 36 COM_SLOG_LD,True
+Future perturbation 36 JOINT_LOG_LOG,True
+Future perturbation 36 JOINT_LOG_DEV,True
+Future perturbation 36 JOINT_LOG_SLOG,True
+Future perturbation 36 JOINT_DEV_LOG,True
+Future perturbation 36 JOINT_DEV_DEV,True
+Future perturbation 36 JOINT_DEV_SLOG,True
+Future perturbation 36 JOINT_SLOG_LOG,True
+Future perturbation 36 JOINT_SLOG_DEV,True
+Future perturbation 36 JOINT_SLOG_SLOG,True
+Prefix invariant 60 EJR,True
+Prefix invariant 60 TOT_LOG_L,True
+Prefix invariant 60 TOT_LOG_D,True
+Prefix invariant 60 TOT_LOG_LD,True
+Prefix invariant 60 TOT_DEV_L,True
+Prefix invariant 60 TOT_DEV_D,True
+Prefix invariant 60 TOT_DEV_LD,True
+Prefix invariant 60 TOT_SLOG_L,True
+Prefix invariant 60 TOT_SLOG_D,True
+Prefix invariant 60 TOT_SLOG_LD,True
+Prefix invariant 60 COM_LOG_L,True
+Prefix invariant 60 COM_LOG_D,True
+Prefix invariant 60 COM_LOG_LD,True
+Prefix invariant 60 COM_DEV_L,True
+Prefix invariant 60 COM_DEV_D,True
+Prefix invariant 60 COM_DEV_LD,True
+Prefix invariant 60 COM_SLOG_L,True
+Prefix invariant 60 COM_SLOG_D,True
+Prefix invariant 60 COM_SLOG_LD,True
+Prefix invariant 60 JOINT_LOG_LOG,True
+Prefix invariant 60 JOINT_LOG_DEV,True
+Prefix invariant 60 JOINT_LOG_SLOG,True
+Prefix invariant 60 JOINT_DEV_LOG,True
+Prefix invariant 60 JOINT_DEV_DEV,True
+Prefix invariant 60 JOINT_DEV_SLOG,True
+Prefix invariant 60 JOINT_SLOG_LOG,True
+Prefix invariant 60 JOINT_SLOG_DEV,True
+Prefix invariant 60 JOINT_SLOG_SLOG,True
+Future perturbation 60 EJR,True
+Future perturbation 60 TOT_LOG_L,True
+Future perturbation 60 TOT_LOG_D,True
+Future perturbation 60 TOT_LOG_LD,True
+Future perturbation 60 TOT_DEV_L,True
+Future perturbation 60 TOT_DEV_D,True
+Future perturbation 60 TOT_DEV_LD,True
+Future perturbation 60 TOT_SLOG_L,True
+Future perturbation 60 TOT_SLOG_D,True
+Future perturbation 60 TOT_SLOG_LD,True
+Future perturbation 60 COM_LOG_L,True
+Future perturbation 60 COM_LOG_D,True
+Future perturbation 60 COM_LOG_LD,True
+Future perturbation 60 COM_DEV_L,True
+Future perturbation 60 COM_DEV_D,True
+Future perturbation 60 COM_DEV_LD,True
+Future perturbation 60 COM_SLOG_L,True
+Future perturbation 60 COM_SLOG_D,True
+Future perturbation 60 COM_SLOG_LD,True
+Future perturbation 60 JOINT_LOG_LOG,True
+Future perturbation 60 JOINT_LOG_DEV,True
+Future perturbation 60 JOINT_LOG_SLOG,True
+Future perturbation 60 JOINT_DEV_LOG,True
+Future perturbation 60 JOINT_DEV_DEV,True
+Future perturbation 60 JOINT_DEV_SLOG,True
+Future perturbation 60 JOINT_SLOG_LOG,True
+Future perturbation 60 JOINT_SLOG_DEV,True
+Future perturbation 60 JOINT_SLOG_SLOG,True
+Prefix invariant 96 EJR,True
+Prefix invariant 96 TOT_LOG_L,True
+Prefix invariant 96 TOT_LOG_D,True
+Prefix invariant 96 TOT_LOG_LD,True
+Prefix invariant 96 TOT_DEV_L,True
+Prefix invariant 96 TOT_DEV_D,True
+Prefix invariant 96 TOT_DEV_LD,True
+Prefix invariant 96 TOT_SLOG_L,True
+Prefix invariant 96 TOT_SLOG_D,True
+Prefix invariant 96 TOT_SLOG_LD,True
+Prefix invariant 96 COM_LOG_L,True
+Prefix invariant 96 COM_LOG_D,True
+Prefix invariant 96 COM_LOG_LD,True
+Prefix invariant 96 COM_DEV_L,True
+Prefix invariant 96 COM_DEV_D,True
+Prefix invariant 96 COM_DEV_LD,True
+Prefix invariant 96 COM_SLOG_L,True
+Prefix invariant 96 COM_SLOG_D,True
+Prefix invariant 96 COM_SLOG_LD,True
+Prefix invariant 96 JOINT_LOG_LOG,True
+Prefix invariant 96 JOINT_LOG_DEV,True
+Prefix invariant 96 JOINT_LOG_SLOG,True
+Prefix invariant 96 JOINT_DEV_LOG,True
+Prefix invariant 96 JOINT_DEV_DEV,True
+Prefix invariant 96 JOINT_DEV_SLOG,True
+Prefix invariant 96 JOINT_SLOG_LOG,True
+Prefix invariant 96 JOINT_SLOG_DEV,True
+Prefix invariant 96 JOINT_SLOG_SLOG,True
+Future perturbation 96 EJR,True
+Future perturbation 96 TOT_LOG_L,True
+Future perturbation 96 TOT_LOG_D,True
+Future perturbation 96 TOT_LOG_LD,True
+Future perturbation 96 TOT_DEV_L,True
+Future perturbation 96 TOT_DEV_D,True
+Future perturbation 96 TOT_DEV_LD,True
+Future perturbation 96 TOT_SLOG_L,True
+Future perturbation 96 TOT_SLOG_D,True
+Future perturbation 96 TOT_SLOG_LD,True
+Future perturbation 96 COM_LOG_L,True
+Future perturbation 96 COM_LOG_D,True
+Future perturbation 96 COM_LOG_LD,True
+Future perturbation 96 COM_DEV_L,True
+Future perturbation 96 COM_DEV_D,True
+Future perturbation 96 COM_DEV_LD,True
+Future perturbation 96 COM_SLOG_L,True
+Future perturbation 96 COM_SLOG_D,True
+Future perturbation 96 COM_SLOG_LD,True
+Future perturbation 96 JOINT_LOG_LOG,True
+Future perturbation 96 JOINT_LOG_DEV,True
+Future perturbation 96 JOINT_LOG_SLOG,True
+Future perturbation 96 JOINT_DEV_LOG,True
+Future perturbation 96 JOINT_DEV_DEV,True
+Future perturbation 96 JOINT_DEV_SLOG,True
+Future perturbation 96 JOINT_SLOG_LOG,True
+Future perturbation 96 JOINT_SLOG_DEV,True
+Future perturbation 96 JOINT_SLOG_SLOG,True
+Selection uses only completed past targets,True
+Selection has >=24 prior validation origins,True
+Training targets always mature,True
+"Paired dates (np.int64(12), 'adaptive_ALL', 'BRL')",True
+"Paired dates (np.int64(12), 'adaptive_ALL', 'CAD')",True
+"Paired dates (np.int64(12), 'adaptive_ALL', 'EUR')",True
+"Paired dates (np.int64(12), 'adaptive_ALL', 'POOL')",True
+"Paired dates (np.int64(12), 'adaptive_COM', 'BRL')",True
+"Paired dates (np.int64(12), 'adaptive_COM', 'CAD')",True
+"Paired dates (np.int64(12), 'adaptive_COM', 'EUR')",True
+"Paired dates (np.int64(12), 'adaptive_COM', 'POOL')",True
+"Paired dates (np.int64(12), 'adaptive_JOINT', 'BRL')",True
+"Paired dates (np.int64(12), 'adaptive_JOINT', 'CAD')",True
+"Paired dates (np.int64(12), 'adaptive_JOINT', 'EUR')",True
+"Paired dates (np.int64(12), 'adaptive_JOINT', 'POOL')",True
+"Paired dates (np.int64(12), 'adaptive_TOT', 'BRL')",True
+"Paired dates (np.int64(12), 'adaptive_TOT', 'CAD')",True
+"Paired dates (np.int64(12), 'adaptive_TOT', 'EUR')",True
+"Paired dates (np.int64(12), 'adaptive_TOT', 'POOL')",True
+"Paired dates (np.int64(12), 'fixed', 'BRL')",True
+"Paired dates (np.int64(12), 'fixed', 'CAD')",True
+"Paired dates (np.int64(12), 'fixed', 'EUR')",True
+"Paired dates (np.int64(12), 'fixed', 'POOL')",True
+"Paired dates (np.int64(12), 'recent', 'BRL')",True
+"Paired dates (np.int64(12), 'recent', 'CAD')",True
+"Paired dates (np.int64(12), 'recent', 'EUR')",True
+"Paired dates (np.int64(12), 'recent', 'POOL')",True
+"Paired dates (np.int64(24), 'adaptive_ALL', 'BRL')",True
+"Paired dates (np.int64(24), 'adaptive_ALL', 'CAD')",True
+"Paired dates (np.int64(24), 'adaptive_ALL', 'EUR')",True
+"Paired dates (np.int64(24), 'adaptive_ALL', 'POOL')",True
+"Paired dates (np.int64(24), 'adaptive_COM', 'BRL')",True
+"Paired dates (np.int64(24), 'adaptive_COM', 'CAD')",True
+"Paired dates (np.int64(24), 'adaptive_COM', 'EUR')",True
+"Paired dates (np.int64(24), 'adaptive_COM', 'POOL')",True
+"Paired dates (np.int64(24), 'adaptive_JOINT', 'BRL')",True
+"Paired dates (np.int64(24), 'adaptive_JOINT', 'CAD')",True
+"Paired dates (np.int64(24), 'adaptive_JOINT', 'EUR')",True
+"Paired dates (np.int64(24), 'adaptive_JOINT', 'POOL')",True
+"Paired dates (np.int64(24), 'adaptive_TOT', 'BRL')",True
+"Paired dates (np.int64(24), 'adaptive_TOT', 'CAD')",True
+"Paired dates (np.int64(24), 'adaptive_TOT', 'EUR')",True
+"Paired dates (np.int64(24), 'adaptive_TOT', 'POOL')",True
+"Paired dates (np.int64(24), 'fixed', 'BRL')",True
+"Paired dates (np.int64(24), 'fixed', 'CAD')",True
+"Paired dates (np.int64(24), 'fixed', 'EUR')",True
+"Paired dates (np.int64(24), 'fixed', 'POOL')",True
+"Paired dates (np.int64(24), 'recent', 'BRL')",True
+"Paired dates (np.int64(24), 'recent', 'CAD')",True
+"Paired dates (np.int64(24), 'recent', 'EUR')",True
+"Paired dates (np.int64(24), 'recent', 'POOL')",True
+"Paired dates (np.int64(36), 'adaptive_ALL', 'BRL')",True
+"Paired dates (np.int64(36), 'adaptive_ALL', 'CAD')",True
+"Paired dates (np.int64(36), 'adaptive_ALL', 'EUR')",True
+"Paired dates (np.int64(36), 'adaptive_ALL', 'POOL')",True
+"Paired dates (np.int64(36), 'adaptive_COM', 'BRL')",True
+"Paired dates (np.int64(36), 'adaptive_COM', 'CAD')",True
+"Paired dates (np.int64(36), 'adaptive_COM', 'EUR')",True
+"Paired dates (np.int64(36), 'adaptive_COM', 'POOL')",True
+"Paired dates (np.int64(36), 'adaptive_JOINT', 'BRL')",True
+"Paired dates (np.int64(36), 'adaptive_JOINT', 'CAD')",True
+"Paired dates (np.int64(36), 'adaptive_JOINT', 'EUR')",True
+"Paired dates (np.int64(36), 'adaptive_JOINT', 'POOL')",True
+"Paired dates (np.int64(36), 'adaptive_TOT', 'BRL')",True
+"Paired dates (np.int64(36), 'adaptive_TOT', 'CAD')",True
+"Paired dates (np.int64(36), 'adaptive_TOT', 'EUR')",True
+"Paired dates (np.int64(36), 'adaptive_TOT', 'POOL')",True
+"Paired dates (np.int64(36), 'fixed', 'BRL')",True
+"Paired dates (np.int64(36), 'fixed', 'CAD')",True
+"Paired dates (np.int64(36), 'fixed', 'EUR')",True
+"Paired dates (np.int64(36), 'fixed', 'POOL')",True
+"Paired dates (np.int64(36), 'recent', 'BRL')",True
+"Paired dates (np.int64(36), 'recent', 'CAD')",True
+"Paired dates (np.int64(36), 'recent', 'EUR')",True
+"Paired dates (np.int64(36), 'recent', 'POOL')",True
+"Paired dates (np.int64(48), 'adaptive_ALL', 'BRL')",True
+"Paired dates (np.int64(48), 'adaptive_ALL', 'CAD')",True
+"Paired dates (np.int64(48), 'adaptive_ALL', 'EUR')",True
+"Paired dates (np.int64(48), 'adaptive_ALL', 'POOL')",True
+"Paired dates (np.int64(48), 'adaptive_COM', 'BRL')",True
+"Paired dates (np.int64(48), 'adaptive_COM', 'CAD')",True
+"Paired dates (np.int64(48), 'adaptive_COM', 'EUR')",True
+"Paired dates (np.int64(48), 'adaptive_COM', 'POOL')",True
+"Paired dates (np.int64(48), 'adaptive_JOINT', 'BRL')",True
+"Paired dates (np.int64(48), 'adaptive_JOINT', 'CAD')",True
+"Paired dates (np.int64(48), 'adaptive_JOINT', 'EUR')",True
+"Paired dates (np.int64(48), 'adaptive_JOINT', 'POOL')",True
+"Paired dates (np.int64(48), 'adaptive_TOT', 'BRL')",True
+"Paired dates (np.int64(48), 'adaptive_TOT', 'CAD')",True
+"Paired dates (np.int64(48), 'adaptive_TOT', 'EUR')",True
+"Paired dates (np.int64(48), 'adaptive_TOT', 'POOL')",True
+"Paired dates (np.int64(48), 'fixed', 'BRL')",True
+"Paired dates (np.int64(48), 'fixed', 'CAD')",True
+"Paired dates (np.int64(48), 'fixed', 'EUR')",True
+"Paired dates (np.int64(48), 'fixed', 'POOL')",True
+"Paired dates (np.int64(48), 'recent', 'BRL')",True
+"Paired dates (np.int64(48), 'recent', 'CAD')",True
+"Paired dates (np.int64(48), 'recent', 'EUR')",True
+"Paired dates (np.int64(48), 'recent', 'POOL')",True
+"Paired dates (np.int64(60), 'adaptive_ALL', 'BRL')",True
+"Paired dates (np.int64(60), 'adaptive_ALL', 'CAD')",True
+"Paired dates (np.int64(60), 'adaptive_ALL', 'EUR')",True
+"Paired dates (np.int64(60), 'adaptive_ALL', 'POOL')",True
+"Paired dates (np.int64(60), 'adaptive_COM', 'BRL')",True
+"Paired dates (np.int64(60), 'adaptive_COM', 'CAD')",True
+"Paired dates (np.int64(60), 'adaptive_COM', 'EUR')",True
+"Paired dates (np.int64(60), 'adaptive_COM', 'POOL')",True
+"Paired dates (np.int64(60), 'adaptive_JOINT', 'BRL')",True
+"Paired dates (np.int64(60), 'adaptive_JOINT', 'CAD')",True
+"Paired dates (np.int64(60), 'adaptive_JOINT', 'EUR')",True
+"Paired dates (np.int64(60), 'adaptive_JOINT', 'POOL')",True
+"Paired dates (np.int64(60), 'adaptive_TOT', 'BRL')",True
+"Paired dates (np.int64(60), 'adaptive_TOT', 'CAD')",True
+"Paired dates (np.int64(60), 'adaptive_TOT', 'EUR')",True
+"Paired dates (np.int64(60), 'adaptive_TOT', 'POOL')",True
+"Paired dates (np.int64(60), 'fixed', 'BRL')",True
+"Paired dates (np.int64(60), 'fixed', 'CAD')",True
+"Paired dates (np.int64(60), 'fixed', 'EUR')",True
+"Paired dates (np.int64(60), 'fixed', 'POOL')",True
+"Paired dates (np.int64(60), 'recent', 'BRL')",True
+"Paired dates (np.int64(60), 'recent', 'CAD')",True
+"Paired dates (np.int64(60), 'recent', 'EUR')",True
+"Paired dates (np.int64(60), 'recent', 'POOL')",True
+"Paired dates (np.int64(72), 'adaptive_ALL', 'BRL')",True
+"Paired dates (np.int64(72), 'adaptive_ALL', 'CAD')",True
+"Paired dates (np.int64(72), 'adaptive_ALL', 'EUR')",True
+"Paired dates (np.int64(72), 'adaptive_ALL', 'POOL')",True
+"Paired dates (np.int64(72), 'adaptive_COM', 'BRL')",True
+"Paired dates (np.int64(72), 'adaptive_COM', 'CAD')",True
+"Paired dates (np.int64(72), 'adaptive_COM', 'EUR')",True
+"Paired dates (np.int64(72), 'adaptive_COM', 'POOL')",True
+"Paired dates (np.int64(72), 'adaptive_JOINT', 'BRL')",True
+"Paired dates (np.int64(72), 'adaptive_JOINT', 'CAD')",True
+"Paired dates (np.int64(72), 'adaptive_JOINT', 'EUR')",True
+"Paired dates (np.int64(72), 'adaptive_JOINT', 'POOL')",True
+"Paired dates (np.int64(72), 'adaptive_TOT', 'BRL')",True
+"Paired dates (np.int64(72), 'adaptive_TOT', 'CAD')",True
+"Paired dates (np.int64(72), 'adaptive_TOT', 'EUR')",True
+"Paired dates (np.int64(72), 'adaptive_TOT', 'POOL')",True
+"Paired dates (np.int64(72), 'fixed', 'BRL')",True
+"Paired dates (np.int64(72), 'fixed', 'CAD')",True
+"Paired dates (np.int64(72), 'fixed', 'EUR')",True
+"Paired dates (np.int64(72), 'fixed', 'POOL')",True
+"Paired dates (np.int64(72), 'recent', 'BRL')",True
+"Paired dates (np.int64(72), 'recent', 'CAD')",True
+"Paired dates (np.int64(72), 'recent', 'EUR')",True
+"Paired dates (np.int64(72), 'recent', 'POOL')",True
+"Paired dates (np.int64(84), 'fixed', 'BRL')",True
+"Paired dates (np.int64(84), 'fixed', 'CAD')",True
+"Paired dates (np.int64(84), 'fixed', 'EUR')",True
+"Paired dates (np.int64(84), 'fixed', 'POOL')",True
+"Paired dates (np.int64(84), 'recent', 'BRL')",True
+"Paired dates (np.int64(84), 'recent', 'CAD')",True
+"Paired dates (np.int64(84), 'recent', 'EUR')",True
+"Paired dates (np.int64(84), 'recent', 'POOL')",True
+"Paired dates (np.int64(96), 'fixed', 'BRL')",True
+"Paired dates (np.int64(96), 'fixed', 'CAD')",True
+"Paired dates (np.int64(96), 'fixed', 'EUR')",True
+"Paired dates (np.int64(96), 'fixed', 'POOL')",True

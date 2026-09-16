@@ -1,0 +1,290 @@
+[
+  {
+    "universe": "six",
+    "method": "Ranking",
+    "signal": "Carry",
+    "hold": 12,
+    "cagr": 0.03266244620619485,
+    "table_cagr": 0.032662446206195,
+    "passed": true
+  },
+  {
+    "universe": "six",
+    "method": "Ranking",
+    "signal": "Carry",
+    "hold": 60,
+    "cagr": 0.032293459221941045,
+    "table_cagr": 0.0322934592219412,
+    "passed": true
+  },
+  {
+    "universe": "six",
+    "method": "Ranking",
+    "signal": "EJR",
+    "hold": 12,
+    "cagr": 0.02624680385969147,
+    "table_cagr": 0.0262468038596914,
+    "passed": true
+  },
+  {
+    "universe": "six",
+    "method": "Ranking",
+    "signal": "EJR",
+    "hold": 60,
+    "cagr": 0.022198857391703353,
+    "table_cagr": 0.0221988573917033,
+    "passed": true
+  },
+  {
+    "universe": "six",
+    "method": "Ranking",
+    "signal": "EJR_trio",
+    "hold": 12,
+    "cagr": 0.02624680385969147,
+    "table_cagr": 0.0262468038596914,
+    "passed": true
+  },
+  {
+    "universe": "six",
+    "method": "Ranking",
+    "signal": "EJR_trio",
+    "hold": 60,
+    "cagr": 0.022198857391703353,
+    "table_cagr": 0.0221988573917033,
+    "passed": true
+  },
+  {
+    "universe": "six",
+    "method": "Ranking",
+    "signal": "EJR_TOT_trio",
+    "hold": 12,
+    "cagr": 0.019307656172804943,
+    "table_cagr": 0.0193076561728049,
+    "passed": true
+  },
+  {
+    "universe": "six",
+    "method": "Ranking",
+    "signal": "EJR_TOT_trio",
+    "hold": 60,
+    "cagr": 0.01805643208227692,
+    "table_cagr": 0.0180564320822769,
+    "passed": true
+  },
+  {
+    "universe": "six",
+    "method": "long60",
+    "signal": "Carry",
+    "hold": 12,
+    "cagr": 0.021252419517189258,
+    "table_cagr": 0.0212524195171894,
+    "passed": true
+  },
+  {
+    "universe": "six",
+    "method": "long60",
+    "signal": "Carry",
+    "hold": 60,
+    "cagr": 0.01913998931934313,
+    "table_cagr": 0.0191399893193433,
+    "passed": true
+  },
+  {
+    "universe": "six",
+    "method": "long60",
+    "signal": "EJR",
+    "hold": 12,
+    "cagr": 0.02046650652693338,
+    "table_cagr": 0.0204665065269333,
+    "passed": true
+  },
+  {
+    "universe": "six",
+    "method": "long60",
+    "signal": "EJR",
+    "hold": 60,
+    "cagr": 0.012700607100268657,
+    "table_cagr": 0.0127006071002688,
+    "passed": true
+  },
+  {
+    "universe": "six",
+    "method": "long60",
+    "signal": "EJR_trio",
+    "hold": 12,
+    "cagr": 0.020300558625323095,
+    "table_cagr": 0.0203005586253233,
+    "passed": true
+  },
+  {
+    "universe": "six",
+    "method": "long60",
+    "signal": "EJR_trio",
+    "hold": 60,
+    "cagr": 0.012549010391717408,
+    "table_cagr": 0.0125490103917174,
+    "passed": true
+  },
+  {
+    "universe": "six",
+    "method": "long60",
+    "signal": "EJR_TOT_trio",
+    "hold": 12,
+    "cagr": 0.01853840000629381,
+    "table_cagr": 0.018538400006294,
+    "passed": true
+  },
+  {
+    "universe": "six",
+    "method": "long60",
+    "signal": "EJR_TOT_trio",
+    "hold": 60,
+    "cagr": 0.010053486592509708,
+    "table_cagr": 0.0100534865925097,
+    "passed": true
+  },
+  {
+    "universe": "three",
+    "method": "Ranking",
+    "signal": "Carry",
+    "hold": 12,
+    "cagr": 0.026091920154568626,
+    "table_cagr": 0.0260919201545688,
+    "passed": true
+  },
+  {
+    "universe": "three",
+    "method": "Ranking",
+    "signal": "Carry",
+    "hold": 60,
+    "cagr": 0.026091920154568626,
+    "table_cagr": 0.0260919201545688,
+    "passed": true
+  },
+  {
+    "universe": "three",
+    "method": "Ranking",
+    "signal": "EJR",
+    "hold": 12,
+    "cagr": 0.032711421967423604,
+    "table_cagr": 0.0327114219674238,
+    "passed": true
+  },
+  {
+    "universe": "three",
+    "method": "Ranking",
+    "signal": "EJR",
+    "hold": 60,
+    "cagr": 0.026091920154568626,
+    "table_cagr": 0.0260919201545688,
+    "passed": true
+  },
+  {
+    "universe": "three",
+    "method": "Ranking",
+    "signal": "TT_all",
+    "hold": 12,
+    "cagr": 0.018664084852362928,
+    "table_cagr": 0.0186640848523629,
+    "passed": true
+  },
+  {
+    "universe": "three",
+    "method": "Ranking",
+    "signal": "TT_all",
+    "hold": 60,
+    "cagr": 0.016748034370689835,
+    "table_cagr": 0.0167480343706898,
+    "passed": true
+  },
+  {
+    "universe": "three",
+    "method": "Ranking",
+    "signal": "Matched",
+    "hold": 12,
+    "cagr": 0.017024601117328286,
+    "table_cagr": 0.0170246011173285,
+    "passed": true
+  },
+  {
+    "universe": "three",
+    "method": "Ranking",
+    "signal": "Matched",
+    "hold": 60,
+    "cagr": 0.013400040952791015,
+    "table_cagr": 0.013400040952791,
+    "passed": true
+  },
+  {
+    "universe": "three",
+    "method": "long60",
+    "signal": "Carry",
+    "hold": 12,
+    "cagr": 0.028648158340106367,
+    "table_cagr": 0.0286481583401063,
+    "passed": true
+  },
+  {
+    "universe": "three",
+    "method": "long60",
+    "signal": "Carry",
+    "hold": 60,
+    "cagr": 0.018984838497880574,
+    "table_cagr": 0.0189848384978805,
+    "passed": true
+  },
+  {
+    "universe": "three",
+    "method": "long60",
+    "signal": "EJR",
+    "hold": 12,
+    "cagr": 0.03289663541858445,
+    "table_cagr": 0.0328966354185844,
+    "passed": true
+  },
+  {
+    "universe": "three",
+    "method": "long60",
+    "signal": "EJR",
+    "hold": 60,
+    "cagr": 0.023536536862924118,
+    "table_cagr": 0.0235365368629241,
+    "passed": true
+  },
+  {
+    "universe": "three",
+    "method": "long60",
+    "signal": "TT_all",
+    "hold": 12,
+    "cagr": 0.02427465612400348,
+    "table_cagr": 0.0242746561240034,
+    "passed": true
+  },
+  {
+    "universe": "three",
+    "method": "long60",
+    "signal": "TT_all",
+    "hold": 60,
+    "cagr": 0.013634966433554663,
+    "table_cagr": 0.0136349664335546,
+    "passed": true
+  },
+  {
+    "universe": "three",
+    "method": "long60",
+    "signal": "Matched",
+    "hold": 12,
+    "cagr": 0.027000967824650113,
+    "table_cagr": 0.0270009678246501,
+    "passed": true
+  },
+  {
+    "universe": "three",
+    "method": "long60",
+    "signal": "Matched",
+    "hold": 60,
+    "cagr": 0.0113983473585888,
+    "table_cagr": 0.0113983473585888,
+    "passed": true
+  }
+]

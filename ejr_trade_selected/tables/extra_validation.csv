@@ -1,0 +1,4 @@
+check,passed
+Independent statsmodels EJR,True
+Independent statsmodels TOT_LOG_LD,True
+Independent statsmodels COM_DEV_LD,True

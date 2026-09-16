@@ -1,0 +1,22 @@
+{
+  "long_start": "2013-03",
+  "common_start": "2018-04",
+  "policies": [
+    "Cash",
+    "Carry",
+    "EJR_rank",
+    "EJR_size",
+    "EJR_gate",
+    "Size_structure",
+    "Gate_price",
+    "Cohort_base",
+    "Cohort_long",
+    "Cohort_risk",
+    "Integrated_cohort",
+    "All_filters",
+    "Commodity_blend",
+    "Equal_modules",
+    "Core_satellite",
+    "Two_modules"
+  ]
+}

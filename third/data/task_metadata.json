@@ -1,0 +1,898 @@
+{
+  "A_oil_nominal_3": {
+    "linked": [
+      "JPY",
+      "BRL"
+    ],
+    "other": [
+      "CAD",
+      "EUR",
+      "SEK",
+      "GBP"
+    ],
+    "sector": "energy",
+    "gold_proxy_caveat": false
+  },
+  "A_oil_nominal_12": {
+    "linked": [
+      "JPY",
+      "BRL"
+    ],
+    "other": [
+      "CAD",
+      "EUR",
+      "SEK",
+      "GBP"
+    ],
+    "sector": "energy",
+    "gold_proxy_caveat": false
+  },
+  "A_oil_nominal_36": {
+    "linked": [
+      "JPY",
+      "BRL"
+    ],
+    "other": [
+      "CAD",
+      "EUR",
+      "SEK",
+      "GBP"
+    ],
+    "sector": "energy",
+    "gold_proxy_caveat": false
+  },
+  "A_oil_nominal_60": {
+    "linked": [
+      "JPY",
+      "BRL"
+    ],
+    "other": [
+      "CAD",
+      "EUR",
+      "SEK",
+      "GBP"
+    ],
+    "sector": "energy",
+    "gold_proxy_caveat": false
+  },
+  "A_gas_nominal_3": {
+    "linked": [
+      "JPY",
+      "BRL"
+    ],
+    "other": [
+      "CAD",
+      "EUR",
+      "SEK",
+      "GBP"
+    ],
+    "sector": "energy",
+    "gold_proxy_caveat": false
+  },
+  "A_gas_nominal_12": {
+    "linked": [
+      "JPY",
+      "BRL"
+    ],
+    "other": [
+      "CAD",
+      "EUR",
+      "SEK",
+      "GBP"
+    ],
+    "sector": "energy",
+    "gold_proxy_caveat": false
+  },
+  "A_gas_nominal_36": {
+    "linked": [
+      "JPY",
+      "BRL"
+    ],
+    "other": [
+      "CAD",
+      "EUR",
+      "SEK",
+      "GBP"
+    ],
+    "sector": "energy",
+    "gold_proxy_caveat": false
+  },
+  "A_gas_nominal_60": {
+    "linked": [
+      "JPY",
+      "BRL"
+    ],
+    "other": [
+      "CAD",
+      "EUR",
+      "SEK",
+      "GBP"
+    ],
+    "sector": "energy",
+    "gold_proxy_caveat": false
+  },
+  "A_copper_nominal_3": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "CAD",
+      "GBP",
+      "EUR",
+      "SEK"
+    ],
+    "sector": "metals",
+    "gold_proxy_caveat": false
+  },
+  "A_copper_nominal_12": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "CAD",
+      "GBP",
+      "EUR",
+      "SEK"
+    ],
+    "sector": "metals",
+    "gold_proxy_caveat": false
+  },
+  "A_copper_nominal_36": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "CAD",
+      "GBP",
+      "EUR",
+      "SEK"
+    ],
+    "sector": "metals",
+    "gold_proxy_caveat": false
+  },
+  "A_copper_nominal_60": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "CAD",
+      "GBP",
+      "EUR",
+      "SEK"
+    ],
+    "sector": "metals",
+    "gold_proxy_caveat": false
+  },
+  "A_iron_nominal_3": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "CAD",
+      "GBP",
+      "EUR",
+      "SEK"
+    ],
+    "sector": "metals",
+    "gold_proxy_caveat": false
+  },
+  "A_iron_nominal_12": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "CAD",
+      "GBP",
+      "EUR",
+      "SEK"
+    ],
+    "sector": "metals",
+    "gold_proxy_caveat": false
+  },
+  "A_iron_nominal_36": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "CAD",
+      "GBP",
+      "EUR",
+      "SEK"
+    ],
+    "sector": "metals",
+    "gold_proxy_caveat": false
+  },
+  "A_iron_nominal_60": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "CAD",
+      "GBP",
+      "EUR",
+      "SEK"
+    ],
+    "sector": "metals",
+    "gold_proxy_caveat": false
+  },
+  "A_soy_nominal_3": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "SEK",
+      "EUR",
+      "GBP",
+      "CAD"
+    ],
+    "sector": "food",
+    "gold_proxy_caveat": false
+  },
+  "A_soy_nominal_12": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "SEK",
+      "EUR",
+      "GBP",
+      "CAD"
+    ],
+    "sector": "food",
+    "gold_proxy_caveat": false
+  },
+  "A_soy_nominal_36": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "SEK",
+      "EUR",
+      "GBP",
+      "CAD"
+    ],
+    "sector": "food",
+    "gold_proxy_caveat": false
+  },
+  "A_soy_nominal_60": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "SEK",
+      "EUR",
+      "GBP",
+      "CAD"
+    ],
+    "sector": "food",
+    "gold_proxy_caveat": false
+  },
+  "A_corn_nominal_3": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "SEK",
+      "EUR",
+      "GBP",
+      "CAD"
+    ],
+    "sector": "food",
+    "gold_proxy_caveat": false
+  },
+  "A_corn_nominal_12": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "SEK",
+      "EUR",
+      "GBP",
+      "CAD"
+    ],
+    "sector": "food",
+    "gold_proxy_caveat": false
+  },
+  "A_corn_nominal_36": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "SEK",
+      "EUR",
+      "GBP",
+      "CAD"
+    ],
+    "sector": "food",
+    "gold_proxy_caveat": false
+  },
+  "A_corn_nominal_60": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "SEK",
+      "EUR",
+      "GBP",
+      "CAD"
+    ],
+    "sector": "food",
+    "gold_proxy_caveat": false
+  },
+  "A_wheat_nominal_3": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "SEK",
+      "EUR",
+      "GBP",
+      "CAD"
+    ],
+    "sector": "food",
+    "gold_proxy_caveat": false
+  },
+  "A_wheat_nominal_12": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "SEK",
+      "EUR",
+      "GBP",
+      "CAD"
+    ],
+    "sector": "food",
+    "gold_proxy_caveat": false
+  },
+  "A_wheat_nominal_36": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "SEK",
+      "EUR",
+      "GBP",
+      "CAD"
+    ],
+    "sector": "food",
+    "gold_proxy_caveat": false
+  },
+  "A_wheat_nominal_60": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "SEK",
+      "EUR",
+      "GBP",
+      "CAD"
+    ],
+    "sector": "food",
+    "gold_proxy_caveat": false
+  },
+  "A_gold_nominal_3": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "CAD",
+      "GBP",
+      "EUR",
+      "SEK"
+    ],
+    "sector": "metals",
+    "gold_proxy_caveat": true
+  },
+  "A_gold_nominal_12": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "CAD",
+      "GBP",
+      "EUR",
+      "SEK"
+    ],
+    "sector": "metals",
+    "gold_proxy_caveat": true
+  },
+  "A_gold_nominal_36": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "CAD",
+      "GBP",
+      "EUR",
+      "SEK"
+    ],
+    "sector": "metals",
+    "gold_proxy_caveat": true
+  },
+  "A_gold_nominal_60": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "CAD",
+      "GBP",
+      "EUR",
+      "SEK"
+    ],
+    "sector": "metals",
+    "gold_proxy_caveat": true
+  },
+  "A_oil_real_3": {
+    "linked": [
+      "JPY",
+      "BRL"
+    ],
+    "other": [
+      "CAD",
+      "EUR",
+      "SEK",
+      "GBP"
+    ],
+    "sector": "energy",
+    "gold_proxy_caveat": false
+  },
+  "A_oil_real_12": {
+    "linked": [
+      "JPY",
+      "BRL"
+    ],
+    "other": [
+      "CAD",
+      "EUR",
+      "SEK",
+      "GBP"
+    ],
+    "sector": "energy",
+    "gold_proxy_caveat": false
+  },
+  "A_oil_real_36": {
+    "linked": [
+      "JPY",
+      "BRL"
+    ],
+    "other": [
+      "CAD",
+      "EUR",
+      "SEK",
+      "GBP"
+    ],
+    "sector": "energy",
+    "gold_proxy_caveat": false
+  },
+  "A_oil_real_60": {
+    "linked": [
+      "JPY",
+      "BRL"
+    ],
+    "other": [
+      "CAD",
+      "EUR",
+      "SEK",
+      "GBP"
+    ],
+    "sector": "energy",
+    "gold_proxy_caveat": false
+  },
+  "A_gas_real_3": {
+    "linked": [
+      "JPY",
+      "BRL"
+    ],
+    "other": [
+      "CAD",
+      "EUR",
+      "SEK",
+      "GBP"
+    ],
+    "sector": "energy",
+    "gold_proxy_caveat": false
+  },
+  "A_gas_real_12": {
+    "linked": [
+      "JPY",
+      "BRL"
+    ],
+    "other": [
+      "CAD",
+      "EUR",
+      "SEK",
+      "GBP"
+    ],
+    "sector": "energy",
+    "gold_proxy_caveat": false
+  },
+  "A_gas_real_36": {
+    "linked": [
+      "JPY",
+      "BRL"
+    ],
+    "other": [
+      "CAD",
+      "EUR",
+      "SEK",
+      "GBP"
+    ],
+    "sector": "energy",
+    "gold_proxy_caveat": false
+  },
+  "A_gas_real_60": {
+    "linked": [
+      "JPY",
+      "BRL"
+    ],
+    "other": [
+      "CAD",
+      "EUR",
+      "SEK",
+      "GBP"
+    ],
+    "sector": "energy",
+    "gold_proxy_caveat": false
+  },
+  "A_copper_real_3": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "CAD",
+      "GBP",
+      "EUR",
+      "SEK"
+    ],
+    "sector": "metals",
+    "gold_proxy_caveat": false
+  },
+  "A_copper_real_12": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "CAD",
+      "GBP",
+      "EUR",
+      "SEK"
+    ],
+    "sector": "metals",
+    "gold_proxy_caveat": false
+  },
+  "A_copper_real_36": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "CAD",
+      "GBP",
+      "EUR",
+      "SEK"
+    ],
+    "sector": "metals",
+    "gold_proxy_caveat": false
+  },
+  "A_copper_real_60": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "CAD",
+      "GBP",
+      "EUR",
+      "SEK"
+    ],
+    "sector": "metals",
+    "gold_proxy_caveat": false
+  },
+  "A_iron_real_3": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "CAD",
+      "GBP",
+      "EUR",
+      "SEK"
+    ],
+    "sector": "metals",
+    "gold_proxy_caveat": false
+  },
+  "A_iron_real_12": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "CAD",
+      "GBP",
+      "EUR",
+      "SEK"
+    ],
+    "sector": "metals",
+    "gold_proxy_caveat": false
+  },
+  "A_iron_real_36": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "CAD",
+      "GBP",
+      "EUR",
+      "SEK"
+    ],
+    "sector": "metals",
+    "gold_proxy_caveat": false
+  },
+  "A_iron_real_60": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "CAD",
+      "GBP",
+      "EUR",
+      "SEK"
+    ],
+    "sector": "metals",
+    "gold_proxy_caveat": false
+  },
+  "A_soy_real_3": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "SEK",
+      "EUR",
+      "GBP",
+      "CAD"
+    ],
+    "sector": "food",
+    "gold_proxy_caveat": false
+  },
+  "A_soy_real_12": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "SEK",
+      "EUR",
+      "GBP",
+      "CAD"
+    ],
+    "sector": "food",
+    "gold_proxy_caveat": false
+  },
+  "A_soy_real_36": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "SEK",
+      "EUR",
+      "GBP",
+      "CAD"
+    ],
+    "sector": "food",
+    "gold_proxy_caveat": false
+  },
+  "A_soy_real_60": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "SEK",
+      "EUR",
+      "GBP",
+      "CAD"
+    ],
+    "sector": "food",
+    "gold_proxy_caveat": false
+  },
+  "A_corn_real_3": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "SEK",
+      "EUR",
+      "GBP",
+      "CAD"
+    ],
+    "sector": "food",
+    "gold_proxy_caveat": false
+  },
+  "A_corn_real_12": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "SEK",
+      "EUR",
+      "GBP",
+      "CAD"
+    ],
+    "sector": "food",
+    "gold_proxy_caveat": false
+  },
+  "A_corn_real_36": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "SEK",
+      "EUR",
+      "GBP",
+      "CAD"
+    ],
+    "sector": "food",
+    "gold_proxy_caveat": false
+  },
+  "A_corn_real_60": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "SEK",
+      "EUR",
+      "GBP",
+      "CAD"
+    ],
+    "sector": "food",
+    "gold_proxy_caveat": false
+  },
+  "A_wheat_real_3": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "SEK",
+      "EUR",
+      "GBP",
+      "CAD"
+    ],
+    "sector": "food",
+    "gold_proxy_caveat": false
+  },
+  "A_wheat_real_12": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "SEK",
+      "EUR",
+      "GBP",
+      "CAD"
+    ],
+    "sector": "food",
+    "gold_proxy_caveat": false
+  },
+  "A_wheat_real_36": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "SEK",
+      "EUR",
+      "GBP",
+      "CAD"
+    ],
+    "sector": "food",
+    "gold_proxy_caveat": false
+  },
+  "A_wheat_real_60": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "SEK",
+      "EUR",
+      "GBP",
+      "CAD"
+    ],
+    "sector": "food",
+    "gold_proxy_caveat": false
+  },
+  "A_gold_real_3": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "CAD",
+      "GBP",
+      "EUR",
+      "SEK"
+    ],
+    "sector": "metals",
+    "gold_proxy_caveat": true
+  },
+  "A_gold_real_12": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "CAD",
+      "GBP",
+      "EUR",
+      "SEK"
+    ],
+    "sector": "metals",
+    "gold_proxy_caveat": true
+  },
+  "A_gold_real_36": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "CAD",
+      "GBP",
+      "EUR",
+      "SEK"
+    ],
+    "sector": "metals",
+    "gold_proxy_caveat": true
+  },
+  "A_gold_real_60": {
+    "linked": [
+      "BRL",
+      "JPY"
+    ],
+    "other": [
+      "CAD",
+      "GBP",
+      "EUR",
+      "SEK"
+    ],
+    "sector": "metals",
+    "gold_proxy_caveat": true
+  }
+}

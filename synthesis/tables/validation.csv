@@ -1,0 +1,47 @@
+check,result
+Reproduction of every policy,PASS
+Neutral net exposure,PASS
+Gross exposure never exceeds one,PASS
+Finite weights,PASS
+No positions before admissible signals,PASS
+Risk modules do not start early,PASS
+"Equal ensemble at weights, before costs",PASS
+Core satellite fixed half allocation,PASS
+Future corruption cannot change past weights,PASS
+Commercial forecast reproduces third study,PASS
+Commercial labels mature before forecast,PASS
+Selector only sees earlier returns,PASS
+Joint-pair forecast reproduced,PASS
+Joint-pair labels mature before fit,PASS
+Joint-pair portfolio neutrality,PASS
+Reported metrics Carry,PASS
+Delayed execution Carry,PASS
+Funding and transaction ledger Carry,PASS
+Costs monotone Carry,PASS
+Reported metrics Equal_modules,PASS
+Delayed execution Equal_modules,PASS
+Funding and transaction ledger Equal_modules,PASS
+Costs monotone Equal_modules,PASS
+Reported metrics Cohort_base,PASS
+Delayed execution Cohort_base,PASS
+Funding and transaction ledger Cohort_base,PASS
+Costs monotone Cohort_base,PASS
+Reported metrics Cohort_risk,PASS
+Delayed execution Cohort_risk,PASS
+Funding and transaction ledger Cohort_risk,PASS
+Costs monotone Cohort_risk,PASS
+Exact return attribution Carry,PASS
+Exact return attribution Equal_modules,PASS
+Exact return attribution Cohort_risk,PASS
+Cohort age and expiry cohort_base,PASS
+Closed cohort legs not reopened as same entry cohort_base,PASS
+Cohort age and expiry cohort_risk,PASS
+Closed cohort legs not reopened as same entry cohort_risk,PASS
+Cohort age and expiry integrated,PASS
+Closed cohort legs not reopened as same entry integrated,PASS
+Hedge ratios bounded,PASS
+Same hedge overlay across assets Half,PASS
+Same hedge overlay across assets Full,PASS
+Same hedge overlay across assets EJR_FX,PASS
+Same hedge overlay across assets Equal_signals,PASS
+All previous files unchanged,PASS

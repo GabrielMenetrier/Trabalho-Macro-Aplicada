@@ -1,0 +1,8 @@
+tools/
+tmp/
+__pycache__/
+.pytest_cache/
+*.pyc
+output/pdf/*.log
+output/pdf/*.aux
+entrega_macro_cambio.zip

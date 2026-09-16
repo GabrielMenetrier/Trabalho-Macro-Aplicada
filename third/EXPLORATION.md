@@ -1,0 +1,11 @@
+# Registro de desenvolvimento e exploração
+
+Antes de observar resultados: o XLSX do Banco Mundial revelou pesos de índices oficiais baseados em 2002-2004. Para não introduzi-los na estimação iniciada em 1999, substituímos os índices por cestas geométricas de pesos iguais (energia, alimentos, matérias-primas agrícolas, metais), detalhadas em `data/construction.json`. Os pesos entre grupos e países usam somente fluxos de comércio de 1994-1996.
+
+Na primeira rodada: o modelo com interceptos por país teve desempenho muito diferente do EJR original. Para isolar a contribuição das commodities da mudança de estimador, acrescentamos uma família estritamente aninhada ao EJR: mesma inclinação agrupada, centralização com a média disponível na origem e ausência de intercepto. As duas famílias são reportadas; não atribuímos às commodities ganhos derivados de mudar a regressão. Acrescentamos ainda variação nominal passada (DS) para não limitar o benchmark nominal a seu nível. Isso é uma ampliação de desenho após a primeira rodada, declarada exploratória.
+
+A correção de multiplicidade inclui as comparações contra o modelo-base e contra nenhuma mudança (RW), em ambos os períodos e todos os países. P-valor baixo contra um benchmark fraco não significa superar RW. A família é conservadora e contém algumas comparações de informação similares; nenhuma é interpretada como evidência independente.
+
+Candidatos selecionados após a rodada inicial para intervalos e fases não sobrepostas: componente comercial específico no EJR em 36/60 meses; EUR nominal -> ferro real em 36 meses; CAD real -> petróleo nominal em 12 meses. Toda seleção é pós-resultados. Não houve otimização de pesos comerciais, escolha retroativa de períodos ou calibração de hiperparâmetros para maximizar desempenho.
+
+Sensibilidades predefinidas executadas para todas as commodities centrais nos horizontes 12/36 meses e quatro famílias EJR nos quatro horizontes: penalização 1/10/100, janela móvel de 120 meses, um mês adicional de atraso de commodities, retirada de EUR e BRL (as últimas três na família EJR). Exclusão de alvos que atravessam 2020-2021 é somente diagnóstico; em horizontes longos elimina boa parte da avaliação. Comparação nominal/real adicional iguala atraso em dois meses para separar deflação da diferença de disponibilidade.

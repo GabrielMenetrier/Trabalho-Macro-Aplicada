@@ -1,0 +1,279 @@
+{
+  "title": "Câmbio real e carry trade",
+  "subtitle": "Replicação de Eichenbaum, Johannsen e Rebelo (2021) e extensões empíricas",
+  "slides": [
+    {
+      "title": "Câmbio real e carry trade",
+      "seconds": 30,
+      "core": "O trabalho investiga se uma informação útil para prever câmbio também ajuda a decidir como carregar uma posição.",
+      "concepts": "Há três objetos diferentes ao longo da apresentação. A replicação procura reproduzir uma relação econômica do artigo. A previsão avalia erros em observações futuras. O backtest calcula o resultado de uma regra de investimento, incluindo juros e câmbio. Um sucesso no primeiro objeto não implica sucesso nos seguintes. O projeto percorreu essas etapas e encontrou tanto fracassos quanto resultados históricos promissores.",
+      "reading": "A capa apenas apresenta a pergunta e a referência. Não tente antecipar todos os resultados ou explicar todas as extensões aqui.",
+      "speech": "O trabalho parte da previsibilidade cambial de médio e longo prazo estudada por Eichenbaum, Johannsen e Rebelo. Apresento uma replicação parcial da relação da aula e testes de previsão nominal. Depois mostro, apenas como referência exploratória, aplicações mensais e filtros de exposição. Esses resultados de carteira não demonstram a exploração do ajuste de longo prazo do artigo.",
+      "caution": "Distinguir replicação parcial da relação preditiva e regras de investimento próprias. Os resultados posteriores de carteira são referências exploratórias.",
+      "qa": "Qual é a pergunta central? A informação do câmbio real ajuda a prever o câmbio nominal e, separadamente, a decidir como assumir risco cambial?",
+      "transition": "Primeiro, preciso explicar por que o artigo olha para o câmbio real.",
+      "sources": [
+        "Artigo EJR, introdução",
+        "synthesis/README.md"
+      ],
+      "old": 1
+    },
+    {
+      "title": "A ideia econômica do artigo",
+      "seconds": 70,
+      "core": "Uma diferença persistente de preços relativos pode se ajustar pelo câmbio nominal ou pela inflação relativa.",
+      "concepts": "Câmbio nominal S é o preço do dólar em moeda local. No Brasil, S = 5 significa R$ 5 por US$ 1. O câmbio real Q = S × P_US / P_local ajusta essa cotação pelos níveis de preços das duas economias. Trabalhamos com o logaritmo q. Quando q sobe, a moeda local sofre depreciação real, ficando relativamente barata. Essa classificação depende da referência histórica, não de um valor justo conhecido. A identidade implica que a mudança real soma a mudança nominal à inflação americana menos a inflação local. Se a inflação relativa responde pouco, o ajuste tende a aparecer mais no nominal.",
+      "reading": "Explique a relação entre câmbio real e nominal. A seção 3.3 do artigo encontra ganho agregado fora da amostra em horizontes acima de dois anos, destacando quatro e seis anos. Isso não demonstra previsão do caminho mensal. O artigo não propõe as regras de carteira posteriores deste trabalho.",
+      "speech": "Câmbio nominal é a cotação que vemos no mercado. Câmbio real também considera o que os preços fizeram nos dois países. Por exemplo, se os preços brasileiros sobem relativamente aos americanos e a cotação não muda, o real fica mais caro em termos reais. O artigo pergunta como esse tipo de diferença se ajusta. Nos países com metas de inflação estudados, o câmbio real ajuda a prever o nominal futuro, mas prevê pouco a inflação. A intuição é que, quando os preços estão mais ancorados, parte maior do ajuste pode aparecer na cotação. O artigo também estima um modelo estrutural. Meu exercício reproduz a parte preditiva e o exemplo da aula, sem reestimar esse modelo completo.",
+      "caution": "A identidade contábil não prova reversão à média nem identifica o efeito causal das metas de inflação. Não diga que toda moeda barata necessariamente valoriza.",
+      "qa": "Câmbio real é a cotação descontada do IPCA brasileiro? Não. Ele envolve preços relativos entre duas economias, com uma convenção definida para a cotação.",
+      "transition": "A primeira verificação foi reproduzir a relação mostrada na aula.",
+      "sources": [
+        "Artigo EJR, resumo e introdução",
+        "src/models.py: features"
+      ],
+      "old": 2
+    },
+    {
+      "title": "A relação da aula aparece na replicação",
+      "seconds": 75,
+      "core": "A replicação brasileira recupera a inclinação de oito anos da aula, aproximadamente −1,808.",
+      "concepts": "Cada ponto relaciona o desvio do câmbio real em um mês à mudança do log da cotação nos oito anos seguintes. O eixo horizontal usa q menos sua média no exercício histórico. O eixo vertical usa log(S daqui a oito anos / S hoje). Um valor vertical negativo representa apreciação nominal da moeda local. A inclinação negativa indica que meses de real mais depreciado se associaram a apreciação posterior. O R² mede a fração da variação do alvo explicada pelo ajuste dentro da amostra. Não é a probabilidade de acertar uma previsão nem uma medida de rentabilidade.",
+      "reading": "Comece pelos eixos. Aponte a inclinação descendente. Só então diga que o coeficiente de −1,808 praticamente coincide com o valor da aula e que o R² é 0,883. Há 280 origens mensais, de janeiro de 1995 a abril de 2018, com resultados até abril de 2026. As observações compartilham muitos dos mesmos meses futuros.",
+      "speech": "Neste gráfico, cada ponto é um mês brasileiro. À direita estão momentos de maior depreciação real. Para baixo estão apreciações nominais nos oito anos seguintes. A relação é claramente negativa, e a inclinação de menos 1,808 praticamente reproduz o número da aula. O R² é alto, cerca de 88%. Mas esse resultado descreve o ajuste da relação na amostra histórica. Não significa que o modelo acerta 88% das operações. Além disso, previsões feitas em dois meses vizinhos usam quase os mesmos oito anos seguintes, então os pontos não são evidências independentes. A próxima etapa é perguntar se essa relação ajuda quando eu realmente escondo o futuro do modelo.",
+      "caution": "Este gráfico usa ajuste dentro da amostra. Não o apresente como uma previsão produzida em tempo real ou como replicação integral do artigo.",
+      "qa": "Por que o coeficiente é menor que −1? A regressão permite esse valor no horizonte longo. Isso não significa retorno mensal de 180% ou convergência garantida. É uma relação entre mudanças e desvios em log.",
+      "transition": "Reproduzir a relação histórica e prever dados futuros são testes diferentes.",
+      "sources": [
+        "output/tables/classroom_replication.csv",
+        "data/processed/classroom.csv",
+        "Macro_Aplicada_2026_shared/Slides/Macro_Aplicada_aula_8.pdf"
+      ],
+      "old": 3,
+      "training": "Ajuste descritivo: jan/1995–abr/2026. Sem divisão entre treino e teste. Origens de oito anos até abr/2018."
+    },
+    {
+      "title": "A previsão varia por país e horizonte",
+      "seconds": 90,
+      "core": "O Brasil melhora em todos os seis horizontes. O painel agrupado perde para nenhuma mudança nas janelas completas de cada horizonte.",
+      "concepts": "Em cada origem t, estimamos a mudança futura do log da cotação a partir do desvio real. A inclinação é comum a seis moedas, e a média histórica de q é específica de cada moeda. A janela de treinamento se expande desde outubro de 1999. Exigimos pelo menos 60 origens de treinamento por moeda cujos alvos já tenham terminado até t−1. O CPI entra com dois meses de defasagem. Repetimos a estimação a cada mês, prevemos e avaliamos o erro quando o horizonte termina. O RMSE relativo compara esse erro com nenhuma mudança. O teste de Clark–West usa correção para dependência temporal. O resultado agregado de cinco anos não estabelece superioridade estatística. Dados revisados limitam o caráter estritamente em tempo real.",
+      "reading": "A tabela mostra cada moeda e o agregado das seis moedas, usando a mesma especificação EJR agrupada. BRL é real, EUR euro, JPY iene, GBP libra, CAD dólar canadense e SEK coroa sueca. Todas são avaliadas contra USD. Valores abaixo de 1 aparecem em verde e indicam menor RMSE que prever nenhuma mudança. O agregado reúne os erros do painel; não é uma soma nem uma média simples das razões individuais. Em cinco anos, o Brasil tem 0,792 e o agregado 1,037. Em oito anos, 0,816 e 1,115. Os períodos de origem de cada horizonte estão no rodapé e são diferentes entre as linhas.",
+      "speech": "O teste fora da amostra não diz que a regressão falha em todo lugar. O Brasil melhora em todos os horizontes mostrados. Em cinco anos, seu erro é cerca de 21% menor que o de prever nenhuma mudança. Mas o resultado agregado das seis moedas é pior que essa referência. Essa heterogeneidade é central. Também não estamos comparando exatamente a regressão brasileira do slide anterior: agora a inclinação é comum às moedas e muda conforme novas observações ficam disponíveis. As janelas indicadas no rodapé são diferentes. Quando uso as mesmas datas de origem, o painel melhora em um, dois e três anos. Portanto, a conclusão depende do país, horizonte e período.",
+      "caution": "Não conclua que câmbio é imprevisível em qualquer horizonte. As linhas têm períodos distintos. O ganho de erro não basta, sozinho, para demonstrar significância estatística ou valor de investimento.",
+      "qa": "E se estimarmos só para o Brasil? A regressão brasileira com intercepto e inclinação próprios tem erro relativo 0,596 em oito anos. É outro modelo e um resultado favorável, mas com forte sobreposição dos alvos. No painel com origens comuns de nov/2012 a ago/2018, os erros são 0,958, 0,950 e 0,964 em um, dois e três anos.",
+      "transition": "A heterogeneidade preditiva motivou testar se a previsão ajuda na escolha das posições de carry.",
+      "sources": [
+        "output/tables/forecast_accuracy.csv",
+        "output/tables/forecast_common_origins.csv",
+        "output/tables/timing_audit.csv"
+      ],
+      "old": 4,
+      "training": "Treino expansivo desde out/1999; mínimo de 60 origens maduras por moeda e alvos de treino até t−1. Origens avaliadas: 1 ano jan/2010–ago/2025; 2 anos jan/2010–ago/2024; 3 anos jan/2010–ago/2023; 5 anos jan/2010–ago/2021; 7 anos nov/2011–ago/2019; 8 anos nov/2012–ago/2018. Alvos realizados até ago/2026."
+    },
+    {
+      "title": "A proposta inicial para o carry",
+      "seconds": 85,
+      "core": "Comparar escolher posições pelo diferencial de juros com escolher pelo diferencial de juros mais a valorização cambial prevista.",
+      "concepts": "Carry ou carrego é a remuneração associada ao diferencial de juros de uma posição financiada em outra moeda. Comprar uma moeda envolve um ativo nessa moeda, como um depósito, enquanto a outra ponta financia a operação. O projeto usa proxies de aplicações de curto prazo, não retornos de bolsa ou títulos longos. Quem compra a moeda de juros altos ganha com apreciação dessa moeda e perde com sua depreciação. No painel, cada regra compra as duas moedas de maior sinal e vende as duas de menor sinal, com 25% de notional em cada ponta. A soma dos valores absolutos é 100% e a exposição líquida é zero. Há caixa em dólar como colateral.",
+      "reading": "Leia a aproximação de retorno: diferencial de juros mais valorização da moeda comprada, menos custos. O exemplo é hipotético: ativo rende 10%, financiamento custa 3% e a moeda comprada cai 8% em dólar. O resultado exato antes de custos é 1,10 × 0,92 − 1,03 = −1,8% sobre o notional. A soma simples daria −1%, pois ignora a interação entre juros e câmbio.",
+      "speech": "Eu comparei duas formas de escolher as posições. A primeira olha apenas para quais moedas pagam mais juros. A segunda acrescenta a valorização cambial prevista pelo modelo. Nas duas, o retorno realizado inclui tanto os juros quanto a mudança do câmbio. O que muda é a informação usada para escolher a carteira. O risco é que a desvalorização da moeda consuma o juro recebido. Neste exemplo, ganhar 10% no ativo e pagar 3% no financiamento parece oferecer uma folga de 7%, mas uma queda de 8% da moeda já produz perda. No backtest, calculo o retorno combinado de forma exata, incluindo a interação e os custos. A previsão de cinco anos apenas orienta a decisão, sem garantir o caminho mensal.",
+      "caution": "Aplicação própria: convertemos a previsão de 60 meses em ritmo mensal dividindo por 60. Isso não estima uma trajetória mensal nem replica uma estratégia de investimento do artigo.",
+      "qa": "A estratégia compra dólar ou bolsa americana? Aqui o dólar é o numerário e o caixa de colateral. As posições cambiais usam aplicações curtas e financiamento nas moedas. Ações americanas seriam outro risco e outro exercício.",
+      "transition": "A primeira tentativa foi simples, e o resultado foi pior que o carry original.",
+      "sources": [
+        "src/models.py: run_book e rank_weights",
+        "report/relatorio.tex"
+      ],
+      "old": 5
+    },
+    {
+      "title": "Aplicação mensal de uma previsão de cinco anos",
+      "seconds": 80,
+      "core": "O ranking mensal com sinal de cinco anos perdeu para o carry. Esse resultado avalia esta implementação, não rejeita a previsibilidade de longo prazo.",
+      "concepts": "Não usamos a otimização média-variância de Markowitz. Ordenamos seis moedas por um sinal e compramos as duas de maior sinal, vendendo as duas de menor sinal. Cada ponta recebe 25% do patrimônio em notional: 100% bruto e zero líquido. O carry usa diferencial de juros. O ranking alternativo soma apreciação prevista, aproximada como −previsão de Δs em 60 meses/60. Reavaliamos mensalmente, sem compromisso de manter cada moeda por cinco anos. O caixa em dólar serve de colateral. Retorno anual composto é crescimento do patrimônio, volatilidade é dispersão anualizada, Sharpe usa excesso sobre o caixa e queda máxima mede a perda desde o pico.",
+      "reading": "Compare retorno anual de 4,11% e 2,73%, e Sharpe de 0,60 e 0,31. Depois leia o rodapé: backtest de março de 2010 a agosto de 2026, sinal de cinco anos, revisão mensal e treinamento expansivo. Os custos de negociação por notional transacionado são 10 pontos-base para BRL, 3 para SEK e 2 para as outras moedas. Há também spread de financiamento de 50 pontos-base ao ano na ponta vendida. Um ponto-base é 0,01 ponto percentual. Entrada, rebalanceamento e liquidação final pagam os custos assumidos.",
+      "speech": "Esta é uma aplicação própria, não uma carteira do artigo. Usamos previsão cambial de cinco anos, dividida por sessenta para formar um sinal mensal. Compramos duas moedas e vendemos duas, com pesos iguais, revistos mensalmente. Não houve Markowitz. O resultado foi pior que o carry por juros. Isso não prova que a previsão de longo prazo falhou: o backtest testa uma tradução específica da previsão em decisões mensais, sem manter obrigatoriamente as posições até o horizonte previsto.",
+      "caution": "Não diga Markowitz, otimização de pesos ou posição fixa de cinco anos. Os custos são hipóteses agregadas de negociação e financiamento, não uma lista de tarifas executadas por corretora. Não incluem uma tributação específica do investidor.",
+      "qa": "Qual prazo foi usado? Previsão de 60 meses, revisão mensal e nenhum prazo máximo de permanência no ranking. A dispersão da aula usa oito anos. São objetos distintos. A rotina inicial também calculou coortes de 60 meses, ausentes deste gráfico, mas não uma otimização de Markowitz.",
+      "transition": "O gráfico seguinte mostra como essa diferença se acumulou no patrimônio.",
+      "sources": [
+        "output/tables/portfolio_metrics.csv"
+      ],
+      "old": 6,
+      "training": "Primeiro sinal: jan/2010. Treino EJR: origens out/1999–dez/2004 (63 meses por moeda), alvos até dez/2009. A janela se expande mensalmente. Previsão: 60 meses. Sinal t, execução t+1 e retorno t+2. Backtest: mar/2010–ago/2026."
+    },
+    {
+      "old": "initial_wealth",
+      "title": "Patrimônio da aplicação mensal do sinal de cinco anos",
+      "seconds": 50,
+      "core": "As duas carteiras incluem juros, câmbio e custos. O ranking com previsão termina abaixo do carry por juros.",
+      "concepts": "Patrimônio base 100 é o valor acumulado após reinvestir os retornos mensais líquidos. Um nível de 195 significa ganho total próximo de 95%, e não retorno anual de 95%. A linha de caixa usa a mesma remuneração USD do backtest. Comparar o patrimônio não muda a estratégia: é outra forma de mostrar os resultados da tabela anterior.",
+      "reading": "As linhas cobrem março de 2010 a agosto de 2026. Compare os pontos finais e depois o caminho, sem tentar explicar cada oscilação. O gráfico usa os mesmos 198 retornos da tabela do slide 6, com inicialização em 100 antes do primeiro retorno.",
+      "speech": "Este é o resultado acumulado das mesmas duas regras. A linha do carry por juros termina acima da linha que acrescenta a previsão cambial. A diferença não vem de excluir os juros de uma delas: ambas incluem juros, câmbio, financiamento e negociação. A linha de caixa permite visualizar quanto seria recebido apenas no colateral em dólar. O gráfico reforça o fracasso da alteração direta do ranking nesta implementação.",
+      "caution": "Este gráfico não representa posições obrigatoriamente mantidas por cinco anos e não demonstra captura da convergência de longo prazo.",
+      "qa": "São operações independentes de um mês? A carteira tem decisões mensais. Uma moeda pode permanecer na posição se o ranking continuar favorável. Calculamos o resultado dessa exposição sucessiva, com custos sobre as mudanças do notional.",
+      "transition": "A seguir, mostro como referência exploratória os resultados das regras de exposição. Elas não validam uma estratégia de investimento de longo prazo baseada no artigo.",
+      "training": "Primeiro sinal: jan/2010. Treino EJR: origens out/1999–dez/2004 (63 meses por moeda), alvos até dez/2009. A janela se expande mensalmente. Previsão: 60 meses. Sinal t, execução t+1 e retorno t+2. Backtest: mar/2010–ago/2026.",
+      "sources": [
+        "output/tables/portfolio_returns.csv",
+        "output/tables/portfolio_metrics.csv",
+        "src/models.py"
+      ]
+    },
+    {
+      "title": "Referência exploratória: regras de exposição",
+      "seconds": 105,
+      "core": "Referência exploratória de uma regra própria; não valida a captura do ajuste cambial de longo prazo.",
+      "concepts": "O módulo A reduz o tamanho do carry quando o retorno previsto é baixo em relação à referência passada e elimina pares com mudança comercial observada muito alta. O módulo B só entra se o retorno previsto anualizado, suavizado por seis meses, superar 2%, e evita pares com movimento adverso forte dos preços comerciais. O módulo C distribui entradas mensais em parcelas, cada uma com duração máxima de 12 meses, e antecipa a saída quando o modelo com composição comercial indica aumento relevante do risco de o câmbio consumir os juros, relativamente ao modelo base. Os limites de eventos extremos usam o percentil 80 da história passada. A combinação usa um terço dos pesos de cada módulo e calcula custos após agregar as posições.",
+      "reading": "Explique cada linha como uma decisão concreta: quanto comprar, quando entrar, quando sair. Dê mais tempo ao terceiro módulo. Uma ‘coorte’ é simplesmente o lote de posições aberto em um mês. Cada lote tem orçamento limitado, em vez de multiplicar a exposição ao somar vários meses. Os pares retirados saem com as duas pontas, preservando a neutralidade líquida.",
+      "speech": "Este bloco fica apenas como referência exploratória. Combinamos três regras próprias, com pesos iguais: ajuste de tamanho, permissão de entrada e saída de lotes. O sinal EJR olha cinco anos, mas as decisões são mensais e o modelo adicional de risco olha doze meses. Nenhuma dessas regras foi derivada como estratégia de longo prazo no artigo. O resultado serve para documentar o que testamos, sem substituir a avaliação econômica no horizonte previsto.",
+      "caution": "Resultado selecionado na pesquisa, mantido apenas como referência histórica. Previsão EJR de 60 meses, decisões mensais e risco de 12 meses são horizontes distintos. Não demonstra uma estratégia validada de convergência no horizonte do artigo.",
+      "qa": "Por que pesos iguais? É uma combinação simples, que evita otimizar os pesos para o maior Sharpe. Ainda assim, a escolha dos componentes já usa aprendizados da história examinada.",
+      "transition": "Para comparar, eu coloco o carry e a combinação exatamente nas mesmas datas.",
+      "sources": [
+        "synthesis/model.py: make_policies",
+        "synthesis/PROTOCOL.md",
+        "synthesis/EXPLORATION.md"
+      ],
+      "old": 10,
+      "training": "EJR: janela expansiva desde out/1999 e previsão nominal de 60 meses. Risco comercial: origens desde jan/2011, mínimo 36 datas maduras e alvo de 12 meses, mais atraso de execução. Limiares comerciais: mínimo 36 meses anteriores. Backtest comum: abr/2018–ago/2026."
+    },
+    {
+      "title": "Referência exploratória: resultado da combinação",
+      "seconds": 80,
+      "core": "Referência exploratória de uma regra própria; não valida a captura do ajuste cambial de longo prazo.",
+      "concepts": "A janela comum começa quando todos os módulos já podem funcionar. Tem 101 retornos mensais. O retorno total inclui remuneração do caixa em dólar, contribuições dos ativos e financiamento, além de custos assumidos. O Sharpe usa excesso sobre o caixa. Exposição bruta é a soma do valor absoluto das posições dividida pelo patrimônio. A combinação teve exposição bruta média de 48%, contra 100% do carry. Isso explica parte da queda de risco e deve aparecer ao lado das métricas, não como ressalva escondida.",
+      "reading": "Leia primeiro retorno anual de 5,78% e 5,94%: são próximos. Depois destaque volatilidade de 4,11% e 2,33%, e queda máxima de 9,09% e 1,43% em magnitude. Termine obrigatoriamente na exposição de 100% e 48%. O Sharpe sobe de 0,75 para 1,37. Os sinais negativos na linha de queda máxima representam perdas em relação ao pico.",
+      "speech": "Na janela comum, o retorno anual ficou próximo: 5,78% no carry e 5,94% na combinação. A diferença mais visível aparece no risco: a volatilidade caiu de 4,11% para 2,33% e a queda máxima observada caiu de 9,09% para 1,43%. O Sharpe aumentou. Mas existe uma explicação importante: a combinação carregou, em média, apenas 48% de exposição bruta. Parte do resultado vem simplesmente de assumir menos risco e permanecer mais em caixa. Eu fiz controles de exposição, mas eles não eliminam toda a incerteza sobre a vantagem. O que posso mostrar é uma trajetória histórica mais estável, sem afirmar uma rentabilidade superior garantida.",
+      "caution": "Resultado selecionado na pesquisa, mantido apenas como referência histórica. Previsão EJR de 60 meses, decisões mensais e risco de 12 meses são horizontes distintos. Não demonstra uma estratégia validada de convergência no horizonte do artigo.",
+      "qa": "Bastava investir metade no carry? O controle retrospectivo com exposição média de 48% rendeu 4,18% ao ano e teve queda máxima de 4,02%, contra 5,94% e 1,43% da combinação. Isso é diagnóstico útil, mas usa a média conhecida depois e não prova superioridade futura.",
+      "transition": "Antes de ver o gráfico, verifico o que muda quando altero o prazo dos lotes.",
+      "sources": [
+        "synthesis/tables/metrics.csv: common, all",
+        "synthesis/tables/exposure_controls.csv"
+      ],
+      "old": 11,
+      "training": "Primeiro sinal da janela comum: fev/2018. EJR: origens out/1999–jan/2013. Risco comercial: jan/2011–dez/2016. Resultados disponíveis até jan/2018. Reestimação expansiva mensal. Backtest: abr/2018–ago/2026."
+    },
+    {
+      "old": "tenure",
+      "title": "Referência exploratória: prazo dos lotes",
+      "seconds": 65,
+      "core": "Referência exploratória de uma regra própria; não valida a captura do ajuste cambial de longo prazo.",
+      "concepts": "A combinação tem três módulos. Os dois primeiros revêm o carry mensalmente. O terceiro abre novos lotes mensais e permite carregá-los até um prazo máximo, com saída antecipada por risco. Aqui só variamos esse máximo entre 6, 12 e 24 meses. O orçamento de entrada mensal desse módulo é 1/H, onde H é o prazo máximo, preservando o teto de exposição. As previsões permanecem as mesmas: EJR de 60 meses e risco de consumo dos juros em 12 meses. Portanto, é uma sensibilidade de política de permanência, não uma comparação de novos modelos de previsão para cada prazo.",
+      "reading": "A tabela mostra a combinação inteira na mesma janela de abril de 2018 a agosto de 2026, com os mesmos custos. Para 6, 12 e 24 meses, os retornos anuais são 5,96%, 5,94% e 5,77%. A exposição média cai de 51% para 48% e 44%. Essa mudança de exposição participa da diferença de risco. A saída pode ocorrer antes do máximo e a entrada é gradual.",
+      "speech": "Mesmo com uma carteira contínua, o prazo importa. Aqui mantive os outros dois módulos e alterei apenas o prazo máximo dos lotes do módulo de permanência. O retorno muda pouco entre seis e doze meses e cai um pouco em vinte e quatro. A exposição também cai conforme aumenta o prazo máximo, porque as entradas são menores e podem sair antes por risco. Isso mostra que o prazo muda a política, mas não prova que doze meses seja ótimo. E não mudamos o horizonte do modelo de risco: ele continua olhando doze meses.",
+      "caution": "Resultado selecionado na pesquisa, mantido apenas como referência histórica. Previsão EJR de 60 meses, decisões mensais e risco de 12 meses são horizontes distintos. Não demonstra uma estratégia validada de convergência no horizonte do artigo.",
+      "qa": "Por que o prazo maior reduziu a exposição? Com orçamento 1/H por entrada e saída antecipada, muitos lotes podem sair antes de completar H meses. A formação gradual e o cancelamento entre pontas também influenciam a exposição líquida por moeda. Isso deve ser considerado ao comparar o risco.",
+      "transition": "A trajetória do patrimônio da combinação-base, com lotes de até doze meses, aparece no próximo gráfico.",
+      "training": "Primeiro sinal da janela comum: fev/2018. EJR: origens out/1999–jan/2013. Risco comercial: jan/2011–dez/2016. Resultados disponíveis até jan/2018. Reestimação expansiva mensal. Backtest: abr/2018–ago/2026.",
+      "sources": [
+        "synthesis/tables/robustness.csv: Base, Tenure6, Tenure24",
+        "synthesis/model.py: make_policies, cohorts",
+        "synthesis/robustness.py"
+      ]
+    },
+    {
+      "title": "Referência exploratória: trajetória da combinação",
+      "seconds": 50,
+      "core": "Referência exploratória de uma regra própria; não valida a captura do ajuste cambial de longo prazo.",
+      "concepts": "O gráfico acumula retornos líquidos, com patrimônio inicial 100. O retorno final é semelhante, mas as trajetórias de perdas diferem. A carteira recebe novas decisões mensais e não tem uma única janela fixa de treinamento. Em fevereiro de 2018, primeiro sinal para retorno em abril, o EJR usa origens de outubro de 1999 a janeiro de 2013, com alvos terminados até janeiro de 2018. O modelo de risco comercial usa origens de janeiro de 2011 a dezembro de 2016, com resultados disponíveis até janeiro de 2018. Depois as duas janelas se expandem e os modelos são reestimados. A combinação contém também regras baseadas em preços e limiares calculados com a história passada.",
+      "reading": "Aponte a trajetória, sem tentar explicar cada oscilação. A queda do carry em torno de 2020 é mais visível que a da combinação. O painel de perdas mostra a profundidade em relação ao pico. Como o retorno final é semelhante, este slide reforça que o achado principal é a suavização histórica do caminho.",
+      "speech": "Aqui todas as estratégias começam em 100. O ponto final do carry e da combinação é próximo, mas o caminho é diferente. O carry atravessa uma queda mais pronunciada em torno de 2020, enquanto a combinação mantém uma trajetória mais estável nessa janela. O painel de baixo mostra a perda em relação ao pico anterior. A linha do caixa lembra que parte do retorno total vem da remuneração em dólar, mesmo quando a exposição cai. Esta figura ajuda a entender por que duas carteiras com retorno final parecido podem ter riscos bastante diferentes.",
+      "caution": "Resultado selecionado na pesquisa, mantido apenas como referência histórica. Previsão EJR de 60 meses, decisões mensais e risco de 12 meses são horizontes distintos. Não demonstra uma estratégia validada de convergência no horizonte do artigo.",
+      "qa": "A previsão foi treinada de 2018 a 2026? Não em uma única estimação que olha todo o período. A cada mês, usamos apenas a história admissível, mas a escolha dos módulos usou pesquisa sobre essa história já examinada. Para o primeiro retorno, o sinal vem de fevereiro de 2018 e a execução de março. Em junho de 2026, o EJR já usa origens até maio de 2021 e alvos até maio de 2026.",
+      "transition": "Também vale separar contabilmente o que veio dos juros e o que veio do câmbio.",
+      "sources": [
+        "synthesis/tables/returns.csv.gz: common",
+        "synthesis/tables/metrics.csv"
+      ],
+      "old": 12,
+      "training": "Primeiro sinal: fev/2018. EJR: out/1999–jan/2013, alvos até jan/2018. Risco comercial: jan/2011–dez/2016, alvos disponíveis até jan/2018. Janelas expansivas. Backtest: abr/2018–ago/2026."
+    },
+    {
+      "title": "Referência exploratória: decomposição do resultado",
+      "seconds": 55,
+      "core": "Referência exploratória de uma regra própria; não valida a captura do ajuste cambial de longo prazo.",
+      "concepts": "A atribuição divide a média mensal do retorno em excesso em parcelas contábeis e multiplica por 12. Os valores são pontos percentuais de contribuição anual, não CAGRs separáveis. Carry: câmbio 0,74 p.p. e juros 2,62 p.p. Combinação: câmbio 1,82 p.p. e juros 1,50 p.p. Interação, spread de financiamento e custos completam a conta. O excesso médio total é aproximadamente 3,07% e 3,17% ao ano, respectivamente. Isso é consistente com melhor seleção de exposição na história, mas não identifica um mecanismo causal.",
+      "reading": "Compare as barras de cada componente. A remuneração de juros cai na combinação, enquanto a contribuição de câmbio sobe. Diga que os componentes mostrados não somam o retorno composto da tabela anterior. Para ilustrar custo de oportunidade, em 2019 o excesso médio anualizado da combinação foi 0,40%, contra 3,83% do carry. Em 2020–2021, foi 2,39% contra −1,43%.",
+      "speech": "A decomposição contábil ajuda a entender o resultado. A combinação recebeu menos contribuição de juros, o que faz sentido porque operou com menor exposição. Em compensação, teve contribuição cambial maior na amostra. Isso manteve o excesso médio de retorno próximo ao do carry, com menos risco. Mas ficar de fora também tem custo: em 2019, a combinação ganhou pouco acima do caixa e ficou bastante atrás do carry. Em 2020 e 2021, ocorreu o contrário. Portanto, os filtros podem proteger em alguns episódios e deixar ganhos para trás em outros. Essa alternância é parte do resultado, não uma exceção a esconder.",
+      "caution": "Resultado selecionado na pesquisa, mantido apenas como referência histórica. Previsão EJR de 60 meses, decisões mensais e risco de 12 meses são horizontes distintos. Não demonstra uma estratégia validada de convergência no horizonte do artigo.",
+      "qa": "O resultado vem só do carrego? Não. As duas estratégias recebem juros e carregam risco cambial. A combinação mudou a exposição a essas duas fontes de resultado.",
+      "transition": "Os resultados são interessantes, mas há limites claros para a interpretação.",
+      "sources": [
+        "synthesis/tables/attribution.csv",
+        "synthesis/tables/episodes.csv"
+      ],
+      "old": 13,
+      "training": "Mesmas previsões, regras e treinamento expansivo da combinação. Atribuição realizada no backtest de abr/2018 a ago/2026. Não há um novo modelo de previsão para a atribuição."
+    },
+    {
+      "title": "O resultado ainda exige validação",
+      "seconds": 60,
+      "core": "As carteiras são referências exploratórias: falta validar a ligação entre previsão de longo prazo e execução econômica.",
+      "concepts": "Vazamento temporal ocorre quando a decisão usa informação que só seria conhecida depois. O projeto controla defasagens, maturação dos alvos e atraso de execução. Seleção de modelos é outro problema: depois de testar muitas ideias, as que parecem melhores podem ser apenas as que tiveram sorte nessa história. Um backtest pode respeitar o calendário e ainda sofrer com seleção retrospectiva. Além disso, os dados macroeconômicos disponíveis foram revisados e as taxas são proxies, não cotações executáveis. A dependência de países também limita a generalização.",
+      "reading": "Explique quatro limites em linguagem simples: mesma história explorada, exposição menor, concentração por país e dados sem todas as versões históricas. A atribuição de BRL e JPY representa cerca de 86% da contribuição por moeda antes de custos de negociação. Na sensibilidade sem BRL, o excesso da combinação cai de 3,17% para aproximadamente 0,65% ao ano. O teste corrigido para a grade principal não estabelece ganho de retorno médio sobre carry.",
+      "speech": "A principal limitação é que os módulos foram escolhidos após explorar essa mesma história. Eu cuidei para que as decisões mensais não usassem o futuro, mas isso não transforma o resultado em uma validação independente da escolha das regras. O desempenho também depende bastante do Brasil e do iene, e a menor exposição explica parte da queda de risco. Os testes corrigidos para as alternativas principais não sustentam ganho de retorno médio sobre o carry. Finalmente, taxas oficiais e séries revisadas são aproximações da informação e dos preços disponíveis para um investidor. Por isso, a próxima validação teria de congelar as regras e acompanhar dados futuros e custos executáveis.",
+      "caution": "Evite ‘não houve nenhum vazamento’ como certificação absoluta. Diga quais controles existem e quais limitações permanecem.",
+      "qa": "Então o trabalho não tem valor? Tem. Reproduz a relação da aula, mostra onde extensões preditivas falham e documenta uma hipótese de controle de risco com resultados e limites transparentes.",
+      "transition": "Com esses limites, a conclusão fica mais simples e mais defensável.",
+      "sources": [
+        "synthesis/tables/search_adjustment.csv",
+        "synthesis/tables/robustness.csv",
+        "synthesis/PROTOCOL.md",
+        "AUDITORIA.md"
+      ],
+      "old": 14
+    },
+    {
+      "title": "O que o trabalho permite concluir",
+      "seconds": 35,
+      "core": "A relação histórica foi parcialmente replicada. As aplicações mensais posteriores não validam uma estratégia no horizonte do artigo.",
+      "concepts": "A conclusão deve separar o que foi reproduzido do que ficou como hipótese. A relação histórica brasileira apresentada na aula foi recuperada. Somar a previsão ao ranking mensal falhou, enquanto regras de exposição apresentaram risco histórico menor. Nenhuma dessas etapas prova arbitragem, ganho causal de uma variável ou alfa persistente.",
+      "reading": "Separe a evidência preditiva do resultado das carteiras. Encerre sem apresentar os filtros mensais como a conclusão econômica do artigo.",
+      "speech": "A relação histórica da aula aparece na replicação parcial, e os testes preditivos variam por moeda e horizonte. As carteiras posteriores ficam como referências exploratórias. A conversão de uma previsão de cinco anos em sinal mensal e os filtros de doze meses não demonstram a captura do ajuste de longo prazo. Portanto, o trabalho ainda não estabelece uma estratégia econômica validada no horizonte do artigo.",
+      "caution": "Encerre no slide 14. Os slides 15 e 16 são apoio para perguntas e ficam fora dos 15 minutos e 30 segundos.",
+      "qa": "O que falta para a conclusão econômica? Um desenho de investimento explicitamente alinhado ao horizonte previsto, com regras de manutenção e saída justificadas, financiamento, custos e comparação adequada.",
+      "transition": "Obrigado. Posso detalhar a metodologia ou os resultados nas perguntas.",
+      "sources": [
+        "Relatórios original e síntese"
+      ],
+      "old": 15
+    },
+    {
+      "title": "Apoio: equações e informação disponível",
+      "seconds": 0,
+      "core": "A regressão usa o desvio do câmbio real para prever a mudança futura do câmbio nominal.",
+      "concepts": "No EJR implementado, Δs(t,t+h) = β_h × [q_t − média histórica de q] + erro, com coeficiente agrupado e sem intercepto adicional. A média é calculada com dados disponíveis na origem. Cada regressão em t só usa alvos j+h que terminaram até t−1. A observação atual do CPI entra com dois meses de atraso. A previsão mensal usada no sinal de carry é a previsão de Δs em 60 meses dividida por 60, uma aproximação de ritmo médio, não uma trajetória estimada.",
+      "reading": "Use somente se houver pergunta técnica. Explique cada letra antes de interpretar o coeficiente. A variável prevista é nominal. O câmbio real é o regressor.",
+      "speech": "Esta é a forma simplificada da regressão. A variável prevista é a mudança futura do log da cotação nominal. O regressor é o desvio do câmbio real em relação à sua média histórica disponível. Um alvo só entra no treinamento depois de terminar. Não treino uma previsão de cinco anos com resultados que ainda não poderiam ser conhecidos.",
+      "caution": "A equação simplificada do slide omite índices de país para legibilidade. O exercício de dispersão da aula tem ajuste dentro da amostra e intercepto, diferentemente da previsão agrupada.",
+      "qa": "Há identificação causal? Não. Há uma avaliação preditiva condicional, sem uma fonte exógena de variação que identifique um efeito causal.",
+      "transition": "O segundo apoio detalha a comparação econômica e o calendário de negociação.",
+      "sources": [
+        "src/models.py"
+      ],
+      "old": 16,
+      "training": "Janela de treinamento começa em out/1999 no EJR nominal. Para horizonte h, uma origem j só entra se j+h ≤ t−1. Mínimo 60 origens maduras por moeda. CPI defasado em dois meses. As janelas de avaliação variam por horizonte."
+    },
+    {
+      "title": "Apoio: exposição, custos e interpretação",
+      "seconds": 0,
+      "core": "Comparações econômicas precisam manter datas, numerário e custos consistentes, além de distinguir controle retrospectivo de estratégia executável.",
+      "concepts": "No controle retrospectivo, o carry é escalado pela exposição média realizada da combinação, conhecida ao final. Serve para investigar quanto da melhora decorre de menor tamanho, não como regra que poderia ser escolhida antecipadamente. O controle estimado apenas com história passada tem outra exposição média e não iguala ex post o risco. O backtest calcula o ativo local em dólar como (1+i_local) × S_anterior/S_atual − 1. Soma o caixa USD e o resultado das posições, descontando financiamento adicional e negociação. Custos por notional: 10 pontos-base para BRL, 3 para SEK e 2 para as demais moedas, além de 50 pontos-base anuais de spread na ponta vendida. Um ponto-base é 0,01 ponto percentual.",
+      "reading": "A tabela compara, em 2018–2026, carry a 100%, carry reduzido retrospectivamente a 48% e combinação. O calendário é sinal no fechamento de t, execução no fechamento de t+1 e primeiro retorno em t+2. As taxas curtas são proxies, não contratos a termo efetivamente negociados.",
+      "speech": "O controle com o mesmo tamanho médio ajuda a separar exposição e seleção. Ele tem volatilidade até um pouco menor que a combinação, mas retorno menor e drawdown maior na história. Como usa a exposição média conhecida ao final, eu o trato como diagnóstico. Os retornos da simulação incluem juros, variação cambial e os custos definidos, sempre em dólar. Para execução real ainda faltariam cotações negociáveis, vintages históricas e outras fricções específicas do investidor.",
+      "caution": "Drawdown é uma estatística da trajetória observada, não um limite de perda futura. Custos assumidos não são custos garantidos para qualquer investidor.",
+      "qa": "Por que não é arbitragem? Porque há risco de perda, incerteza de convergência e custos de financiamento. Nenhum resultado positivo é garantido.",
+      "transition": "Esses detalhes sustentam a leitura cautelosa dos resultados principais.",
+      "sources": [
+        "synthesis/tables/exposure_controls.csv",
+        "src/models.py: run_book",
+        "synthesis/model.py"
+      ],
+      "old": 17,
+      "training": "Treino mensal expansivo da combinação, com primeiro sinal em fev/2018. Backtest comum: abr/2018–ago/2026. A exposição média do controle retrospectivo só é conhecida ao final."
+    }
+  ],
+  "main_count": 16
+}

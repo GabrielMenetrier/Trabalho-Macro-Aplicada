@@ -1,0 +1,150 @@
+[
+  {
+    "check": "Pairs_EJR net zero",
+    "passed": true
+  },
+  {
+    "check": "Pairs_EJR gross one",
+    "passed": true
+  },
+  {
+    "check": "Pairs_EJR 25pct cap",
+    "passed": true
+  },
+  {
+    "check": "Pairs_Carry net zero",
+    "passed": true
+  },
+  {
+    "check": "Pairs_Carry gross one",
+    "passed": true
+  },
+  {
+    "check": "Pairs_Carry 25pct cap",
+    "passed": true
+  },
+  {
+    "check": "Sharpe_EJR_long60 net zero",
+    "passed": true
+  },
+  {
+    "check": "Sharpe_EJR_long60 gross one",
+    "passed": true
+  },
+  {
+    "check": "Sharpe_EJR_long60 25pct cap",
+    "passed": true
+  },
+  {
+    "check": "Sharpe_Carry_long60 net zero",
+    "passed": true
+  },
+  {
+    "check": "Sharpe_Carry_long60 gross one",
+    "passed": true
+  },
+  {
+    "check": "Sharpe_Carry_long60 25pct cap",
+    "passed": true
+  },
+  {
+    "check": "Sharpe_EJR_monthly120 net zero",
+    "passed": true
+  },
+  {
+    "check": "Sharpe_EJR_monthly120 gross one",
+    "passed": true
+  },
+  {
+    "check": "Sharpe_EJR_monthly120 25pct cap",
+    "passed": true
+  },
+  {
+    "check": "Optimizer improves expected Sharpe 2010-01",
+    "passed": true
+  },
+  {
+    "check": "Optimizer repeatability 2010-01",
+    "passed": true
+  },
+  {
+    "check": "Future risk returns cannot affect covariance 2010-01",
+    "passed": true
+  },
+  {
+    "check": "Forecast prefix reproduces saved signal 2010-01",
+    "passed": true
+  },
+  {
+    "check": "Optimizer improves expected Sharpe 2015-01",
+    "passed": true
+  },
+  {
+    "check": "Optimizer repeatability 2015-01",
+    "passed": true
+  },
+  {
+    "check": "Future risk returns cannot affect covariance 2015-01",
+    "passed": true
+  },
+  {
+    "check": "Forecast prefix reproduces saved signal 2015-01",
+    "passed": true
+  },
+  {
+    "check": "Optimizer improves expected Sharpe 2020-01",
+    "passed": true
+  },
+  {
+    "check": "Optimizer repeatability 2020-01",
+    "passed": true
+  },
+  {
+    "check": "Future risk returns cannot affect covariance 2020-01",
+    "passed": true
+  },
+  {
+    "check": "Forecast prefix reproduces saved signal 2020-01",
+    "passed": true
+  },
+  {
+    "check": "60-month selection fixed Pairs_EJR123",
+    "passed": true
+  },
+  {
+    "check": "60-month selection fixed Pairs_EJR183",
+    "passed": true
+  },
+  {
+    "check": "60-month selection fixed Pairs_EJR243",
+    "passed": true
+  },
+  {
+    "check": "Frozen engine matches existing monthly accounting Pairs_EJR",
+    "passed": true
+  },
+  {
+    "check": "60-month selection fixed Pairs_Carry123",
+    "passed": true
+  },
+  {
+    "check": "60-month selection fixed Pairs_Carry183",
+    "passed": true
+  },
+  {
+    "check": "60-month selection fixed Pairs_Carry243",
+    "passed": true
+  },
+  {
+    "check": "Frozen engine matches existing monthly accounting Pairs_Carry",
+    "passed": true
+  },
+  {
+    "check": "Original full backtest reproduced Pairs_EJR",
+    "passed": true
+  },
+  {
+    "check": "Original full backtest reproduced Pairs_Carry",
+    "passed": true
+  }
+]

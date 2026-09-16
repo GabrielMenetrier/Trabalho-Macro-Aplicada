@@ -1,0 +1,2946 @@
+{
+  "passed": true,
+  "count": 735,
+  "checks": [
+    {
+      "check": "18 main slides plus 7 appendix",
+      "passed": true
+    },
+    {
+      "check": "Under twenty minutes",
+      "passed": true
+    },
+    {
+      "check": "Appendix outside timing",
+      "passed": true
+    },
+    {
+      "check": "Original sources preserved",
+      "passed": true
+    },
+    {
+      "check": "Notes slide 1",
+      "passed": true
+    },
+    {
+      "check": "No monthly-risk optimization or decomposition slide 1",
+      "passed": true
+    },
+    {
+      "check": "Correct title 1",
+      "passed": true
+    },
+    {
+      "check": "Notes slide 2",
+      "passed": true
+    },
+    {
+      "check": "No monthly-risk optimization or decomposition slide 2",
+      "passed": true
+    },
+    {
+      "check": "Correct title 2",
+      "passed": true
+    },
+    {
+      "check": "Notes slide 3",
+      "passed": true
+    },
+    {
+      "check": "No monthly-risk optimization or decomposition slide 3",
+      "passed": true
+    },
+    {
+      "check": "Correct title 3",
+      "passed": true
+    },
+    {
+      "check": "Notes slide 4",
+      "passed": true
+    },
+    {
+      "check": "No monthly-risk optimization or decomposition slide 4",
+      "passed": true
+    },
+    {
+      "check": "Correct title 4",
+      "passed": true
+    },
+    {
+      "check": "Notes slide 5",
+      "passed": true
+    },
+    {
+      "check": "No monthly-risk optimization or decomposition slide 5",
+      "passed": true
+    },
+    {
+      "check": "Correct title 5",
+      "passed": true
+    },
+    {
+      "check": "Notes slide 6",
+      "passed": true
+    },
+    {
+      "check": "No monthly-risk optimization or decomposition slide 6",
+      "passed": true
+    },
+    {
+      "check": "Correct title 6",
+      "passed": true
+    },
+    {
+      "check": "Notes slide 7",
+      "passed": true
+    },
+    {
+      "check": "No monthly-risk optimization or decomposition slide 7",
+      "passed": true
+    },
+    {
+      "check": "Correct title 7",
+      "passed": true
+    },
+    {
+      "check": "Notes slide 8",
+      "passed": true
+    },
+    {
+      "check": "No monthly-risk optimization or decomposition slide 8",
+      "passed": true
+    },
+    {
+      "check": "Correct title 8",
+      "passed": true
+    },
+    {
+      "check": "Notes slide 9",
+      "passed": true
+    },
+    {
+      "check": "No monthly-risk optimization or decomposition slide 9",
+      "passed": true
+    },
+    {
+      "check": "Correct title 9",
+      "passed": true
+    },
+    {
+      "check": "Notes slide 10",
+      "passed": true
+    },
+    {
+      "check": "No monthly-risk optimization or decomposition slide 10",
+      "passed": true
+    },
+    {
+      "check": "Correct title 10",
+      "passed": true
+    },
+    {
+      "check": "Notes slide 11",
+      "passed": true
+    },
+    {
+      "check": "No monthly-risk optimization or decomposition slide 11",
+      "passed": true
+    },
+    {
+      "check": "Correct title 11",
+      "passed": true
+    },
+    {
+      "check": "Notes slide 12",
+      "passed": true
+    },
+    {
+      "check": "No monthly-risk optimization or decomposition slide 12",
+      "passed": true
+    },
+    {
+      "check": "Correct title 12",
+      "passed": true
+    },
+    {
+      "check": "Notes slide 13",
+      "passed": true
+    },
+    {
+      "check": "No monthly-risk optimization or decomposition slide 13",
+      "passed": true
+    },
+    {
+      "check": "Correct title 13",
+      "passed": true
+    },
+    {
+      "check": "Notes slide 14",
+      "passed": true
+    },
+    {
+      "check": "No monthly-risk optimization or decomposition slide 14",
+      "passed": true
+    },
+    {
+      "check": "Correct title 14",
+      "passed": true
+    },
+    {
+      "check": "Notes slide 15",
+      "passed": true
+    },
+    {
+      "check": "No monthly-risk optimization or decomposition slide 15",
+      "passed": true
+    },
+    {
+      "check": "Correct title 15",
+      "passed": true
+    },
+    {
+      "check": "Notes slide 16",
+      "passed": true
+    },
+    {
+      "check": "No monthly-risk optimization or decomposition slide 16",
+      "passed": true
+    },
+    {
+      "check": "Correct title 16",
+      "passed": true
+    },
+    {
+      "check": "Notes slide 17",
+      "passed": true
+    },
+    {
+      "check": "No monthly-risk optimization or decomposition slide 17",
+      "passed": true
+    },
+    {
+      "check": "Correct title 17",
+      "passed": true
+    },
+    {
+      "check": "Notes slide 18",
+      "passed": true
+    },
+    {
+      "check": "No monthly-risk optimization or decomposition slide 18",
+      "passed": true
+    },
+    {
+      "check": "Correct title 18",
+      "passed": true
+    },
+    {
+      "check": "Notes slide 19",
+      "passed": true
+    },
+    {
+      "check": "No monthly-risk optimization or decomposition slide 19",
+      "passed": true
+    },
+    {
+      "check": "Correct title 19",
+      "passed": true
+    },
+    {
+      "check": "Notes slide 20",
+      "passed": true
+    },
+    {
+      "check": "No monthly-risk optimization or decomposition slide 20",
+      "passed": true
+    },
+    {
+      "check": "Correct title 20",
+      "passed": true
+    },
+    {
+      "check": "Notes slide 21",
+      "passed": true
+    },
+    {
+      "check": "No monthly-risk optimization or decomposition slide 21",
+      "passed": true
+    },
+    {
+      "check": "Correct title 21",
+      "passed": true
+    },
+    {
+      "check": "Notes slide 22",
+      "passed": true
+    },
+    {
+      "check": "No monthly-risk optimization or decomposition slide 22",
+      "passed": true
+    },
+    {
+      "check": "Correct title 22",
+      "passed": true
+    },
+    {
+      "check": "Notes slide 23",
+      "passed": true
+    },
+    {
+      "check": "No monthly-risk optimization or decomposition slide 23",
+      "passed": true
+    },
+    {
+      "check": "Correct title 23",
+      "passed": true
+    },
+    {
+      "check": "Notes slide 24",
+      "passed": true
+    },
+    {
+      "check": "No monthly-risk optimization or decomposition slide 24",
+      "passed": true
+    },
+    {
+      "check": "Correct title 24",
+      "passed": true
+    },
+    {
+      "check": "Notes slide 25",
+      "passed": true
+    },
+    {
+      "check": "No monthly-risk optimization or decomposition slide 25",
+      "passed": true
+    },
+    {
+      "check": "Correct title 25",
+      "passed": true
+    },
+    {
+      "check": "Triple table 14 Ranking Carry 12",
+      "passed": true
+    },
+    {
+      "check": "Triple table 14 Ranking Carry 60",
+      "passed": true
+    },
+    {
+      "check": "Triple table 14 Ranking EJR 12",
+      "passed": true
+    },
+    {
+      "check": "Triple table 14 Ranking EJR 60",
+      "passed": true
+    },
+    {
+      "check": "Triple table 14 Ranking EJR_trio 12",
+      "passed": true
+    },
+    {
+      "check": "Triple table 14 Ranking EJR_trio 60",
+      "passed": true
+    },
+    {
+      "check": "Triple table 14 Ranking EJR_TOT_trio 12",
+      "passed": true
+    },
+    {
+      "check": "Triple table 14 Ranking EJR_TOT_trio 60",
+      "passed": true
+    },
+    {
+      "check": "Triple table 14 long60 Carry 12",
+      "passed": true
+    },
+    {
+      "check": "Triple table 14 long60 Carry 60",
+      "passed": true
+    },
+    {
+      "check": "Triple table 14 long60 EJR 12",
+      "passed": true
+    },
+    {
+      "check": "Triple table 14 long60 EJR 60",
+      "passed": true
+    },
+    {
+      "check": "Triple table 14 long60 EJR_trio 12",
+      "passed": true
+    },
+    {
+      "check": "Triple table 14 long60 EJR_trio 60",
+      "passed": true
+    },
+    {
+      "check": "Triple table 14 long60 EJR_TOT_trio 12",
+      "passed": true
+    },
+    {
+      "check": "Triple table 14 long60 EJR_TOT_trio 60",
+      "passed": true
+    },
+    {
+      "check": "Triple table 16 Ranking Carry 12",
+      "passed": true
+    },
+    {
+      "check": "Triple table 16 Ranking Carry 60",
+      "passed": true
+    },
+    {
+      "check": "Triple table 16 Ranking EJR 12",
+      "passed": true
+    },
+    {
+      "check": "Triple table 16 Ranking EJR 60",
+      "passed": true
+    },
+    {
+      "check": "Triple table 16 Ranking TT_all 12",
+      "passed": true
+    },
+    {
+      "check": "Triple table 16 Ranking TT_all 60",
+      "passed": true
+    },
+    {
+      "check": "Triple table 16 Ranking Matched 12",
+      "passed": true
+    },
+    {
+      "check": "Triple table 16 Ranking Matched 60",
+      "passed": true
+    },
+    {
+      "check": "Triple table 16 long60 Carry 12",
+      "passed": true
+    },
+    {
+      "check": "Triple table 16 long60 Carry 60",
+      "passed": true
+    },
+    {
+      "check": "Triple table 16 long60 EJR 12",
+      "passed": true
+    },
+    {
+      "check": "Triple table 16 long60 EJR 60",
+      "passed": true
+    },
+    {
+      "check": "Triple table 16 long60 TT_all 12",
+      "passed": true
+    },
+    {
+      "check": "Triple table 16 long60 TT_all 60",
+      "passed": true
+    },
+    {
+      "check": "Triple table 16 long60 Matched 12",
+      "passed": true
+    },
+    {
+      "check": "Triple table 16 long60 Matched 60",
+      "passed": true
+    },
+    {
+      "check": "Forecast full table BRL EJR",
+      "passed": true
+    },
+    {
+      "check": "Forecast full table BRL TOT_both",
+      "passed": true
+    },
+    {
+      "check": "Forecast full table EUR EJR",
+      "passed": true
+    },
+    {
+      "check": "Forecast full table EUR TOT_both",
+      "passed": true
+    },
+    {
+      "check": "Forecast full table JPY EJR",
+      "passed": true
+    },
+    {
+      "check": "Forecast full table JPY TOT_both",
+      "passed": true
+    },
+    {
+      "check": "Forecast full table GBP EJR",
+      "passed": true
+    },
+    {
+      "check": "Forecast full table GBP TOT_both",
+      "passed": true
+    },
+    {
+      "check": "Forecast full table CAD EJR",
+      "passed": true
+    },
+    {
+      "check": "Forecast full table CAD TOT_both",
+      "passed": true
+    },
+    {
+      "check": "Forecast full table SEK EJR",
+      "passed": true
+    },
+    {
+      "check": "Forecast full table SEK TOT_both",
+      "passed": true
+    },
+    {
+      "check": "Forecast full table POOL EJR",
+      "passed": true
+    },
+    {
+      "check": "Forecast full table POOL TOT_both",
+      "passed": true
+    },
+    {
+      "check": "Curve equals table ('six', 'Ranking', 'Carry', 12)",
+      "passed": true
+    },
+    {
+      "check": "Curve equals table ('six', 'Ranking', 'Carry', 60)",
+      "passed": true
+    },
+    {
+      "check": "Curve equals table ('six', 'Ranking', 'EJR', 12)",
+      "passed": true
+    },
+    {
+      "check": "Curve equals table ('six', 'Ranking', 'EJR', 60)",
+      "passed": true
+    },
+    {
+      "check": "Curve equals table ('six', 'Ranking', 'EJR_trio', 12)",
+      "passed": true
+    },
+    {
+      "check": "Curve equals table ('six', 'Ranking', 'EJR_trio', 60)",
+      "passed": true
+    },
+    {
+      "check": "Curve equals table ('six', 'Ranking', 'EJR_TOT_trio', 12)",
+      "passed": true
+    },
+    {
+      "check": "Curve equals table ('six', 'Ranking', 'EJR_TOT_trio', 60)",
+      "passed": true
+    },
+    {
+      "check": "Curve equals table ('six', 'long60', 'Carry', 12)",
+      "passed": true
+    },
+    {
+      "check": "Curve equals table ('six', 'long60', 'Carry', 60)",
+      "passed": true
+    },
+    {
+      "check": "Curve equals table ('six', 'long60', 'EJR', 12)",
+      "passed": true
+    },
+    {
+      "check": "Curve equals table ('six', 'long60', 'EJR', 60)",
+      "passed": true
+    },
+    {
+      "check": "Curve equals table ('six', 'long60', 'EJR_trio', 12)",
+      "passed": true
+    },
+    {
+      "check": "Curve equals table ('six', 'long60', 'EJR_trio', 60)",
+      "passed": true
+    },
+    {
+      "check": "Curve equals table ('six', 'long60', 'EJR_TOT_trio', 12)",
+      "passed": true
+    },
+    {
+      "check": "Curve equals table ('six', 'long60', 'EJR_TOT_trio', 60)",
+      "passed": true
+    },
+    {
+      "check": "Curve equals table ('three', 'Ranking', 'Carry', 12)",
+      "passed": true
+    },
+    {
+      "check": "Curve equals table ('three', 'Ranking', 'Carry', 60)",
+      "passed": true
+    },
+    {
+      "check": "Curve equals table ('three', 'Ranking', 'EJR', 12)",
+      "passed": true
+    },
+    {
+      "check": "Curve equals table ('three', 'Ranking', 'EJR', 60)",
+      "passed": true
+    },
+    {
+      "check": "Curve equals table ('three', 'Ranking', 'TT_all', 12)",
+      "passed": true
+    },
+    {
+      "check": "Curve equals table ('three', 'Ranking', 'TT_all', 60)",
+      "passed": true
+    },
+    {
+      "check": "Curve equals table ('three', 'Ranking', 'Matched', 12)",
+      "passed": true
+    },
+    {
+      "check": "Curve equals table ('three', 'Ranking', 'Matched', 60)",
+      "passed": true
+    },
+    {
+      "check": "Curve equals table ('three', 'long60', 'Carry', 12)",
+      "passed": true
+    },
+    {
+      "check": "Curve equals table ('three', 'long60', 'Carry', 60)",
+      "passed": true
+    },
+    {
+      "check": "Curve equals table ('three', 'long60', 'EJR', 12)",
+      "passed": true
+    },
+    {
+      "check": "Curve equals table ('three', 'long60', 'EJR', 60)",
+      "passed": true
+    },
+    {
+      "check": "Curve equals table ('three', 'long60', 'TT_all', 12)",
+      "passed": true
+    },
+    {
+      "check": "Curve equals table ('three', 'long60', 'TT_all', 60)",
+      "passed": true
+    },
+    {
+      "check": "Curve equals table ('three', 'long60', 'Matched', 12)",
+      "passed": true
+    },
+    {
+      "check": "Curve equals table ('three', 'long60', 'Matched', 60)",
+      "passed": true
+    },
+    {
+      "check": "Native charts slide 10",
+      "passed": true
+    },
+    {
+      "check": "Native charts slide 11",
+      "passed": true
+    },
+    {
+      "check": "Native charts slide 13",
+      "passed": true
+    },
+    {
+      "check": "Native charts slide 15",
+      "passed": true
+    },
+    {
+      "check": "Preserved ejr_trade/tables/metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "Preserved ejr_trade_selected/tables/metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "Preserved ejr_trade_selected/tables/pooling_diagnostics.csv",
+      "passed": true
+    },
+    {
+      "check": "Preserved horizon_tests/tables/with_terms_of_trade.csv",
+      "passed": true
+    },
+    {
+      "check": "Preserved horizon_tests/tables/restricted_table.csv",
+      "passed": true
+    },
+    {
+      "check": "Preserved horizon_tests/tables/returns.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "Preserved horizon_tests/tables/with_tot_returns.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "Preserved horizon_tests/tables/restricted_returns.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "Preserved ejr_trade_selected/tables/in_sample.csv",
+      "passed": true
+    },
+    {
+      "check": "Preserved ejr_trade_selected/tables/predictions.csv.gz",
+      "passed": true
+    },
+    {
+      "check": "apresentacao_macro_aula_v7 page count",
+      "passed": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v7 page count",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 1 0",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 1 1",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 1 2",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 1 3",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 1 4",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 1 5",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 1 6",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 1 7",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 1 8",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 1 9",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 1 10",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 1 11",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 1 12",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 1 13",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 1 14",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 2 0",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 2 1",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 2 2",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 2 3",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 2 4",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 2 5",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 2 6",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 2 7",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 2 8",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 2 9",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 2 10",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 2 11",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 2 12",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 2 13",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 2 14",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 2 15",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 2 16",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 2 17",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 2 18",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 2 19",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 2 20",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 2 21",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 2 22",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 2 23",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 2 24",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 2 25",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 3 0",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 3 1",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 3 2",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 3 3",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 3 4",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 3 5",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 3 6",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 3 7",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 3 8",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 3 9",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 3 10",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 3 11",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 3 12",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 3 13",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 3 14",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 3 15",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 3 16",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 3 17",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 4 0",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 4 1",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 4 2",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 4 3",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 4 4",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 4 5",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 4 6",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 4 7",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 4 8",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 4 9",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 4 10",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 4 11",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 4 12",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 4 13",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 4 14",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 4 15",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 4 16",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 4 17",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 5 0",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 5 1",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 5 2",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 5 3",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 5 4",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 5 5",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 5 6",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 5 7",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 5 8",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 5 9",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 5 10",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 5 11",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 5 12",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 5 13",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 5 14",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 5 15",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 5 16",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 5 17",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 5 18",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 5 19",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 6 0",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 6 1",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 6 2",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 6 3",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 6 4",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 6 5",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 6 6",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 6 7",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 6 8",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 6 9",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 6 10",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 6 11",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 6 12",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 6 13",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 6 14",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 6 15",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 6 16",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 6 17",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 6 18",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 6 19",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 7 0",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 7 1",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 7 2",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 7 3",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 7 4",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 7 5",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 7 6",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 7 7",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 7 8",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 7 9",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 7 10",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 7 11",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 7 12",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 7 13",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 7 14",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 7 15",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 7 16",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 7 17",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 8 0",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 8 1",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 8 2",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 8 3",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 8 4",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 8 5",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 8 6",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 8 7",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 8 8",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 8 9",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 8 10",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 8 11",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 8 12",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 8 13",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 8 14",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 8 15",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 8 16",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 8 17",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 8 18",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 8 19",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 9 0",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 9 1",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 9 2",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 9 3",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 9 4",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 9 5",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 9 6",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 9 7",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 9 8",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 9 9",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 9 10",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 9 11",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 9 12",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 9 13",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 9 14",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 9 15",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 9 16",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 9 17",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 9 18",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 9 19",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 10 0",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 10 1",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 10 2",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 10 3",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 10 4",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 10 5",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 10 6",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 10 7",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 10 8",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 10 9",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 10 10",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 10 11",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 10 12",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 10 13",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 10 14",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 10 15",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 10 16",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 10 17",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 11 0",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 11 1",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 11 2",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 11 3",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 11 4",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 11 5",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 11 6",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 11 7",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 11 8",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 11 9",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 11 10",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 11 11",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 11 12",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 11 13",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 11 14",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 11 15",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 11 16",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 11 17",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 12 0",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 12 1",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 12 2",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 12 3",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 12 4",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 12 5",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 12 6",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 12 7",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 12 8",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 12 9",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 12 10",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 12 11",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 12 12",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 12 13",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 12 14",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 12 15",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 13 0",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 13 1",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 13 2",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 13 3",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 13 4",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 13 5",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 13 6",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 13 7",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 13 8",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 13 9",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 13 10",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 13 11",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 13 12",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 13 13",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 13 14",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 13 15",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 14 0",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 14 1",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 14 2",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 14 3",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 14 4",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 14 5",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 14 6",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 14 7",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 14 8",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 14 9",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 14 10",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 14 11",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 14 12",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 14 13",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 14 14",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 14 15",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 14 16",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 14 17",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 15 0",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 15 1",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 15 2",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 15 3",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 15 4",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 15 5",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 15 6",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 15 7",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 15 8",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 15 9",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 15 10",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 15 11",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 15 12",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 15 13",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 15 14",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 15 15",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 15 16",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 15 17",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 16 0",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 16 1",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 16 2",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 16 3",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 16 4",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 16 5",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 16 6",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 16 7",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 16 8",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 16 9",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 16 10",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 16 11",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 16 12",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 16 13",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 16 14",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 16 15",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 17 0",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 17 1",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 17 2",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 17 3",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 17 4",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 17 5",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 17 6",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 17 7",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 17 8",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 17 9",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 17 10",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 17 11",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 17 12",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 17 13",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 17 14",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 17 15",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 17 16",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 17 17",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 18 0",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 18 1",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 18 2",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 18 3",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 18 4",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 18 5",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 18 6",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 18 7",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 18 8",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 18 9",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 18 10",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 18 11",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 18 12",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 18 13",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 18 14",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 18 15",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 19 0",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 19 1",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 19 2",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 19 3",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 19 4",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 19 5",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 19 6",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 19 7",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 19 8",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 19 9",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 19 10",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 19 11",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 19 12",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 19 13",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 19 14",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 19 15",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 20 0",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 20 1",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 20 2",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 20 3",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 20 4",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 20 5",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 20 6",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 20 7",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 20 8",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 20 9",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 20 10",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 20 11",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 20 12",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 20 13",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 20 14",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 20 15",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 21 0",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 21 1",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 21 2",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 21 3",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 21 4",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 21 5",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 21 6",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 21 7",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 21 8",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 21 9",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 21 10",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 21 11",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 21 12",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 21 13",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 21 14",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 21 15",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 22 0",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 22 1",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 22 2",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 22 3",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 22 4",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 22 5",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 22 6",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 22 7",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 22 8",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 22 9",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 22 10",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 22 11",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 22 12",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 22 13",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 22 14",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 22 15",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 23 0",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 23 1",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 23 2",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 23 3",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 23 4",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 23 5",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 23 6",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 23 7",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 23 8",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 23 9",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 23 10",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 23 11",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 23 12",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 23 13",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 23 14",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 23 15",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 23 16",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 23 17",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 23 18",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 23 19",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 24 0",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 24 1",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 24 2",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 24 3",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 24 4",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 24 5",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 24 6",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 24 7",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 24 8",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 24 9",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 24 10",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 24 11",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 24 12",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 24 13",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 24 14",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 24 15",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 24 16",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 24 17",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 24 18",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 24 19",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 25 0",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 25 1",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 25 2",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 25 3",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 25 4",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 25 5",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 25 6",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 25 7",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 25 8",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 25 9",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 25 10",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 25 11",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 25 12",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 25 13",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 25 14",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 25 15",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 25 16",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 25 17",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 25 18",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 25 19",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 26 0",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 26 1",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 26 2",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 26 3",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 26 4",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 26 5",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 26 6",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 26 7",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 26 8",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 26 9",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 26 10",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 26 11",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 26 12",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 26 13",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 26 14",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 26 15",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 26 16",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 26 17",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 26 18",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 26 19",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 27 0",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 27 1",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 27 2",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 27 3",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 27 4",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 27 5",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 27 6",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 27 7",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 27 8",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 27 9",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 27 10",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 27 11",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 27 12",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 27 13",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 27 14",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 27 15",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 27 16",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 27 17",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 27 18",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 27 19",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 28 0",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 28 1",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 28 2",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 28 3",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 28 4",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 28 5",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 28 6",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 28 7",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 28 8",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 28 9",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 28 10",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 28 11",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 28 12",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 28 13",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 28 14",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 29 0",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 29 1",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 29 2",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 29 3",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 29 4",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 29 5",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 29 6",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 29 7",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 29 8",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 29 9",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 29 10",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 29 11",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 29 12",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 29 13",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 29 14",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 30 0",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 30 1",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 30 2",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 30 3",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 30 4",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 30 5",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 30 6",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 30 7",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 30 8",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 30 9",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 30 10",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 30 11",
+      "passed": true
+    },
+    {
+      "check": "Page bounds guia_apresentacao_macro_v7 30 12",
+      "passed": true
+    },
+    {
+      "check": "Guide correspondence 1",
+      "passed": true
+    },
+    {
+      "check": "Guide correspondence 2",
+      "passed": true
+    },
+    {
+      "check": "Guide correspondence 3",
+      "passed": true
+    },
+    {
+      "check": "Guide correspondence 4",
+      "passed": true
+    },
+    {
+      "check": "Guide correspondence 5",
+      "passed": true
+    },
+    {
+      "check": "Guide correspondence 6",
+      "passed": true
+    },
+    {
+      "check": "Guide correspondence 7",
+      "passed": true
+    },
+    {
+      "check": "Guide correspondence 8",
+      "passed": true
+    },
+    {
+      "check": "Guide correspondence 9",
+      "passed": true
+    },
+    {
+      "check": "Guide correspondence 10",
+      "passed": true
+    },
+    {
+      "check": "Guide correspondence 11",
+      "passed": true
+    },
+    {
+      "check": "Guide correspondence 12",
+      "passed": true
+    },
+    {
+      "check": "Guide correspondence 13",
+      "passed": true
+    },
+    {
+      "check": "Guide correspondence 14",
+      "passed": true
+    },
+    {
+      "check": "Guide correspondence 15",
+      "passed": true
+    },
+    {
+      "check": "Guide correspondence 16",
+      "passed": true
+    },
+    {
+      "check": "Guide correspondence 17",
+      "passed": true
+    },
+    {
+      "check": "Guide correspondence 18",
+      "passed": true
+    },
+    {
+      "check": "Guide correspondence 19",
+      "passed": true
+    },
+    {
+      "check": "Guide correspondence 20",
+      "passed": true
+    },
+    {
+      "check": "Guide correspondence 21",
+      "passed": true
+    },
+    {
+      "check": "Guide correspondence 22",
+      "passed": true
+    },
+    {
+      "check": "Guide correspondence 23",
+      "passed": true
+    },
+    {
+      "check": "Guide correspondence 24",
+      "passed": true
+    },
+    {
+      "check": "Guide correspondence 25",
+      "passed": true
+    },
+    {
+      "check": "Correct paper title",
+      "passed": true
+    }
+  ]
+}

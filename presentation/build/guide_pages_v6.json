@@ -1,0 +1,27 @@
+{
+  "pages": 22,
+  "mapping": {
+    "inicio": 1,
+    "roteiro": 2,
+    "slide1": 3,
+    "slide2": 4,
+    "slide3": 5,
+    "slide4": 6,
+    "slide5": 7,
+    "slide6": 8,
+    "slide7": 9,
+    "slide8": 10,
+    "slide9": 11,
+    "slide10": 12,
+    "slide11": 13,
+    "slide12": 14,
+    "slide13": 15,
+    "slide14": 16,
+    "slide15": 17,
+    "slide16": 18,
+    "glossario1": 19,
+    "glossario2": 20,
+    "defesa": 21,
+    "referencias": 22
+  }
+}

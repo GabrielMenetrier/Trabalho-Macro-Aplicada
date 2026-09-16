@@ -1,0 +1,50 @@
+[
+  {
+    "ticker": "IMAB11.SA",
+    "url": "https://query2.finance.yahoo.com/v8/finance/chart/IMAB11.SA?period1=1167609600&period2=1788220800&interval=1d&events=div%2Csplits",
+    "sha256": "ccc3ee8486b338cc051a5544e977164ef67f972894a3b82a20621db8b766c0b3",
+    "first": "2019-05",
+    "last": "2026-08",
+    "n": 88
+  },
+  {
+    "ticker": "VALE3.SA",
+    "url": "https://query2.finance.yahoo.com/v8/finance/chart/VALE3.SA?period1=1167609600&period2=1788220800&interval=1d&events=div%2Csplits",
+    "sha256": "b9f2bef06ce222d6a62f40825a35a3120d99ca1e996294cc5025bb3b5ae3952a",
+    "first": "2007-01",
+    "last": "2026-08",
+    "n": 236
+  },
+  {
+    "ticker": "ITUB4.SA",
+    "url": "https://query2.finance.yahoo.com/v8/finance/chart/ITUB4.SA?period1=1167609600&period2=1788220800&interval=1d&events=div%2Csplits",
+    "sha256": "5c5da0cd2f3c4217268d107b7d7f6c94da3644d2088f334c7defbb5fb34be95b",
+    "first": "2007-01",
+    "last": "2026-08",
+    "n": 236
+  },
+  {
+    "ticker": "SUZB3.SA",
+    "url": "https://query2.finance.yahoo.com/v8/finance/chart/SUZB3.SA?period1=1167609600&period2=1788220800&interval=1d&events=div%2Csplits",
+    "sha256": "caae971d7a49750bfddd2e0d197ba01f1c30b9ada5d11416f8858329bb3d08f3",
+    "first": "2007-01",
+    "last": "2026-08",
+    "n": 236
+  },
+  {
+    "ticker": "BBAS3.SA",
+    "url": "https://query2.finance.yahoo.com/v8/finance/chart/BBAS3.SA?period1=1167609600&period2=1788220800&interval=1d&events=div%2Csplits",
+    "sha256": "c49e0f0d6698a543970ddab2a3e1d8fbe29e5121e723af4c0859daa677807484",
+    "first": "2007-01",
+    "last": "2026-08",
+    "n": 236
+  },
+  {
+    "ticker": "BOVA11.SA",
+    "url": "https://query2.finance.yahoo.com/v8/finance/chart/BOVA11.SA?period1=1167609600&period2=1788220800&interval=1d&events=div%2Csplits",
+    "sha256": "875c3a5137cb7b3f463ed1c412a9f5b87d9269fc00637513ef2cfeb5d19176fa",
+    "first": "2008-11",
+    "last": "2026-08",
+    "n": 214
+  }
+]

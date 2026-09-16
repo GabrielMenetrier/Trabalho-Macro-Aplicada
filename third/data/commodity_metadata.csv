@@ -1,0 +1,13 @@
+code,label,unit
+oil,"Crude oil, average",($/bbl)
+gas,"Natural gas, US",($/mmbtu)
+copper,Copper,($/mt)
+iron,"Iron ore, cfr spot",($/dmtu)
+soy,Soybeans,($/mt)
+corn,Maize,($/mt)
+wheat,"Wheat, US HRW",($/mt)
+gold,Gold,($/troy oz)
+cotton,"Cotton, A Index",($/kg)
+rubber,"Rubber, RSS3",($/kg)
+aluminum,Aluminum,($/mt)
+nickel,Nickel,($/mt)

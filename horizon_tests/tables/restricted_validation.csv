@@ -1,0 +1,515 @@
+check,passed
+Six-country evidence selects precisely BRL EUR CAD,True
+Every selected country beats no-change at 60m,True
+TT improves incrementally only in BRL,True
+Complete and unique forecast EJR 2010-01,True
+Training labels precede decision EJR 2010-01,True
+Carry input matches cached data EJR 2010-01,True
+Complete and unique forecast TT_all 2010-01,True
+Training labels precede decision TT_all 2010-01,True
+Carry input matches cached data TT_all 2010-01,True
+Complete and unique forecast EJR 2011-01,True
+Training labels precede decision EJR 2011-01,True
+Carry input matches cached data EJR 2011-01,True
+Complete and unique forecast TT_all 2011-01,True
+Training labels precede decision TT_all 2011-01,True
+Carry input matches cached data TT_all 2011-01,True
+Complete and unique forecast EJR 2012-01,True
+Training labels precede decision EJR 2012-01,True
+Carry input matches cached data EJR 2012-01,True
+Complete and unique forecast TT_all 2012-01,True
+Training labels precede decision TT_all 2012-01,True
+Carry input matches cached data TT_all 2012-01,True
+Complete and unique forecast EJR 2013-01,True
+Training labels precede decision EJR 2013-01,True
+Carry input matches cached data EJR 2013-01,True
+Complete and unique forecast TT_all 2013-01,True
+Training labels precede decision TT_all 2013-01,True
+Carry input matches cached data TT_all 2013-01,True
+Complete and unique forecast EJR 2014-01,True
+Training labels precede decision EJR 2014-01,True
+Carry input matches cached data EJR 2014-01,True
+Complete and unique forecast TT_all 2014-01,True
+Training labels precede decision TT_all 2014-01,True
+Carry input matches cached data TT_all 2014-01,True
+Complete and unique forecast EJR 2015-01,True
+Training labels precede decision EJR 2015-01,True
+Carry input matches cached data EJR 2015-01,True
+Complete and unique forecast TT_all 2015-01,True
+Training labels precede decision TT_all 2015-01,True
+Carry input matches cached data TT_all 2015-01,True
+Complete and unique forecast EJR 2016-01,True
+Training labels precede decision EJR 2016-01,True
+Carry input matches cached data EJR 2016-01,True
+Complete and unique forecast TT_all 2016-01,True
+Training labels precede decision TT_all 2016-01,True
+Carry input matches cached data TT_all 2016-01,True
+Complete and unique forecast EJR 2017-01,True
+Training labels precede decision EJR 2017-01,True
+Carry input matches cached data EJR 2017-01,True
+Complete and unique forecast TT_all 2017-01,True
+Training labels precede decision TT_all 2017-01,True
+Carry input matches cached data TT_all 2017-01,True
+Complete and unique forecast EJR 2018-01,True
+Training labels precede decision EJR 2018-01,True
+Carry input matches cached data EJR 2018-01,True
+Complete and unique forecast TT_all 2018-01,True
+Training labels precede decision TT_all 2018-01,True
+Carry input matches cached data TT_all 2018-01,True
+Complete and unique forecast EJR 2019-01,True
+Training labels precede decision EJR 2019-01,True
+Carry input matches cached data EJR 2019-01,True
+Complete and unique forecast TT_all 2019-01,True
+Training labels precede decision TT_all 2019-01,True
+Carry input matches cached data TT_all 2019-01,True
+Complete and unique forecast EJR 2020-01,True
+Training labels precede decision EJR 2020-01,True
+Carry input matches cached data EJR 2020-01,True
+Complete and unique forecast TT_all 2020-01,True
+Training labels precede decision TT_all 2020-01,True
+Carry input matches cached data TT_all 2020-01,True
+Complete and unique forecast EJR 2021-01,True
+Training labels precede decision EJR 2021-01,True
+Carry input matches cached data EJR 2021-01,True
+Complete and unique forecast TT_all 2021-01,True
+Training labels precede decision TT_all 2021-01,True
+Carry input matches cached data TT_all 2021-01,True
+Complete and unique forecast EJR 2022-01,True
+Training labels precede decision EJR 2022-01,True
+Carry input matches cached data EJR 2022-01,True
+Complete and unique forecast TT_all 2022-01,True
+Training labels precede decision TT_all 2022-01,True
+Carry input matches cached data TT_all 2022-01,True
+Complete and unique forecast EJR 2023-01,True
+Training labels precede decision EJR 2023-01,True
+Carry input matches cached data EJR 2023-01,True
+Complete and unique forecast TT_all 2023-01,True
+Training labels precede decision TT_all 2023-01,True
+Carry input matches cached data TT_all 2023-01,True
+Complete and unique forecast EJR 2024-01,True
+Training labels precede decision EJR 2024-01,True
+Carry input matches cached data EJR 2024-01,True
+Complete and unique forecast TT_all 2024-01,True
+Training labels precede decision TT_all 2024-01,True
+Carry input matches cached data TT_all 2024-01,True
+Global optimum beats dense grid Carry monthly120 2010-01,True
+Global optimum beats ranking Carry monthly120 2010-01,True
+Global optimum beats dense grid Carry monthly120 2011-01,True
+Global optimum beats ranking Carry monthly120 2011-01,True
+Global optimum beats dense grid Carry monthly120 2012-01,True
+Global optimum beats ranking Carry monthly120 2012-01,True
+Global optimum beats dense grid Carry monthly120 2013-01,True
+Global optimum beats ranking Carry monthly120 2013-01,True
+Global optimum beats dense grid Carry monthly120 2014-01,True
+Global optimum beats ranking Carry monthly120 2014-01,True
+Global optimum beats dense grid Carry monthly120 2015-01,True
+Global optimum beats ranking Carry monthly120 2015-01,True
+Global optimum beats dense grid Carry monthly120 2016-01,True
+Global optimum beats ranking Carry monthly120 2016-01,True
+Global optimum beats dense grid Carry monthly120 2017-01,True
+Global optimum beats ranking Carry monthly120 2017-01,True
+Global optimum beats dense grid Carry monthly120 2018-01,True
+Global optimum beats ranking Carry monthly120 2018-01,True
+Global optimum beats dense grid Carry monthly120 2019-01,True
+Global optimum beats ranking Carry monthly120 2019-01,True
+Global optimum beats dense grid Carry monthly120 2020-01,True
+Global optimum beats ranking Carry monthly120 2020-01,True
+Global optimum beats dense grid Carry monthly120 2021-01,True
+Global optimum beats ranking Carry monthly120 2021-01,True
+Global optimum beats dense grid Carry monthly120 2022-01,True
+Global optimum beats ranking Carry monthly120 2022-01,True
+Global optimum beats dense grid Carry monthly120 2023-01,True
+Global optimum beats ranking Carry monthly120 2023-01,True
+Global optimum beats dense grid Carry monthly120 2024-01,True
+Global optimum beats ranking Carry monthly120 2024-01,True
+Global optimum beats dense grid Carry long60 2010-01,True
+Global optimum beats ranking Carry long60 2010-01,True
+Global optimum beats dense grid Carry long60 2011-01,True
+Global optimum beats ranking Carry long60 2011-01,True
+Global optimum beats dense grid Carry long60 2012-01,True
+Global optimum beats ranking Carry long60 2012-01,True
+Global optimum beats dense grid Carry long60 2013-01,True
+Global optimum beats ranking Carry long60 2013-01,True
+Global optimum beats dense grid Carry long60 2014-01,True
+Global optimum beats ranking Carry long60 2014-01,True
+Global optimum beats dense grid Carry long60 2015-01,True
+Global optimum beats ranking Carry long60 2015-01,True
+Global optimum beats dense grid Carry long60 2016-01,True
+Global optimum beats ranking Carry long60 2016-01,True
+Global optimum beats dense grid Carry long60 2017-01,True
+Global optimum beats ranking Carry long60 2017-01,True
+Global optimum beats dense grid Carry long60 2018-01,True
+Global optimum beats ranking Carry long60 2018-01,True
+Global optimum beats dense grid Carry long60 2019-01,True
+Global optimum beats ranking Carry long60 2019-01,True
+Global optimum beats dense grid Carry long60 2020-01,True
+Global optimum beats ranking Carry long60 2020-01,True
+Global optimum beats dense grid Carry long60 2021-01,True
+Global optimum beats ranking Carry long60 2021-01,True
+Global optimum beats dense grid Carry long60 2022-01,True
+Global optimum beats ranking Carry long60 2022-01,True
+Global optimum beats dense grid Carry long60 2023-01,True
+Global optimum beats ranking Carry long60 2023-01,True
+Global optimum beats dense grid Carry long60 2024-01,True
+Global optimum beats ranking Carry long60 2024-01,True
+Global optimum beats dense grid EJR monthly120 2010-01,True
+Global optimum beats ranking EJR monthly120 2010-01,True
+Global optimum beats dense grid EJR monthly120 2011-01,True
+Global optimum beats ranking EJR monthly120 2011-01,True
+Global optimum beats dense grid EJR monthly120 2012-01,True
+Global optimum beats ranking EJR monthly120 2012-01,True
+Global optimum beats dense grid EJR monthly120 2013-01,True
+Global optimum beats ranking EJR monthly120 2013-01,True
+Global optimum beats dense grid EJR monthly120 2014-01,True
+Global optimum beats ranking EJR monthly120 2014-01,True
+Global optimum beats dense grid EJR monthly120 2015-01,True
+Global optimum beats ranking EJR monthly120 2015-01,True
+Global optimum beats dense grid EJR monthly120 2016-01,True
+Global optimum beats ranking EJR monthly120 2016-01,True
+Global optimum beats dense grid EJR monthly120 2017-01,True
+Global optimum beats ranking EJR monthly120 2017-01,True
+Global optimum beats dense grid EJR monthly120 2018-01,True
+Global optimum beats ranking EJR monthly120 2018-01,True
+Global optimum beats dense grid EJR monthly120 2019-01,True
+Global optimum beats ranking EJR monthly120 2019-01,True
+Global optimum beats dense grid EJR monthly120 2020-01,True
+Global optimum beats ranking EJR monthly120 2020-01,True
+Global optimum beats dense grid EJR monthly120 2021-01,True
+Global optimum beats ranking EJR monthly120 2021-01,True
+Global optimum beats dense grid EJR monthly120 2022-01,True
+Global optimum beats ranking EJR monthly120 2022-01,True
+Global optimum beats dense grid EJR monthly120 2023-01,True
+Global optimum beats ranking EJR monthly120 2023-01,True
+Global optimum beats dense grid EJR monthly120 2024-01,True
+Global optimum beats ranking EJR monthly120 2024-01,True
+Global optimum beats dense grid EJR long60 2010-01,True
+Global optimum beats ranking EJR long60 2010-01,True
+Global optimum beats dense grid EJR long60 2011-01,True
+Global optimum beats ranking EJR long60 2011-01,True
+Global optimum beats dense grid EJR long60 2012-01,True
+Global optimum beats ranking EJR long60 2012-01,True
+Global optimum beats dense grid EJR long60 2013-01,True
+Global optimum beats ranking EJR long60 2013-01,True
+Global optimum beats dense grid EJR long60 2014-01,True
+Global optimum beats ranking EJR long60 2014-01,True
+Global optimum beats dense grid EJR long60 2015-01,True
+Global optimum beats ranking EJR long60 2015-01,True
+Global optimum beats dense grid EJR long60 2016-01,True
+Global optimum beats ranking EJR long60 2016-01,True
+Global optimum beats dense grid EJR long60 2017-01,True
+Global optimum beats ranking EJR long60 2017-01,True
+Global optimum beats dense grid EJR long60 2018-01,True
+Global optimum beats ranking EJR long60 2018-01,True
+Global optimum beats dense grid EJR long60 2019-01,True
+Global optimum beats ranking EJR long60 2019-01,True
+Global optimum beats dense grid EJR long60 2020-01,True
+Global optimum beats ranking EJR long60 2020-01,True
+Global optimum beats dense grid EJR long60 2021-01,True
+Global optimum beats ranking EJR long60 2021-01,True
+Global optimum beats dense grid EJR long60 2022-01,True
+Global optimum beats ranking EJR long60 2022-01,True
+Global optimum beats dense grid EJR long60 2023-01,True
+Global optimum beats ranking EJR long60 2023-01,True
+Global optimum beats dense grid EJR long60 2024-01,True
+Global optimum beats ranking EJR long60 2024-01,True
+Global optimum beats dense grid TT_all monthly120 2010-01,True
+Global optimum beats ranking TT_all monthly120 2010-01,True
+Global optimum beats dense grid TT_all monthly120 2011-01,True
+Global optimum beats ranking TT_all monthly120 2011-01,True
+Global optimum beats dense grid TT_all monthly120 2012-01,True
+Global optimum beats ranking TT_all monthly120 2012-01,True
+Global optimum beats dense grid TT_all monthly120 2013-01,True
+Global optimum beats ranking TT_all monthly120 2013-01,True
+Global optimum beats dense grid TT_all monthly120 2014-01,True
+Global optimum beats ranking TT_all monthly120 2014-01,True
+Global optimum beats dense grid TT_all monthly120 2015-01,True
+Global optimum beats ranking TT_all monthly120 2015-01,True
+Global optimum beats dense grid TT_all monthly120 2016-01,True
+Global optimum beats ranking TT_all monthly120 2016-01,True
+Global optimum beats dense grid TT_all monthly120 2017-01,True
+Global optimum beats ranking TT_all monthly120 2017-01,True
+Global optimum beats dense grid TT_all monthly120 2018-01,True
+Global optimum beats ranking TT_all monthly120 2018-01,True
+Global optimum beats dense grid TT_all monthly120 2019-01,True
+Global optimum beats ranking TT_all monthly120 2019-01,True
+Global optimum beats dense grid TT_all monthly120 2020-01,True
+Global optimum beats ranking TT_all monthly120 2020-01,True
+Global optimum beats dense grid TT_all monthly120 2021-01,True
+Global optimum beats ranking TT_all monthly120 2021-01,True
+Global optimum beats dense grid TT_all monthly120 2022-01,True
+Global optimum beats ranking TT_all monthly120 2022-01,True
+Global optimum beats dense grid TT_all monthly120 2023-01,True
+Global optimum beats ranking TT_all monthly120 2023-01,True
+Global optimum beats dense grid TT_all monthly120 2024-01,True
+Global optimum beats ranking TT_all monthly120 2024-01,True
+Global optimum beats dense grid TT_all long60 2010-01,True
+Global optimum beats ranking TT_all long60 2010-01,True
+Global optimum beats dense grid TT_all long60 2011-01,True
+Global optimum beats ranking TT_all long60 2011-01,True
+Global optimum beats dense grid TT_all long60 2012-01,True
+Global optimum beats ranking TT_all long60 2012-01,True
+Global optimum beats dense grid TT_all long60 2013-01,True
+Global optimum beats ranking TT_all long60 2013-01,True
+Global optimum beats dense grid TT_all long60 2014-01,True
+Global optimum beats ranking TT_all long60 2014-01,True
+Global optimum beats dense grid TT_all long60 2015-01,True
+Global optimum beats ranking TT_all long60 2015-01,True
+Global optimum beats dense grid TT_all long60 2016-01,True
+Global optimum beats ranking TT_all long60 2016-01,True
+Global optimum beats dense grid TT_all long60 2017-01,True
+Global optimum beats ranking TT_all long60 2017-01,True
+Global optimum beats dense grid TT_all long60 2018-01,True
+Global optimum beats ranking TT_all long60 2018-01,True
+Global optimum beats dense grid TT_all long60 2019-01,True
+Global optimum beats ranking TT_all long60 2019-01,True
+Global optimum beats dense grid TT_all long60 2020-01,True
+Global optimum beats ranking TT_all long60 2020-01,True
+Global optimum beats dense grid TT_all long60 2021-01,True
+Global optimum beats ranking TT_all long60 2021-01,True
+Global optimum beats dense grid TT_all long60 2022-01,True
+Global optimum beats ranking TT_all long60 2022-01,True
+Global optimum beats dense grid TT_all long60 2023-01,True
+Global optimum beats ranking TT_all long60 2023-01,True
+Global optimum beats dense grid TT_all long60 2024-01,True
+Global optimum beats ranking TT_all long60 2024-01,True
+Global optimum beats dense grid Matched monthly120 2010-01,True
+Global optimum beats ranking Matched monthly120 2010-01,True
+Global optimum beats dense grid Matched monthly120 2011-01,True
+Global optimum beats ranking Matched monthly120 2011-01,True
+Global optimum beats dense grid Matched monthly120 2012-01,True
+Global optimum beats ranking Matched monthly120 2012-01,True
+Global optimum beats dense grid Matched monthly120 2013-01,True
+Global optimum beats ranking Matched monthly120 2013-01,True
+Global optimum beats dense grid Matched monthly120 2014-01,True
+Global optimum beats ranking Matched monthly120 2014-01,True
+Global optimum beats dense grid Matched monthly120 2015-01,True
+Global optimum beats ranking Matched monthly120 2015-01,True
+Global optimum beats dense grid Matched monthly120 2016-01,True
+Global optimum beats ranking Matched monthly120 2016-01,True
+Global optimum beats dense grid Matched monthly120 2017-01,True
+Global optimum beats ranking Matched monthly120 2017-01,True
+Global optimum beats dense grid Matched monthly120 2018-01,True
+Global optimum beats ranking Matched monthly120 2018-01,True
+Global optimum beats dense grid Matched monthly120 2019-01,True
+Global optimum beats ranking Matched monthly120 2019-01,True
+Global optimum beats dense grid Matched monthly120 2020-01,True
+Global optimum beats ranking Matched monthly120 2020-01,True
+Global optimum beats dense grid Matched monthly120 2021-01,True
+Global optimum beats ranking Matched monthly120 2021-01,True
+Global optimum beats dense grid Matched monthly120 2022-01,True
+Global optimum beats ranking Matched monthly120 2022-01,True
+Global optimum beats dense grid Matched monthly120 2023-01,True
+Global optimum beats ranking Matched monthly120 2023-01,True
+Global optimum beats dense grid Matched monthly120 2024-01,True
+Global optimum beats ranking Matched monthly120 2024-01,True
+Global optimum beats dense grid Matched long60 2010-01,True
+Global optimum beats ranking Matched long60 2010-01,True
+Global optimum beats dense grid Matched long60 2011-01,True
+Global optimum beats ranking Matched long60 2011-01,True
+Global optimum beats dense grid Matched long60 2012-01,True
+Global optimum beats ranking Matched long60 2012-01,True
+Global optimum beats dense grid Matched long60 2013-01,True
+Global optimum beats ranking Matched long60 2013-01,True
+Global optimum beats dense grid Matched long60 2014-01,True
+Global optimum beats ranking Matched long60 2014-01,True
+Global optimum beats dense grid Matched long60 2015-01,True
+Global optimum beats ranking Matched long60 2015-01,True
+Global optimum beats dense grid Matched long60 2016-01,True
+Global optimum beats ranking Matched long60 2016-01,True
+Global optimum beats dense grid Matched long60 2017-01,True
+Global optimum beats ranking Matched long60 2017-01,True
+Global optimum beats dense grid Matched long60 2018-01,True
+Global optimum beats ranking Matched long60 2018-01,True
+Global optimum beats dense grid Matched long60 2019-01,True
+Global optimum beats ranking Matched long60 2019-01,True
+Global optimum beats dense grid Matched long60 2020-01,True
+Global optimum beats ranking Matched long60 2020-01,True
+Global optimum beats dense grid Matched long60 2021-01,True
+Global optimum beats ranking Matched long60 2021-01,True
+Global optimum beats dense grid Matched long60 2022-01,True
+Global optimum beats ranking Matched long60 2022-01,True
+Global optimum beats dense grid Matched long60 2023-01,True
+Global optimum beats ranking Matched long60 2023-01,True
+Global optimum beats dense grid Matched long60 2024-01,True
+Global optimum beats ranking Matched long60 2024-01,True
+Ranking_Carry net zero,True
+Ranking_Carry gross one,True
+Ranking_Carry cap 50%,True
+monthly120_Carry net zero,True
+monthly120_Carry gross one,True
+monthly120_Carry cap 50%,True
+long60_Carry net zero,True
+long60_Carry gross one,True
+long60_Carry cap 50%,True
+Ranking_EJR net zero,True
+Ranking_EJR gross one,True
+Ranking_EJR cap 50%,True
+monthly120_EJR net zero,True
+monthly120_EJR gross one,True
+monthly120_EJR cap 50%,True
+long60_EJR net zero,True
+long60_EJR gross one,True
+long60_EJR cap 50%,True
+Ranking_TT_all net zero,True
+Ranking_TT_all gross one,True
+Ranking_TT_all cap 50%,True
+monthly120_TT_all net zero,True
+monthly120_TT_all gross one,True
+monthly120_TT_all cap 50%,True
+long60_TT_all net zero,True
+long60_TT_all gross one,True
+long60_TT_all cap 50%,True
+Ranking_Matched net zero,True
+Ranking_Matched gross one,True
+Ranking_Matched cap 50%,True
+monthly120_Matched net zero,True
+monthly120_Matched gross one,True
+monthly120_Matched cap 50%,True
+long60_Matched net zero,True
+long60_Matched gross one,True
+long60_Matched cap 50%,True
+Dates Base Ranking Carry 12,True
+Net accounting Base Ranking Carry 12,True
+All scheduled decisions known Base Ranking Carry 12,True
+Dates Base Ranking Carry 60,True
+Net accounting Base Ranking Carry 60,True
+All scheduled decisions known Base Ranking Carry 60,True
+Dates Base Ranking EJR 12,True
+Net accounting Base Ranking EJR 12,True
+All scheduled decisions known Base Ranking EJR 12,True
+Dates Base Ranking EJR 60,True
+Net accounting Base Ranking EJR 60,True
+All scheduled decisions known Base Ranking EJR 60,True
+Dates Base Ranking TT_all 12,True
+Net accounting Base Ranking TT_all 12,True
+All scheduled decisions known Base Ranking TT_all 12,True
+Dates Base Ranking TT_all 60,True
+Net accounting Base Ranking TT_all 60,True
+All scheduled decisions known Base Ranking TT_all 60,True
+Dates Base Ranking Matched 12,True
+Net accounting Base Ranking Matched 12,True
+All scheduled decisions known Base Ranking Matched 12,True
+Dates Base Ranking Matched 60,True
+Net accounting Base Ranking Matched 60,True
+All scheduled decisions known Base Ranking Matched 60,True
+Dates Base monthly120 Carry 12,True
+Net accounting Base monthly120 Carry 12,True
+All scheduled decisions known Base monthly120 Carry 12,True
+Dates Base monthly120 Carry 60,True
+Net accounting Base monthly120 Carry 60,True
+All scheduled decisions known Base monthly120 Carry 60,True
+Dates Base monthly120 EJR 12,True
+Net accounting Base monthly120 EJR 12,True
+All scheduled decisions known Base monthly120 EJR 12,True
+Dates Base monthly120 EJR 60,True
+Net accounting Base monthly120 EJR 60,True
+All scheduled decisions known Base monthly120 EJR 60,True
+Dates Base monthly120 TT_all 12,True
+Net accounting Base monthly120 TT_all 12,True
+All scheduled decisions known Base monthly120 TT_all 12,True
+Dates Base monthly120 TT_all 60,True
+Net accounting Base monthly120 TT_all 60,True
+All scheduled decisions known Base monthly120 TT_all 60,True
+Dates Base monthly120 Matched 12,True
+Net accounting Base monthly120 Matched 12,True
+All scheduled decisions known Base monthly120 Matched 12,True
+Dates Base monthly120 Matched 60,True
+Net accounting Base monthly120 Matched 60,True
+All scheduled decisions known Base monthly120 Matched 60,True
+Dates Base long60 Carry 12,True
+Net accounting Base long60 Carry 12,True
+All scheduled decisions known Base long60 Carry 12,True
+Dates Base long60 Carry 60,True
+Net accounting Base long60 Carry 60,True
+All scheduled decisions known Base long60 Carry 60,True
+Dates Base long60 EJR 12,True
+Net accounting Base long60 EJR 12,True
+All scheduled decisions known Base long60 EJR 12,True
+Dates Base long60 EJR 60,True
+Net accounting Base long60 EJR 60,True
+All scheduled decisions known Base long60 EJR 60,True
+Dates Base long60 TT_all 12,True
+Net accounting Base long60 TT_all 12,True
+All scheduled decisions known Base long60 TT_all 12,True
+Dates Base long60 TT_all 60,True
+Net accounting Base long60 TT_all 60,True
+All scheduled decisions known Base long60 TT_all 60,True
+Dates Base long60 Matched 12,True
+Net accounting Base long60 Matched 12,True
+All scheduled decisions known Base long60 Matched 12,True
+Dates Base long60 Matched 60,True
+Net accounting Base long60 Matched 60,True
+All scheduled decisions known Base long60 Matched 60,True
+Dates Stress Ranking Carry 12,True
+Net accounting Stress Ranking Carry 12,True
+All scheduled decisions known Stress Ranking Carry 12,True
+Dates Stress Ranking Carry 60,True
+Net accounting Stress Ranking Carry 60,True
+All scheduled decisions known Stress Ranking Carry 60,True
+Dates Stress Ranking EJR 12,True
+Net accounting Stress Ranking EJR 12,True
+All scheduled decisions known Stress Ranking EJR 12,True
+Dates Stress Ranking EJR 60,True
+Net accounting Stress Ranking EJR 60,True
+All scheduled decisions known Stress Ranking EJR 60,True
+Dates Stress Ranking TT_all 12,True
+Net accounting Stress Ranking TT_all 12,True
+All scheduled decisions known Stress Ranking TT_all 12,True
+Dates Stress Ranking TT_all 60,True
+Net accounting Stress Ranking TT_all 60,True
+All scheduled decisions known Stress Ranking TT_all 60,True
+Dates Stress Ranking Matched 12,True
+Net accounting Stress Ranking Matched 12,True
+All scheduled decisions known Stress Ranking Matched 12,True
+Dates Stress Ranking Matched 60,True
+Net accounting Stress Ranking Matched 60,True
+All scheduled decisions known Stress Ranking Matched 60,True
+Dates Stress monthly120 Carry 12,True
+Net accounting Stress monthly120 Carry 12,True
+All scheduled decisions known Stress monthly120 Carry 12,True
+Dates Stress monthly120 Carry 60,True
+Net accounting Stress monthly120 Carry 60,True
+All scheduled decisions known Stress monthly120 Carry 60,True
+Dates Stress monthly120 EJR 12,True
+Net accounting Stress monthly120 EJR 12,True
+All scheduled decisions known Stress monthly120 EJR 12,True
+Dates Stress monthly120 EJR 60,True
+Net accounting Stress monthly120 EJR 60,True
+All scheduled decisions known Stress monthly120 EJR 60,True
+Dates Stress monthly120 TT_all 12,True
+Net accounting Stress monthly120 TT_all 12,True
+All scheduled decisions known Stress monthly120 TT_all 12,True
+Dates Stress monthly120 TT_all 60,True
+Net accounting Stress monthly120 TT_all 60,True
+All scheduled decisions known Stress monthly120 TT_all 60,True
+Dates Stress monthly120 Matched 12,True
+Net accounting Stress monthly120 Matched 12,True
+All scheduled decisions known Stress monthly120 Matched 12,True
+Dates Stress monthly120 Matched 60,True
+Net accounting Stress monthly120 Matched 60,True
+All scheduled decisions known Stress monthly120 Matched 60,True
+Dates Stress long60 Carry 12,True
+Net accounting Stress long60 Carry 12,True
+All scheduled decisions known Stress long60 Carry 12,True
+Dates Stress long60 Carry 60,True
+Net accounting Stress long60 Carry 60,True
+All scheduled decisions known Stress long60 Carry 60,True
+Dates Stress long60 EJR 12,True
+Net accounting Stress long60 EJR 12,True
+All scheduled decisions known Stress long60 EJR 12,True
+Dates Stress long60 EJR 60,True
+Net accounting Stress long60 EJR 60,True
+All scheduled decisions known Stress long60 EJR 60,True
+Dates Stress long60 TT_all 12,True
+Net accounting Stress long60 TT_all 12,True
+All scheduled decisions known Stress long60 TT_all 12,True
+Dates Stress long60 TT_all 60,True
+Net accounting Stress long60 TT_all 60,True
+All scheduled decisions known Stress long60 TT_all 60,True
+Dates Stress long60 Matched 12,True
+Net accounting Stress long60 Matched 12,True
+All scheduled decisions known Stress long60 Matched 12,True
+Dates Stress long60 Matched 60,True
+Net accounting Stress long60 Matched 60,True
+All scheduled decisions known Stress long60 Matched 60,True
+Input files preserved,True

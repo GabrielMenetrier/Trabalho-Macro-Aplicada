@@ -1,0 +1,45 @@
+check,result
+Monthly observations unique and consecutive,PASS
+Same original universe,PASS
+FX and rates complete,PASS
+Known real base uses only t-2 FX and CPI,PASS
+Fixed pre-sample weights reproduce third study,PASS
+Dynamic weights use only annual data Y-2,PASS
+Trade signal complete without future interpolation,PASS
+Future annual corruption leaves earlier W,PASS
+Future annual corruption leaves earlier chain,PASS
+Future annual corruption leaves earlier annual,PASS
+Future annual corruption leaves earlier structure,PASS
+Future annual corruption leaves earlier forecast_structure,PASS
+Future annual corruption leaves earlier repricing,PASS
+Saved macro forecasts exactly reproduced,PASS
+Unavailable future labels and predictors do not change forecasts,PASS
+Augmented and base models train on identical rows,PASS
+Saved matched benchmark reproduced,PASS
+EJR original preserved numerically,PASS
+Every monthly fit uses labels available before origin,PASS
+Annual forecasts use only released training targets,PASS
+All strategies preserve long-short neutrality,PASS
+No strategy reallocates withdrawn gross risk,PASS
+Positions zero before signal availability,PASS
+Execution uses signal two rows before realized return,PASS
+Nonnegative cost and funding-spread charges,PASS
+Duplicating costs reduces terminal wealth,PASS
+Future alert data cannot alter prior thresholds,PASS
+Prediction keys unique,PASS
+Reported paired score recalculates from observations,PASS
+Risk probabilities inside unit interval,PASS
+Ex-post diagnostic matches realized mean gross exposure,PASS
+Long horizon significance suppressed,PASS
+Raw download hash TX.VAL.FUEL.ZS.UN,PASS
+Raw download hash TX.VAL.FOOD.ZS.UN,PASS
+Raw download hash TX.VAL.AGRI.ZS.UN,PASS
+Raw download hash TX.VAL.MMTL.ZS.UN,PASS
+Raw download hash TM.VAL.FUEL.ZS.UN,PASS
+Raw download hash TM.VAL.FOOD.ZS.UN,PASS
+Raw download hash TM.VAL.AGRI.ZS.UN,PASS
+Raw download hash TM.VAL.MMTL.ZS.UN,PASS
+Raw download hash TX.VAL.MRCH.CD.WT,PASS
+Raw download hash TM.VAL.MRCH.CD.WT,PASS
+Raw download hash TT.PRI.MRCH.XD.WD,PASS
+All previous deliverables preserved,PASS

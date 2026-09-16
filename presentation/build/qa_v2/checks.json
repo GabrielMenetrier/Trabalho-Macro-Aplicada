@@ -1,0 +1,2706 @@
+{
+  "checks": [
+    {
+      "check": "19 minutes, 17 main slides and 2 backups",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: output/tables/classroom_replication.csv",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: data/processed/classroom.csv",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: output/tables/forecast_accuracy.csv",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: output/tables/portfolio_metrics.csv",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: third/tables/metrics.csv",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: trade_extension/tables/prediction_metrics.csv",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: synthesis/tables/metrics.csv",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: synthesis/tables/returns.csv.gz",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: synthesis/tables/attribution.csv",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: synthesis/tables/episodes.csv",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: synthesis/tables/exposure_controls.csv",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: synthesis/tables/search_adjustment.csv",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: synthesis/tables/robustness.csv",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: output/tables/portfolio_returns.csv",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: output/tables/timing_audit.csv",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: third/tables/sensitivity.csv",
+      "pass": true
+    },
+    {
+      "check": "Source unchanged: trade_extension/tables/audit.csv",
+      "pass": true
+    },
+    {
+      "check": "Carry example includes cross term",
+      "pass": true
+    },
+    {
+      "check": "Replication sample size",
+      "pass": true
+    },
+    {
+      "check": "101 equal dates Carry",
+      "pass": true
+    },
+    {
+      "check": "Chart and reported CAGR Carry",
+      "pass": true
+    },
+    {
+      "check": "Chart and reported drawdown Carry",
+      "pass": true
+    },
+    {
+      "check": "101 equal dates Equal_modules",
+      "pass": true
+    },
+    {
+      "check": "Chart and reported CAGR Equal_modules",
+      "pass": true
+    },
+    {
+      "check": "Chart and reported drawdown Equal_modules",
+      "pass": true
+    },
+    {
+      "check": "101 equal dates Cash",
+      "pass": true
+    },
+    {
+      "check": "Chart and reported CAGR Cash",
+      "pass": true
+    },
+    {
+      "check": "Chart and reported drawdown Cash",
+      "pass": true
+    },
+    {
+      "check": "Initial chart dates Carry",
+      "pass": true
+    },
+    {
+      "check": "Initial chart CAGR Carry",
+      "pass": true
+    },
+    {
+      "check": "Initial chart dates EJR + carry",
+      "pass": true
+    },
+    {
+      "check": "Initial chart CAGR EJR + carry",
+      "pass": true
+    },
+    {
+      "check": "Notes present for slide 1",
+      "pass": true
+    },
+    {
+      "check": "Notes present for slide 2",
+      "pass": true
+    },
+    {
+      "check": "Notes present for slide 3",
+      "pass": true
+    },
+    {
+      "check": "Notes present for slide 4",
+      "pass": true
+    },
+    {
+      "check": "Notes present for slide 5",
+      "pass": true
+    },
+    {
+      "check": "Notes present for slide 6",
+      "pass": true
+    },
+    {
+      "check": "Notes present for slide 7",
+      "pass": true
+    },
+    {
+      "check": "Notes present for slide 8",
+      "pass": true
+    },
+    {
+      "check": "Notes present for slide 9",
+      "pass": true
+    },
+    {
+      "check": "Notes present for slide 10",
+      "pass": true
+    },
+    {
+      "check": "Notes present for slide 11",
+      "pass": true
+    },
+    {
+      "check": "Notes present for slide 12",
+      "pass": true
+    },
+    {
+      "check": "Notes present for slide 13",
+      "pass": true
+    },
+    {
+      "check": "Notes present for slide 14",
+      "pass": true
+    },
+    {
+      "check": "Notes present for slide 15",
+      "pass": true
+    },
+    {
+      "check": "Notes present for slide 16",
+      "pass": true
+    },
+    {
+      "check": "Notes present for slide 17",
+      "pass": true
+    },
+    {
+      "check": "Notes present for slide 18",
+      "pass": true
+    },
+    {
+      "check": "Notes present for slide 19",
+      "pass": true
+    },
+    {
+      "check": "PPTX has 5 editable charts",
+      "pass": true
+    },
+    {
+      "check": "Native chart workbooks embedded",
+      "pass": true
+    },
+    {
+      "check": "Nine native tables",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 3: -1,808",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 3: 0,883",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 4: 1,039",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 4: 1,076",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 4: 1,096",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 4: 1,037",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 4: 1,072",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 4: 1,115",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 4: 0,964",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 4: 0,916",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 4: 0,884",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 4: 0,792",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 4: 0,793",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 4: 0,816",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 6: 4,11%",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 6: 2,73%",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 6: 0,60",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 6: 0,31",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 6: Markowitz",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 6: 50 pb",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 6: out/1999",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 9: 0,890",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 9: 1,630",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 9: Origem =",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 10: 2,20",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 10: 2,08",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 12: 5,78%",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 12: 5,94%",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 12: 48%",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 12: -1,43%",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 13: 5,96%",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 13: 5,94%",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 13: 5,77%",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 13: 6 meses",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 13: 12 meses",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 13: 24 meses",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 13: 12m",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 14: out/1999–jan/2013",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 14: jan/2011–dez/2016",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 19: 4,18%",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 19: 2,04%",
+      "pass": true
+    },
+    {
+      "check": "Displayed evidence slide 19: -4,02%",
+      "pass": true
+    },
+    {
+      "check": "apresentacao_macro_aula_v2 page count",
+      "pass": true
+    },
+    {
+      "check": "apresentacao_macro_aula_v2 bookmarks",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page count",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 1 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 1 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 1 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 1 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 1 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 1 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 1 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 1 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 1 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 1 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 1 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 1 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 1 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 1 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 1 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 2 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 2 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 2 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 2 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 2 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 2 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 2 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 2 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 2 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 2 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 2 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 2 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 2 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 2 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 2 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 2 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 2 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 2 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 2 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 2 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 2 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 2 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 2 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 2 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 2 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 3 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 3 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 3 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 3 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 3 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 3 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 3 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 3 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 3 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 3 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 3 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 3 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 3 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 3 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 3 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 3 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 3 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 3 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 4 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 4 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 4 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 4 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 4 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 4 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 4 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 4 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 4 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 4 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 4 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 4 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 4 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 4 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 4 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 4 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 4 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 4 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 5 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 5 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 5 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 5 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 5 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 5 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 5 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 5 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 5 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 5 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 5 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 5 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 5 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 5 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 5 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 5 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 5 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 5 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 5 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 5 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 6 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 6 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 6 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 6 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 6 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 6 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 6 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 6 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 6 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 6 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 6 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 6 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 6 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 6 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 6 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 6 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 6 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 6 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 6 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 6 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 7 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 7 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 7 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 7 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 7 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 7 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 7 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 7 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 7 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 7 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 7 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 7 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 7 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 7 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 7 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 7 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 7 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 7 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 8 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 8 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 8 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 8 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 8 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 8 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 8 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 8 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 8 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 8 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 8 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 8 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 8 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 8 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 8 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 8 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 8 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 8 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 8 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 8 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 9 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 9 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 9 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 9 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 9 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 9 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 9 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 9 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 9 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 9 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 9 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 9 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 9 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 9 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 9 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 9 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 9 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 9 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 9 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 9 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 10 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 10 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 10 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 10 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 10 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 10 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 10 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 10 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 10 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 10 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 10 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 10 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 10 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 10 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 10 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 10 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 10 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 10 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 11 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 11 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 11 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 11 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 11 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 11 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 11 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 11 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 11 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 11 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 11 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 11 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 11 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 11 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 11 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 11 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 11 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 11 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 11 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 11 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 12 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 12 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 12 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 12 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 12 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 12 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 12 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 12 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 12 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 12 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 12 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 12 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 12 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 12 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 12 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 12 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 12 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 12 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 12 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 12 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 13 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 13 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 13 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 13 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 13 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 13 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 13 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 13 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 13 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 13 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 13 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 13 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 13 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 13 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 13 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 13 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 13 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 13 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 13 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 13 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 14 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 14 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 14 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 14 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 14 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 14 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 14 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 14 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 14 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 14 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 14 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 14 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 14 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 14 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 14 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 14 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 14 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 14 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 14 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 14 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 15 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 15 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 15 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 15 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 15 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 15 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 15 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 15 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 15 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 15 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 15 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 15 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 15 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 15 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 15 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 15 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 15 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 15 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 15 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 15 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 16 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 16 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 16 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 16 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 16 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 16 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 16 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 16 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 16 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 16 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 16 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 16 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 16 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 16 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 16 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 16 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 16 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 16 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 16 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 16 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 17 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 17 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 17 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 17 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 17 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 17 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 17 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 17 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 17 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 17 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 17 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 17 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 17 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 17 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 17 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 17 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 17 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 17 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 17 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 17 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 18 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 18 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 18 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 18 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 18 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 18 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 18 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 18 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 18 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 18 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 18 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 18 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 18 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 18 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 18 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 18 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 18 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 18 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 19 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 19 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 19 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 19 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 19 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 19 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 19 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 19 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 19 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 19 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 19 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 19 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 19 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 19 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 19 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 19 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 19 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 19 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 20 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 20 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 20 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 20 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 20 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 20 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 20 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 20 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 20 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 20 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 20 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 20 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 20 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 20 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 20 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 20 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 20 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 20 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 20 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 20 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 21 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 21 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 21 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 21 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 21 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 21 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 21 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 21 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 21 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 21 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 21 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 21 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 21 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 21 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 21 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 21 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 21 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 21 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 21 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 21 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 22 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 22 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 22 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 22 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 22 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 22 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 22 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 22 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 22 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 22 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 22 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 22 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 22 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 22 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 22 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 22 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 22 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 22 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 22 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 23 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 23 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 23 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 23 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 23 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 23 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 23 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 23 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 23 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 23 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 23 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 23 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 23 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 23 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 23 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 23 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 23 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 23 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 23 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 24 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 24 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 24 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 24 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 24 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 24 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 24 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 24 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 24 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 24 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 24 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 24 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 24 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 24 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 24 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 25 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 25 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 25 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 25 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 25 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 25 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 25 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 25 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 25 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 25 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 25 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 25 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 25 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 25 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 25 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 25 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 25 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 page 25 text inside bounds",
+      "pass": true
+    },
+    {
+      "check": "guia_apresentacao_macro_v2 bookmarks",
+      "pass": true
+    },
+    {
+      "check": "Guide aligns with slide 1",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 1: Conceitos que",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 1: Como ler",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 1: Fala sugerida",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 1: Pergunta provável",
+      "pass": true
+    },
+    {
+      "check": "Guide aligns with slide 2",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 2: Conceitos que",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 2: Como ler",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 2: Fala sugerida",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 2: Pergunta provável",
+      "pass": true
+    },
+    {
+      "check": "Guide aligns with slide 3",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 3: Conceitos que",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 3: Como ler",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 3: Fala sugerida",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 3: Pergunta provável",
+      "pass": true
+    },
+    {
+      "check": "Guide aligns with slide 4",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 4: Conceitos que",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 4: Como ler",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 4: Fala sugerida",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 4: Pergunta provável",
+      "pass": true
+    },
+    {
+      "check": "Guide aligns with slide 5",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 5: Conceitos que",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 5: Como ler",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 5: Fala sugerida",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 5: Pergunta provável",
+      "pass": true
+    },
+    {
+      "check": "Guide aligns with slide 6",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 6: Conceitos que",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 6: Como ler",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 6: Fala sugerida",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 6: Pergunta provável",
+      "pass": true
+    },
+    {
+      "check": "Guide aligns with slide 7",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 7: Conceitos que",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 7: Como ler",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 7: Fala sugerida",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 7: Pergunta provável",
+      "pass": true
+    },
+    {
+      "check": "Guide aligns with slide 8",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 8: Conceitos que",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 8: Como ler",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 8: Fala sugerida",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 8: Pergunta provável",
+      "pass": true
+    },
+    {
+      "check": "Guide aligns with slide 9",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 9: Conceitos que",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 9: Como ler",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 9: Fala sugerida",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 9: Pergunta provável",
+      "pass": true
+    },
+    {
+      "check": "Guide aligns with slide 10",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 10: Conceitos que",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 10: Como ler",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 10: Fala sugerida",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 10: Pergunta provável",
+      "pass": true
+    },
+    {
+      "check": "Guide aligns with slide 11",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 11: Conceitos que",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 11: Como ler",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 11: Fala sugerida",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 11: Pergunta provável",
+      "pass": true
+    },
+    {
+      "check": "Guide aligns with slide 12",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 12: Conceitos que",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 12: Como ler",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 12: Fala sugerida",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 12: Pergunta provável",
+      "pass": true
+    },
+    {
+      "check": "Guide aligns with slide 13",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 13: Conceitos que",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 13: Como ler",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 13: Fala sugerida",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 13: Pergunta provável",
+      "pass": true
+    },
+    {
+      "check": "Guide aligns with slide 14",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 14: Conceitos que",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 14: Como ler",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 14: Fala sugerida",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 14: Pergunta provável",
+      "pass": true
+    },
+    {
+      "check": "Guide aligns with slide 15",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 15: Conceitos que",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 15: Como ler",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 15: Fala sugerida",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 15: Pergunta provável",
+      "pass": true
+    },
+    {
+      "check": "Guide aligns with slide 16",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 16: Conceitos que",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 16: Como ler",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 16: Fala sugerida",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 16: Pergunta provável",
+      "pass": true
+    },
+    {
+      "check": "Guide aligns with slide 17",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 17: Conceitos que",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 17: Como ler",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 17: Fala sugerida",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 17: Pergunta provável",
+      "pass": true
+    },
+    {
+      "check": "Guide aligns with slide 18",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 18: Conceitos que",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 18: Como ler",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 18: Fala sugerida",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 18: Pergunta provável",
+      "pass": true
+    },
+    {
+      "check": "Guide aligns with slide 19",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 19: Conceitos que",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 19: Como ler",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 19: Fala sugerida",
+      "pass": true
+    },
+    {
+      "check": "Guide slide 19: Pergunta provável",
+      "pass": true
+    }
+  ],
+  "count": 675,
+  "passed": true
+}

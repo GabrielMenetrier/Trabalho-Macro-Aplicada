@@ -1,0 +1,20 @@
+check,passed
+Independent statsmodels regression EJR,True
+Independent statsmodels regression TOT_level,True
+Independent statsmodels regression TOT_change,True
+Independent statsmodels regression TOT_both,True
+Independent statsmodels regression COM_level,True
+Independent statsmodels regression COM_change,True
+Independent statsmodels regression COM_both,True
+Independent statsmodels regression JOINT,True
+Independent statsmodels regression LEGACY,True
+Future annual revisions do not enter old origin,True
+Arbitrary country base index cancels,True
+Future commodity information blocked,True
+Export/import baskets have positive shares,True
+Commodity shares leave nonnegative noncommodity residual,True
+"Observed raw indicator positive in usable history, 1994 onward NE.EXP.GNFS.CN",True
+"Observed raw indicator positive in usable history, 1994 onward NE.EXP.GNFS.KN",True
+"Observed raw indicator positive in usable history, 1994 onward NE.IMP.GNFS.CN",True
+"Observed raw indicator positive in usable history, 1994 onward NE.IMP.GNFS.KN",True
+"Observed raw indicator positive in usable history, 1994 onward TT.PRI.MRCH.XD.WD",True

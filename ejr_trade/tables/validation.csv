@@ -1,0 +1,528 @@
+check,passed
+All main predictors available from start,True
+Annual source year <= origin year minus two,True
+Fixed weights precede sample,True
+EJR availability matches existing implementation h=12,True
+EJR reproduces existing implementation h=12,True
+EJR availability matches existing implementation h=24,True
+EJR reproduces existing implementation h=24,True
+EJR availability matches existing implementation h=36,True
+EJR reproduces existing implementation h=36,True
+EJR availability matches existing implementation h=48,True
+EJR reproduces existing implementation h=48,True
+EJR availability matches existing implementation h=60,True
+EJR reproduces existing implementation h=60,True
+EJR availability matches existing implementation h=72,True
+EJR reproduces existing implementation h=72,True
+EJR availability matches existing implementation h=84,True
+EJR reproduces existing implementation h=84,True
+EJR availability matches existing implementation h=96,True
+EJR reproduces existing implementation h=96,True
+Truncation EJR h=12,True
+Truncation TOT_level h=12,True
+Truncation TOT_change h=12,True
+Truncation TOT_both h=12,True
+Truncation COM_level h=12,True
+Truncation COM_change h=12,True
+Truncation COM_both h=12,True
+Truncation JOINT h=12,True
+Truncation LEGACY h=12,True
+Future perturbation EJR h=12,True
+Future perturbation TOT_level h=12,True
+Future perturbation TOT_change h=12,True
+Future perturbation TOT_both h=12,True
+Future perturbation COM_level h=12,True
+Future perturbation COM_change h=12,True
+Future perturbation COM_both h=12,True
+Future perturbation JOINT h=12,True
+Future perturbation LEGACY h=12,True
+Truncation EJR h=60,True
+Truncation TOT_level h=60,True
+Truncation TOT_change h=60,True
+Truncation TOT_both h=60,True
+Truncation COM_level h=60,True
+Truncation COM_change h=60,True
+Truncation COM_both h=60,True
+Truncation JOINT h=60,True
+Truncation LEGACY h=60,True
+Future perturbation EJR h=60,True
+Future perturbation TOT_level h=60,True
+Future perturbation TOT_change h=60,True
+Future perturbation TOT_both h=60,True
+Future perturbation COM_level h=60,True
+Future perturbation COM_change h=60,True
+Future perturbation COM_both h=60,True
+Future perturbation JOINT h=60,True
+Future perturbation LEGACY h=60,True
+Truncation EJR h=96,True
+Truncation TOT_level h=96,True
+Truncation TOT_change h=96,True
+Truncation TOT_both h=96,True
+Truncation COM_level h=96,True
+Truncation COM_change h=96,True
+Truncation COM_both h=96,True
+Truncation JOINT h=96,True
+Truncation LEGACY h=96,True
+Future perturbation EJR h=96,True
+Future perturbation TOT_level h=96,True
+Future perturbation TOT_change h=96,True
+Future perturbation TOT_both h=96,True
+Future perturbation COM_level h=96,True
+Future perturbation COM_change h=96,True
+Future perturbation COM_both h=96,True
+Future perturbation JOINT h=96,True
+Future perturbation LEGACY h=96,True
+Every target ends before forecast origin,True
+Every training window has required history,True
+"Paired dates ('late_release', 'all', np.int64(12), 'BRL')",True
+"Paired dates ('late_release', 'all', np.int64(12), 'CAD')",True
+"Paired dates ('late_release', 'all', np.int64(12), 'EUR')",True
+"Paired dates ('late_release', 'all', np.int64(12), 'GBP')",True
+"Paired dates ('late_release', 'all', np.int64(12), 'JPY')",True
+"Paired dates ('late_release', 'all', np.int64(12), 'POOL')",True
+"Paired dates ('late_release', 'all', np.int64(12), 'SEK')",True
+"Paired dates ('late_release', 'all', np.int64(24), 'BRL')",True
+"Paired dates ('late_release', 'all', np.int64(24), 'CAD')",True
+"Paired dates ('late_release', 'all', np.int64(24), 'EUR')",True
+"Paired dates ('late_release', 'all', np.int64(24), 'GBP')",True
+"Paired dates ('late_release', 'all', np.int64(24), 'JPY')",True
+"Paired dates ('late_release', 'all', np.int64(24), 'POOL')",True
+"Paired dates ('late_release', 'all', np.int64(24), 'SEK')",True
+"Paired dates ('late_release', 'all', np.int64(36), 'BRL')",True
+"Paired dates ('late_release', 'all', np.int64(36), 'CAD')",True
+"Paired dates ('late_release', 'all', np.int64(36), 'EUR')",True
+"Paired dates ('late_release', 'all', np.int64(36), 'GBP')",True
+"Paired dates ('late_release', 'all', np.int64(36), 'JPY')",True
+"Paired dates ('late_release', 'all', np.int64(36), 'POOL')",True
+"Paired dates ('late_release', 'all', np.int64(36), 'SEK')",True
+"Paired dates ('late_release', 'all', np.int64(48), 'BRL')",True
+"Paired dates ('late_release', 'all', np.int64(48), 'CAD')",True
+"Paired dates ('late_release', 'all', np.int64(48), 'EUR')",True
+"Paired dates ('late_release', 'all', np.int64(48), 'GBP')",True
+"Paired dates ('late_release', 'all', np.int64(48), 'JPY')",True
+"Paired dates ('late_release', 'all', np.int64(48), 'POOL')",True
+"Paired dates ('late_release', 'all', np.int64(48), 'SEK')",True
+"Paired dates ('late_release', 'all', np.int64(60), 'BRL')",True
+"Paired dates ('late_release', 'all', np.int64(60), 'CAD')",True
+"Paired dates ('late_release', 'all', np.int64(60), 'EUR')",True
+"Paired dates ('late_release', 'all', np.int64(60), 'GBP')",True
+"Paired dates ('late_release', 'all', np.int64(60), 'JPY')",True
+"Paired dates ('late_release', 'all', np.int64(60), 'POOL')",True
+"Paired dates ('late_release', 'all', np.int64(60), 'SEK')",True
+"Paired dates ('late_release', 'all', np.int64(72), 'BRL')",True
+"Paired dates ('late_release', 'all', np.int64(72), 'CAD')",True
+"Paired dates ('late_release', 'all', np.int64(72), 'EUR')",True
+"Paired dates ('late_release', 'all', np.int64(72), 'GBP')",True
+"Paired dates ('late_release', 'all', np.int64(72), 'JPY')",True
+"Paired dates ('late_release', 'all', np.int64(72), 'POOL')",True
+"Paired dates ('late_release', 'all', np.int64(72), 'SEK')",True
+"Paired dates ('late_release', 'all', np.int64(84), 'BRL')",True
+"Paired dates ('late_release', 'all', np.int64(84), 'CAD')",True
+"Paired dates ('late_release', 'all', np.int64(84), 'EUR')",True
+"Paired dates ('late_release', 'all', np.int64(84), 'GBP')",True
+"Paired dates ('late_release', 'all', np.int64(84), 'JPY')",True
+"Paired dates ('late_release', 'all', np.int64(84), 'POOL')",True
+"Paired dates ('late_release', 'all', np.int64(84), 'SEK')",True
+"Paired dates ('late_release', 'all', np.int64(96), 'BRL')",True
+"Paired dates ('late_release', 'all', np.int64(96), 'CAD')",True
+"Paired dates ('late_release', 'all', np.int64(96), 'EUR')",True
+"Paired dates ('late_release', 'all', np.int64(96), 'GBP')",True
+"Paired dates ('late_release', 'all', np.int64(96), 'JPY')",True
+"Paired dates ('late_release', 'all', np.int64(96), 'POOL')",True
+"Paired dates ('late_release', 'all', np.int64(96), 'SEK')",True
+"Paired dates ('main', 'all', np.int64(12), 'BRL')",True
+"Paired dates ('main', 'all', np.int64(12), 'CAD')",True
+"Paired dates ('main', 'all', np.int64(12), 'EUR')",True
+"Paired dates ('main', 'all', np.int64(12), 'GBP')",True
+"Paired dates ('main', 'all', np.int64(12), 'JPY')",True
+"Paired dates ('main', 'all', np.int64(12), 'POOL')",True
+"Paired dates ('main', 'all', np.int64(12), 'SEK')",True
+"Paired dates ('main', 'all', np.int64(24), 'BRL')",True
+"Paired dates ('main', 'all', np.int64(24), 'CAD')",True
+"Paired dates ('main', 'all', np.int64(24), 'EUR')",True
+"Paired dates ('main', 'all', np.int64(24), 'GBP')",True
+"Paired dates ('main', 'all', np.int64(24), 'JPY')",True
+"Paired dates ('main', 'all', np.int64(24), 'POOL')",True
+"Paired dates ('main', 'all', np.int64(24), 'SEK')",True
+"Paired dates ('main', 'all', np.int64(36), 'BRL')",True
+"Paired dates ('main', 'all', np.int64(36), 'CAD')",True
+"Paired dates ('main', 'all', np.int64(36), 'EUR')",True
+"Paired dates ('main', 'all', np.int64(36), 'GBP')",True
+"Paired dates ('main', 'all', np.int64(36), 'JPY')",True
+"Paired dates ('main', 'all', np.int64(36), 'POOL')",True
+"Paired dates ('main', 'all', np.int64(36), 'SEK')",True
+"Paired dates ('main', 'all', np.int64(48), 'BRL')",True
+"Paired dates ('main', 'all', np.int64(48), 'CAD')",True
+"Paired dates ('main', 'all', np.int64(48), 'EUR')",True
+"Paired dates ('main', 'all', np.int64(48), 'GBP')",True
+"Paired dates ('main', 'all', np.int64(48), 'JPY')",True
+"Paired dates ('main', 'all', np.int64(48), 'POOL')",True
+"Paired dates ('main', 'all', np.int64(48), 'SEK')",True
+"Paired dates ('main', 'all', np.int64(60), 'BRL')",True
+"Paired dates ('main', 'all', np.int64(60), 'CAD')",True
+"Paired dates ('main', 'all', np.int64(60), 'EUR')",True
+"Paired dates ('main', 'all', np.int64(60), 'GBP')",True
+"Paired dates ('main', 'all', np.int64(60), 'JPY')",True
+"Paired dates ('main', 'all', np.int64(60), 'POOL')",True
+"Paired dates ('main', 'all', np.int64(60), 'SEK')",True
+"Paired dates ('main', 'all', np.int64(72), 'BRL')",True
+"Paired dates ('main', 'all', np.int64(72), 'CAD')",True
+"Paired dates ('main', 'all', np.int64(72), 'EUR')",True
+"Paired dates ('main', 'all', np.int64(72), 'GBP')",True
+"Paired dates ('main', 'all', np.int64(72), 'JPY')",True
+"Paired dates ('main', 'all', np.int64(72), 'POOL')",True
+"Paired dates ('main', 'all', np.int64(72), 'SEK')",True
+"Paired dates ('main', 'all', np.int64(84), 'BRL')",True
+"Paired dates ('main', 'all', np.int64(84), 'CAD')",True
+"Paired dates ('main', 'all', np.int64(84), 'EUR')",True
+"Paired dates ('main', 'all', np.int64(84), 'GBP')",True
+"Paired dates ('main', 'all', np.int64(84), 'JPY')",True
+"Paired dates ('main', 'all', np.int64(84), 'POOL')",True
+"Paired dates ('main', 'all', np.int64(84), 'SEK')",True
+"Paired dates ('main', 'all', np.int64(96), 'BRL')",True
+"Paired dates ('main', 'all', np.int64(96), 'CAD')",True
+"Paired dates ('main', 'all', np.int64(96), 'EUR')",True
+"Paired dates ('main', 'all', np.int64(96), 'GBP')",True
+"Paired dates ('main', 'all', np.int64(96), 'JPY')",True
+"Paired dates ('main', 'all', np.int64(96), 'POOL')",True
+"Paired dates ('main', 'all', np.int64(96), 'SEK')",True
+"Paired dates ('main', 'late', np.int64(12), 'BRL')",True
+"Paired dates ('main', 'late', np.int64(12), 'CAD')",True
+"Paired dates ('main', 'late', np.int64(12), 'EUR')",True
+"Paired dates ('main', 'late', np.int64(12), 'GBP')",True
+"Paired dates ('main', 'late', np.int64(12), 'JPY')",True
+"Paired dates ('main', 'late', np.int64(12), 'POOL')",True
+"Paired dates ('main', 'late', np.int64(12), 'SEK')",True
+"Paired dates ('main', 'late', np.int64(24), 'BRL')",True
+"Paired dates ('main', 'late', np.int64(24), 'CAD')",True
+"Paired dates ('main', 'late', np.int64(24), 'EUR')",True
+"Paired dates ('main', 'late', np.int64(24), 'GBP')",True
+"Paired dates ('main', 'late', np.int64(24), 'JPY')",True
+"Paired dates ('main', 'late', np.int64(24), 'POOL')",True
+"Paired dates ('main', 'late', np.int64(24), 'SEK')",True
+"Paired dates ('main', 'late', np.int64(36), 'BRL')",True
+"Paired dates ('main', 'late', np.int64(36), 'CAD')",True
+"Paired dates ('main', 'late', np.int64(36), 'EUR')",True
+"Paired dates ('main', 'late', np.int64(36), 'GBP')",True
+"Paired dates ('main', 'late', np.int64(36), 'JPY')",True
+"Paired dates ('main', 'late', np.int64(36), 'POOL')",True
+"Paired dates ('main', 'late', np.int64(36), 'SEK')",True
+"Paired dates ('main', 'late', np.int64(48), 'BRL')",True
+"Paired dates ('main', 'late', np.int64(48), 'CAD')",True
+"Paired dates ('main', 'late', np.int64(48), 'EUR')",True
+"Paired dates ('main', 'late', np.int64(48), 'GBP')",True
+"Paired dates ('main', 'late', np.int64(48), 'JPY')",True
+"Paired dates ('main', 'late', np.int64(48), 'POOL')",True
+"Paired dates ('main', 'late', np.int64(48), 'SEK')",True
+"Paired dates ('main', 'late', np.int64(60), 'BRL')",True
+"Paired dates ('main', 'late', np.int64(60), 'CAD')",True
+"Paired dates ('main', 'late', np.int64(60), 'EUR')",True
+"Paired dates ('main', 'late', np.int64(60), 'GBP')",True
+"Paired dates ('main', 'late', np.int64(60), 'JPY')",True
+"Paired dates ('main', 'late', np.int64(60), 'POOL')",True
+"Paired dates ('main', 'late', np.int64(60), 'SEK')",True
+"Paired dates ('main', 'late', np.int64(72), 'BRL')",True
+"Paired dates ('main', 'late', np.int64(72), 'CAD')",True
+"Paired dates ('main', 'late', np.int64(72), 'EUR')",True
+"Paired dates ('main', 'late', np.int64(72), 'GBP')",True
+"Paired dates ('main', 'late', np.int64(72), 'JPY')",True
+"Paired dates ('main', 'late', np.int64(72), 'POOL')",True
+"Paired dates ('main', 'late', np.int64(72), 'SEK')",True
+"Paired dates ('main', 'late', np.int64(84), 'BRL')",True
+"Paired dates ('main', 'late', np.int64(84), 'CAD')",True
+"Paired dates ('main', 'late', np.int64(84), 'EUR')",True
+"Paired dates ('main', 'late', np.int64(84), 'GBP')",True
+"Paired dates ('main', 'late', np.int64(84), 'JPY')",True
+"Paired dates ('main', 'late', np.int64(84), 'POOL')",True
+"Paired dates ('main', 'late', np.int64(84), 'SEK')",True
+"Paired dates ('main', 'same_origins', np.int64(12), 'BRL')",True
+"Paired dates ('main', 'same_origins', np.int64(12), 'CAD')",True
+"Paired dates ('main', 'same_origins', np.int64(12), 'EUR')",True
+"Paired dates ('main', 'same_origins', np.int64(12), 'GBP')",True
+"Paired dates ('main', 'same_origins', np.int64(12), 'JPY')",True
+"Paired dates ('main', 'same_origins', np.int64(12), 'POOL')",True
+"Paired dates ('main', 'same_origins', np.int64(12), 'SEK')",True
+"Paired dates ('main', 'same_origins', np.int64(24), 'BRL')",True
+"Paired dates ('main', 'same_origins', np.int64(24), 'CAD')",True
+"Paired dates ('main', 'same_origins', np.int64(24), 'EUR')",True
+"Paired dates ('main', 'same_origins', np.int64(24), 'GBP')",True
+"Paired dates ('main', 'same_origins', np.int64(24), 'JPY')",True
+"Paired dates ('main', 'same_origins', np.int64(24), 'POOL')",True
+"Paired dates ('main', 'same_origins', np.int64(24), 'SEK')",True
+"Paired dates ('main', 'same_origins', np.int64(36), 'BRL')",True
+"Paired dates ('main', 'same_origins', np.int64(36), 'CAD')",True
+"Paired dates ('main', 'same_origins', np.int64(36), 'EUR')",True
+"Paired dates ('main', 'same_origins', np.int64(36), 'GBP')",True
+"Paired dates ('main', 'same_origins', np.int64(36), 'JPY')",True
+"Paired dates ('main', 'same_origins', np.int64(36), 'POOL')",True
+"Paired dates ('main', 'same_origins', np.int64(36), 'SEK')",True
+"Paired dates ('main', 'same_origins', np.int64(48), 'BRL')",True
+"Paired dates ('main', 'same_origins', np.int64(48), 'CAD')",True
+"Paired dates ('main', 'same_origins', np.int64(48), 'EUR')",True
+"Paired dates ('main', 'same_origins', np.int64(48), 'GBP')",True
+"Paired dates ('main', 'same_origins', np.int64(48), 'JPY')",True
+"Paired dates ('main', 'same_origins', np.int64(48), 'POOL')",True
+"Paired dates ('main', 'same_origins', np.int64(48), 'SEK')",True
+"Paired dates ('main', 'same_origins', np.int64(60), 'BRL')",True
+"Paired dates ('main', 'same_origins', np.int64(60), 'CAD')",True
+"Paired dates ('main', 'same_origins', np.int64(60), 'EUR')",True
+"Paired dates ('main', 'same_origins', np.int64(60), 'GBP')",True
+"Paired dates ('main', 'same_origins', np.int64(60), 'JPY')",True
+"Paired dates ('main', 'same_origins', np.int64(60), 'POOL')",True
+"Paired dates ('main', 'same_origins', np.int64(60), 'SEK')",True
+"Paired dates ('main', 'same_origins', np.int64(72), 'BRL')",True
+"Paired dates ('main', 'same_origins', np.int64(72), 'CAD')",True
+"Paired dates ('main', 'same_origins', np.int64(72), 'EUR')",True
+"Paired dates ('main', 'same_origins', np.int64(72), 'GBP')",True
+"Paired dates ('main', 'same_origins', np.int64(72), 'JPY')",True
+"Paired dates ('main', 'same_origins', np.int64(72), 'POOL')",True
+"Paired dates ('main', 'same_origins', np.int64(72), 'SEK')",True
+"Paired dates ('main', 'same_origins', np.int64(84), 'BRL')",True
+"Paired dates ('main', 'same_origins', np.int64(84), 'CAD')",True
+"Paired dates ('main', 'same_origins', np.int64(84), 'EUR')",True
+"Paired dates ('main', 'same_origins', np.int64(84), 'GBP')",True
+"Paired dates ('main', 'same_origins', np.int64(84), 'JPY')",True
+"Paired dates ('main', 'same_origins', np.int64(84), 'POOL')",True
+"Paired dates ('main', 'same_origins', np.int64(84), 'SEK')",True
+"Paired dates ('main', 'same_origins', np.int64(96), 'BRL')",True
+"Paired dates ('main', 'same_origins', np.int64(96), 'CAD')",True
+"Paired dates ('main', 'same_origins', np.int64(96), 'EUR')",True
+"Paired dates ('main', 'same_origins', np.int64(96), 'GBP')",True
+"Paired dates ('main', 'same_origins', np.int64(96), 'JPY')",True
+"Paired dates ('main', 'same_origins', np.int64(96), 'POOL')",True
+"Paired dates ('main', 'same_origins', np.int64(96), 'SEK')",True
+"Paired dates ('merchandise', 'all', np.int64(12), 'BRL')",True
+"Paired dates ('merchandise', 'all', np.int64(12), 'CAD')",True
+"Paired dates ('merchandise', 'all', np.int64(12), 'EUR')",True
+"Paired dates ('merchandise', 'all', np.int64(12), 'GBP')",True
+"Paired dates ('merchandise', 'all', np.int64(12), 'JPY')",True
+"Paired dates ('merchandise', 'all', np.int64(12), 'POOL')",True
+"Paired dates ('merchandise', 'all', np.int64(12), 'SEK')",True
+"Paired dates ('merchandise', 'all', np.int64(24), 'BRL')",True
+"Paired dates ('merchandise', 'all', np.int64(24), 'CAD')",True
+"Paired dates ('merchandise', 'all', np.int64(24), 'EUR')",True
+"Paired dates ('merchandise', 'all', np.int64(24), 'GBP')",True
+"Paired dates ('merchandise', 'all', np.int64(24), 'JPY')",True
+"Paired dates ('merchandise', 'all', np.int64(24), 'POOL')",True
+"Paired dates ('merchandise', 'all', np.int64(24), 'SEK')",True
+"Paired dates ('merchandise', 'all', np.int64(36), 'BRL')",True
+"Paired dates ('merchandise', 'all', np.int64(36), 'CAD')",True
+"Paired dates ('merchandise', 'all', np.int64(36), 'EUR')",True
+"Paired dates ('merchandise', 'all', np.int64(36), 'GBP')",True
+"Paired dates ('merchandise', 'all', np.int64(36), 'JPY')",True
+"Paired dates ('merchandise', 'all', np.int64(36), 'POOL')",True
+"Paired dates ('merchandise', 'all', np.int64(36), 'SEK')",True
+"Paired dates ('merchandise', 'all', np.int64(48), 'BRL')",True
+"Paired dates ('merchandise', 'all', np.int64(48), 'CAD')",True
+"Paired dates ('merchandise', 'all', np.int64(48), 'EUR')",True
+"Paired dates ('merchandise', 'all', np.int64(48), 'GBP')",True
+"Paired dates ('merchandise', 'all', np.int64(48), 'JPY')",True
+"Paired dates ('merchandise', 'all', np.int64(48), 'POOL')",True
+"Paired dates ('merchandise', 'all', np.int64(48), 'SEK')",True
+"Paired dates ('merchandise', 'all', np.int64(60), 'BRL')",True
+"Paired dates ('merchandise', 'all', np.int64(60), 'CAD')",True
+"Paired dates ('merchandise', 'all', np.int64(60), 'EUR')",True
+"Paired dates ('merchandise', 'all', np.int64(60), 'GBP')",True
+"Paired dates ('merchandise', 'all', np.int64(60), 'JPY')",True
+"Paired dates ('merchandise', 'all', np.int64(60), 'POOL')",True
+"Paired dates ('merchandise', 'all', np.int64(60), 'SEK')",True
+"Paired dates ('merchandise', 'all', np.int64(72), 'BRL')",True
+"Paired dates ('merchandise', 'all', np.int64(72), 'CAD')",True
+"Paired dates ('merchandise', 'all', np.int64(72), 'EUR')",True
+"Paired dates ('merchandise', 'all', np.int64(72), 'GBP')",True
+"Paired dates ('merchandise', 'all', np.int64(72), 'JPY')",True
+"Paired dates ('merchandise', 'all', np.int64(72), 'POOL')",True
+"Paired dates ('merchandise', 'all', np.int64(72), 'SEK')",True
+"Paired dates ('no_BRL', 'all', np.int64(12), 'CAD')",True
+"Paired dates ('no_BRL', 'all', np.int64(12), 'EUR')",True
+"Paired dates ('no_BRL', 'all', np.int64(12), 'GBP')",True
+"Paired dates ('no_BRL', 'all', np.int64(12), 'JPY')",True
+"Paired dates ('no_BRL', 'all', np.int64(12), 'POOL')",True
+"Paired dates ('no_BRL', 'all', np.int64(12), 'SEK')",True
+"Paired dates ('no_BRL', 'all', np.int64(24), 'CAD')",True
+"Paired dates ('no_BRL', 'all', np.int64(24), 'EUR')",True
+"Paired dates ('no_BRL', 'all', np.int64(24), 'GBP')",True
+"Paired dates ('no_BRL', 'all', np.int64(24), 'JPY')",True
+"Paired dates ('no_BRL', 'all', np.int64(24), 'POOL')",True
+"Paired dates ('no_BRL', 'all', np.int64(24), 'SEK')",True
+"Paired dates ('no_BRL', 'all', np.int64(36), 'CAD')",True
+"Paired dates ('no_BRL', 'all', np.int64(36), 'EUR')",True
+"Paired dates ('no_BRL', 'all', np.int64(36), 'GBP')",True
+"Paired dates ('no_BRL', 'all', np.int64(36), 'JPY')",True
+"Paired dates ('no_BRL', 'all', np.int64(36), 'POOL')",True
+"Paired dates ('no_BRL', 'all', np.int64(36), 'SEK')",True
+"Paired dates ('no_BRL', 'all', np.int64(48), 'CAD')",True
+"Paired dates ('no_BRL', 'all', np.int64(48), 'EUR')",True
+"Paired dates ('no_BRL', 'all', np.int64(48), 'GBP')",True
+"Paired dates ('no_BRL', 'all', np.int64(48), 'JPY')",True
+"Paired dates ('no_BRL', 'all', np.int64(48), 'POOL')",True
+"Paired dates ('no_BRL', 'all', np.int64(48), 'SEK')",True
+"Paired dates ('no_BRL', 'all', np.int64(60), 'CAD')",True
+"Paired dates ('no_BRL', 'all', np.int64(60), 'EUR')",True
+"Paired dates ('no_BRL', 'all', np.int64(60), 'GBP')",True
+"Paired dates ('no_BRL', 'all', np.int64(60), 'JPY')",True
+"Paired dates ('no_BRL', 'all', np.int64(60), 'POOL')",True
+"Paired dates ('no_BRL', 'all', np.int64(60), 'SEK')",True
+"Paired dates ('no_BRL', 'all', np.int64(72), 'CAD')",True
+"Paired dates ('no_BRL', 'all', np.int64(72), 'EUR')",True
+"Paired dates ('no_BRL', 'all', np.int64(72), 'GBP')",True
+"Paired dates ('no_BRL', 'all', np.int64(72), 'JPY')",True
+"Paired dates ('no_BRL', 'all', np.int64(72), 'POOL')",True
+"Paired dates ('no_BRL', 'all', np.int64(72), 'SEK')",True
+"Paired dates ('no_BRL', 'all', np.int64(84), 'CAD')",True
+"Paired dates ('no_BRL', 'all', np.int64(84), 'EUR')",True
+"Paired dates ('no_BRL', 'all', np.int64(84), 'GBP')",True
+"Paired dates ('no_BRL', 'all', np.int64(84), 'JPY')",True
+"Paired dates ('no_BRL', 'all', np.int64(84), 'POOL')",True
+"Paired dates ('no_BRL', 'all', np.int64(84), 'SEK')",True
+"Paired dates ('no_BRL', 'all', np.int64(96), 'CAD')",True
+"Paired dates ('no_BRL', 'all', np.int64(96), 'EUR')",True
+"Paired dates ('no_BRL', 'all', np.int64(96), 'GBP')",True
+"Paired dates ('no_BRL', 'all', np.int64(96), 'JPY')",True
+"Paired dates ('no_BRL', 'all', np.int64(96), 'POOL')",True
+"Paired dates ('no_BRL', 'all', np.int64(96), 'SEK')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(12), 'CAD')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(12), 'GBP')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(12), 'JPY')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(12), 'POOL')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(12), 'SEK')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(24), 'CAD')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(24), 'GBP')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(24), 'JPY')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(24), 'POOL')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(24), 'SEK')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(36), 'CAD')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(36), 'GBP')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(36), 'JPY')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(36), 'POOL')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(36), 'SEK')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(48), 'CAD')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(48), 'GBP')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(48), 'JPY')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(48), 'POOL')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(48), 'SEK')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(60), 'CAD')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(60), 'GBP')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(60), 'JPY')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(60), 'POOL')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(60), 'SEK')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(72), 'CAD')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(72), 'GBP')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(72), 'JPY')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(72), 'POOL')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(72), 'SEK')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(84), 'CAD')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(84), 'GBP')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(84), 'JPY')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(84), 'POOL')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(84), 'SEK')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(96), 'CAD')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(96), 'GBP')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(96), 'JPY')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(96), 'POOL')",True
+"Paired dates ('no_BRL_EUR', 'all', np.int64(96), 'SEK')",True
+"Paired dates ('no_EUR', 'all', np.int64(12), 'BRL')",True
+"Paired dates ('no_EUR', 'all', np.int64(12), 'CAD')",True
+"Paired dates ('no_EUR', 'all', np.int64(12), 'GBP')",True
+"Paired dates ('no_EUR', 'all', np.int64(12), 'JPY')",True
+"Paired dates ('no_EUR', 'all', np.int64(12), 'POOL')",True
+"Paired dates ('no_EUR', 'all', np.int64(12), 'SEK')",True
+"Paired dates ('no_EUR', 'all', np.int64(24), 'BRL')",True
+"Paired dates ('no_EUR', 'all', np.int64(24), 'CAD')",True
+"Paired dates ('no_EUR', 'all', np.int64(24), 'GBP')",True
+"Paired dates ('no_EUR', 'all', np.int64(24), 'JPY')",True
+"Paired dates ('no_EUR', 'all', np.int64(24), 'POOL')",True
+"Paired dates ('no_EUR', 'all', np.int64(24), 'SEK')",True
+"Paired dates ('no_EUR', 'all', np.int64(36), 'BRL')",True
+"Paired dates ('no_EUR', 'all', np.int64(36), 'CAD')",True
+"Paired dates ('no_EUR', 'all', np.int64(36), 'GBP')",True
+"Paired dates ('no_EUR', 'all', np.int64(36), 'JPY')",True
+"Paired dates ('no_EUR', 'all', np.int64(36), 'POOL')",True
+"Paired dates ('no_EUR', 'all', np.int64(36), 'SEK')",True
+"Paired dates ('no_EUR', 'all', np.int64(48), 'BRL')",True
+"Paired dates ('no_EUR', 'all', np.int64(48), 'CAD')",True
+"Paired dates ('no_EUR', 'all', np.int64(48), 'GBP')",True
+"Paired dates ('no_EUR', 'all', np.int64(48), 'JPY')",True
+"Paired dates ('no_EUR', 'all', np.int64(48), 'POOL')",True
+"Paired dates ('no_EUR', 'all', np.int64(48), 'SEK')",True
+"Paired dates ('no_EUR', 'all', np.int64(60), 'BRL')",True
+"Paired dates ('no_EUR', 'all', np.int64(60), 'CAD')",True
+"Paired dates ('no_EUR', 'all', np.int64(60), 'GBP')",True
+"Paired dates ('no_EUR', 'all', np.int64(60), 'JPY')",True
+"Paired dates ('no_EUR', 'all', np.int64(60), 'POOL')",True
+"Paired dates ('no_EUR', 'all', np.int64(60), 'SEK')",True
+"Paired dates ('no_EUR', 'all', np.int64(72), 'BRL')",True
+"Paired dates ('no_EUR', 'all', np.int64(72), 'CAD')",True
+"Paired dates ('no_EUR', 'all', np.int64(72), 'GBP')",True
+"Paired dates ('no_EUR', 'all', np.int64(72), 'JPY')",True
+"Paired dates ('no_EUR', 'all', np.int64(72), 'POOL')",True
+"Paired dates ('no_EUR', 'all', np.int64(72), 'SEK')",True
+"Paired dates ('no_EUR', 'all', np.int64(84), 'BRL')",True
+"Paired dates ('no_EUR', 'all', np.int64(84), 'CAD')",True
+"Paired dates ('no_EUR', 'all', np.int64(84), 'GBP')",True
+"Paired dates ('no_EUR', 'all', np.int64(84), 'JPY')",True
+"Paired dates ('no_EUR', 'all', np.int64(84), 'POOL')",True
+"Paired dates ('no_EUR', 'all', np.int64(84), 'SEK')",True
+"Paired dates ('no_EUR', 'all', np.int64(96), 'BRL')",True
+"Paired dates ('no_EUR', 'all', np.int64(96), 'CAD')",True
+"Paired dates ('no_EUR', 'all', np.int64(96), 'GBP')",True
+"Paired dates ('no_EUR', 'all', np.int64(96), 'JPY')",True
+"Paired dates ('no_EUR', 'all', np.int64(96), 'POOL')",True
+"Paired dates ('no_EUR', 'all', np.int64(96), 'SEK')",True
+"Paired dates ('quarterly', 'all', np.int64(12), 'BRL')",True
+"Paired dates ('quarterly', 'all', np.int64(12), 'CAD')",True
+"Paired dates ('quarterly', 'all', np.int64(12), 'EUR')",True
+"Paired dates ('quarterly', 'all', np.int64(12), 'GBP')",True
+"Paired dates ('quarterly', 'all', np.int64(12), 'JPY')",True
+"Paired dates ('quarterly', 'all', np.int64(12), 'POOL')",True
+"Paired dates ('quarterly', 'all', np.int64(12), 'SEK')",True
+"Paired dates ('quarterly', 'all', np.int64(24), 'BRL')",True
+"Paired dates ('quarterly', 'all', np.int64(24), 'CAD')",True
+"Paired dates ('quarterly', 'all', np.int64(24), 'EUR')",True
+"Paired dates ('quarterly', 'all', np.int64(24), 'GBP')",True
+"Paired dates ('quarterly', 'all', np.int64(24), 'JPY')",True
+"Paired dates ('quarterly', 'all', np.int64(24), 'POOL')",True
+"Paired dates ('quarterly', 'all', np.int64(24), 'SEK')",True
+"Paired dates ('quarterly', 'all', np.int64(36), 'BRL')",True
+"Paired dates ('quarterly', 'all', np.int64(36), 'CAD')",True
+"Paired dates ('quarterly', 'all', np.int64(36), 'EUR')",True
+"Paired dates ('quarterly', 'all', np.int64(36), 'GBP')",True
+"Paired dates ('quarterly', 'all', np.int64(36), 'JPY')",True
+"Paired dates ('quarterly', 'all', np.int64(36), 'POOL')",True
+"Paired dates ('quarterly', 'all', np.int64(36), 'SEK')",True
+"Paired dates ('quarterly', 'all', np.int64(48), 'BRL')",True
+"Paired dates ('quarterly', 'all', np.int64(48), 'CAD')",True
+"Paired dates ('quarterly', 'all', np.int64(48), 'EUR')",True
+"Paired dates ('quarterly', 'all', np.int64(48), 'GBP')",True
+"Paired dates ('quarterly', 'all', np.int64(48), 'JPY')",True
+"Paired dates ('quarterly', 'all', np.int64(48), 'POOL')",True
+"Paired dates ('quarterly', 'all', np.int64(48), 'SEK')",True
+"Paired dates ('quarterly', 'all', np.int64(60), 'BRL')",True
+"Paired dates ('quarterly', 'all', np.int64(60), 'CAD')",True
+"Paired dates ('quarterly', 'all', np.int64(60), 'EUR')",True
+"Paired dates ('quarterly', 'all', np.int64(60), 'GBP')",True
+"Paired dates ('quarterly', 'all', np.int64(60), 'JPY')",True
+"Paired dates ('quarterly', 'all', np.int64(60), 'POOL')",True
+"Paired dates ('quarterly', 'all', np.int64(60), 'SEK')",True
+"Paired dates ('quarterly', 'all', np.int64(72), 'BRL')",True
+"Paired dates ('quarterly', 'all', np.int64(72), 'CAD')",True
+"Paired dates ('quarterly', 'all', np.int64(72), 'EUR')",True
+"Paired dates ('quarterly', 'all', np.int64(72), 'GBP')",True
+"Paired dates ('quarterly', 'all', np.int64(72), 'JPY')",True
+"Paired dates ('quarterly', 'all', np.int64(72), 'POOL')",True
+"Paired dates ('quarterly', 'all', np.int64(72), 'SEK')",True
+"Paired dates ('quarterly', 'all', np.int64(84), 'BRL')",True
+"Paired dates ('quarterly', 'all', np.int64(84), 'CAD')",True
+"Paired dates ('quarterly', 'all', np.int64(84), 'EUR')",True
+"Paired dates ('quarterly', 'all', np.int64(84), 'GBP')",True
+"Paired dates ('quarterly', 'all', np.int64(84), 'JPY')",True
+"Paired dates ('quarterly', 'all', np.int64(84), 'POOL')",True
+"Paired dates ('quarterly', 'all', np.int64(84), 'SEK')",True
+"Paired dates ('quarterly', 'all', np.int64(96), 'BRL')",True
+"Paired dates ('quarterly', 'all', np.int64(96), 'CAD')",True
+"Paired dates ('quarterly', 'all', np.int64(96), 'EUR')",True
+"Paired dates ('quarterly', 'all', np.int64(96), 'GBP')",True
+"Paired dates ('quarterly', 'all', np.int64(96), 'JPY')",True
+"Paired dates ('quarterly', 'all', np.int64(96), 'POOL')",True
+"Paired dates ('quarterly', 'all', np.int64(96), 'SEK')",True
+Prior files preserved,True

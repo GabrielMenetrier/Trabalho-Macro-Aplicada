@@ -1,0 +1,162 @@
+[
+  {
+    "indicator": "TT.PRI.MRCH.XD.WD",
+    "url": "https://api.worldbank.org/v2/country/BRA;CAN;JPN;GBR;SWE;DEU/indicator/TT.PRI.MRCH.XD.WD?format=json&date=1960:2025&per_page=5000",
+    "sha256": "0ad2b9f8d6e2b5b73387189e56e185827ca92c87836c9d9f7a3c25dd37a2ef40",
+    "downloaded": "2026-09-15T20:16:32.710485+00:00",
+    "coverage": {
+      "BRA": [
+        2005,
+        2024
+      ],
+      "CAN": [
+        2005,
+        2024
+      ],
+      "DEU": [
+        2005,
+        2024
+      ],
+      "GBR": [
+        2005,
+        2024
+      ],
+      "JPN": [
+        2005,
+        2024
+      ],
+      "SWE": [
+        2005,
+        2024
+      ]
+    }
+  },
+  {
+    "indicator": "NE.EXP.GNFS.CN",
+    "url": "https://api.worldbank.org/v2/country/BRA;CAN;JPN;GBR;SWE;DEU/indicator/NE.EXP.GNFS.CN?format=json&date=1960:2025&per_page=5000",
+    "sha256": "62c09b763da42559807c6611b16e54ae2dd4d040ec52ecb83fbf1cf9ba5a49e4",
+    "downloaded": "2026-09-15T20:16:32.964489+00:00",
+    "coverage": {
+      "BRA": [
+        1960,
+        2025
+      ],
+      "CAN": [
+        1961,
+        2025
+      ],
+      "DEU": [
+        1970,
+        2025
+      ],
+      "GBR": [
+        1970,
+        2025
+      ],
+      "JPN": [
+        1970,
+        2024
+      ],
+      "SWE": [
+        1960,
+        2025
+      ]
+    }
+  },
+  {
+    "indicator": "NE.EXP.GNFS.KN",
+    "url": "https://api.worldbank.org/v2/country/BRA;CAN;JPN;GBR;SWE;DEU/indicator/NE.EXP.GNFS.KN?format=json&date=1960:2025&per_page=5000",
+    "sha256": "82b6180dcbaf9fb837e82913fbf30a6276297831f74d30dc4360408e0a940b79",
+    "downloaded": "2026-09-15T20:16:32.739796+00:00",
+    "coverage": {
+      "BRA": [
+        1960,
+        2025
+      ],
+      "CAN": [
+        1961,
+        2025
+      ],
+      "DEU": [
+        1970,
+        2025
+      ],
+      "GBR": [
+        1970,
+        2025
+      ],
+      "JPN": [
+        1970,
+        2024
+      ],
+      "SWE": [
+        1960,
+        2025
+      ]
+    }
+  },
+  {
+    "indicator": "NE.IMP.GNFS.CN",
+    "url": "https://api.worldbank.org/v2/country/BRA;CAN;JPN;GBR;SWE;DEU/indicator/NE.IMP.GNFS.CN?format=json&date=1960:2025&per_page=5000",
+    "sha256": "981d7c56f821fcf6b19e5d3a761bd6788dafb2e282503b5c09f72fcfef3138ee",
+    "downloaded": "2026-09-15T20:16:32.727065+00:00",
+    "coverage": {
+      "BRA": [
+        1960,
+        2025
+      ],
+      "CAN": [
+        1961,
+        2025
+      ],
+      "DEU": [
+        1970,
+        2025
+      ],
+      "GBR": [
+        1970,
+        2025
+      ],
+      "JPN": [
+        1970,
+        2024
+      ],
+      "SWE": [
+        1960,
+        2025
+      ]
+    }
+  },
+  {
+    "indicator": "NE.IMP.GNFS.KN",
+    "url": "https://api.worldbank.org/v2/country/BRA;CAN;JPN;GBR;SWE;DEU/indicator/NE.IMP.GNFS.KN?format=json&date=1960:2025&per_page=5000",
+    "sha256": "ea60a7b91d44c12cbc225da116d21bbaa8989c8a68b770e226a866b4ef5417e5",
+    "downloaded": "2026-09-15T20:16:33.303689+00:00",
+    "coverage": {
+      "BRA": [
+        1960,
+        2025
+      ],
+      "CAN": [
+        1961,
+        2025
+      ],
+      "DEU": [
+        1970,
+        2025
+      ],
+      "GBR": [
+        1970,
+        2025
+      ],
+      "JPN": [
+        1970,
+        2024
+      ],
+      "SWE": [
+        1960,
+        2025
+      ]
+    }
+  }
+]

@@ -1,0 +1,107 @@
+[
+  {
+    "file": "boj_call.html",
+    "url": "https://www.stat-search.boj.or.jp/ssi/mtshtml/fm02_m_1_en.html",
+    "bytes": 78809,
+    "sha256": "72b21bff115fcdd4d430b4dab2ebc7c8311802223594cbd0189064ba666fee14",
+    "downloaded_utc": "2026-09-10T21:18:09.037268+00:00"
+  },
+  {
+    "file": "ecb_rates.html",
+    "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html",
+    "bytes": 131018,
+    "sha256": "fd4ed0a1ae6da7c20942fec5a3828ed4b4c055ac5fab17b659f15c21d3a5d6f4",
+    "downloaded_utc": "2026-09-10T21:18:08.232980+00:00"
+  },
+  {
+    "file": "bis_cpi.zip",
+    "url": "https://data.bis.org/static/bulk/WS_LONG_CPI_csv_col.zip",
+    "bytes": 461923,
+    "sha256": "de7a2e17a1483ee8f4408c836d3d2dd79ce9de9926ec044cf6055ce45d3338ac",
+    "downloaded_utc": "2026-09-10T21:15:38.872606+00:00"
+  },
+  {
+    "file": "bis_policy.zip",
+    "url": "https://data.bis.org/static/bulk/WS_CBPOL_csv_col.zip",
+    "bytes": 284035,
+    "sha256": "eef383071fe15fa2efdf9235f0123dde77cb2b2b3e56219e6a8d97d4572658cc",
+    "downloaded_utc": "2026-09-10T21:15:38.572995+00:00"
+  },
+  {
+    "file": "bis_fx.zip",
+    "url": "https://data.bis.org/static/bulk/WS_XRU_csv_col.zip",
+    "bytes": 4862284,
+    "sha256": "5c13a732c02f7066ec3f99942516b50cc83ebc0967f543dd4b45d7dd94fb32bc",
+    "downloaded_utc": "2026-09-10T21:15:40.821222+00:00"
+  },
+  {
+    "file": "bis_cpi_documentation.pdf",
+    "url": "https://www.bis.org/statistics/cp/cp_long_documentation.pdf",
+    "bytes": 200851,
+    "sha256": "ef284f4b4d9b78a3bfcd2bdfcaa2faedabd2d0e86c9a9c2f726aea3fa922af04",
+    "downloaded_utc": "2026-09-10T21:15:39.663985+00:00"
+  },
+  {
+    "file": "bis_policy_documentation.pdf",
+    "url": "https://www.bis.org/statistics/cbpol/cbpol_doc.pdf",
+    "bytes": 142733,
+    "sha256": "7215d22054e8c11beceba10c84503522657ea0d4feb573b96329868cb474e6b9",
+    "downloaded_utc": "2026-09-10T21:15:39.157002+00:00"
+  },
+  {
+    "file": "sgs_433.json",
+    "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.433/dados?formato=json&dataInicial=01/01/1994&dataFinal=31/08/2026",
+    "bytes": 14494,
+    "sha256": "f2026431c6b948802b8535c7dc469cf0bd1647fe4bfa3a2032599e6b5e6ba45c",
+    "downloaded_utc": "2026-09-10T21:15:40.123534+00:00"
+  },
+  {
+    "file": "sgs_3698.json",
+    "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.3698/dados?formato=json&dataInicial=01/01/1995&dataFinal=31/08/2026",
+    "bytes": 14821,
+    "sha256": "cea53d89443cc66ddb4ccc5f193575ba99f64bf2fd7ae3051b46dde3275add1a",
+    "downloaded_utc": "2026-09-10T21:15:40.186887+00:00"
+  },
+  {
+    "file": "bls_cpi_sa_1994.json",
+    "url": "https://api.bls.gov/publicAPI/v2/timeseries/data/CUSR0000SA0?startyear=1994&endyear=2003",
+    "bytes": 10559,
+    "sha256": "0d2808aa760f863403ac8619cbd1acd93dc8a7354bc3a54ea43d61569853302e",
+    "downloaded_utc": "2026-09-10T21:19:52.668768+00:00"
+  },
+  {
+    "file": "bls_cpi_sa_2004.json",
+    "url": "https://api.bls.gov/publicAPI/v2/timeseries/data/CUSR0000SA0?startyear=2004&endyear=2013",
+    "bytes": 10631,
+    "sha256": "63cf41a80130b1031c3ff67ef2a09e0e1eaa37bc6ff2612a5698d8dbecf3de5c",
+    "downloaded_utc": "2026-09-10T21:19:52.268471+00:00"
+  },
+  {
+    "file": "bls_cpi_sa_2014.json",
+    "url": "https://api.bls.gov/publicAPI/v2/timeseries/data/CUSR0000SA0?startyear=2014&endyear=2023",
+    "bytes": 10703,
+    "sha256": "ea3a36f57a7172ded0334f17b4abf315d1b3821c5fee4c28747a55338e34334e",
+    "downloaded_utc": "2026-09-10T21:19:52.806823+00:00"
+  },
+  {
+    "file": "bls_cpi_sa_2024.json",
+    "url": "https://api.bls.gov/publicAPI/v2/timeseries/data/CUSR0000SA0?startyear=2024&endyear=2026",
+    "bytes": 2935,
+    "sha256": "a6092fede937e10395aafd48a6994237b3ca293d28abbb2ffc06de20200c0091",
+    "downloaded_utc": "2026-09-10T21:19:52.876514+00:00"
+  },
+  {
+    "file": "yahoo_BIL.json",
+    "url": "https://query2.finance.yahoo.com/v8/finance/chart/BIL?period1=1167609600&period2=1788220800&interval=1d&events=div%2Csplits",
+    "bytes": 518954,
+    "sha256": "7d7e85c19542b5f5d97d4e057307311a0e730b708915dbf669ee300842dd1c6c",
+    "downloaded_utc": "2026-09-10T21:28:01.487019+00:00"
+  },
+  {
+    "file": "yahoo_SPY.json",
+    "url": "https://query2.finance.yahoo.com/v8/finance/chart/SPY?period1=1167609600&period2=1788220800&interval=1d&events=div%2Csplits",
+    "bytes": 548766,
+    "sha256": "174bad920303f9b2ffd9ad288ad05353e6a2ef793af4eb0699afa630fde02feb",
+    "downloaded_utc": "2026-09-10T21:28:39.906393+00:00"
+  }
+]

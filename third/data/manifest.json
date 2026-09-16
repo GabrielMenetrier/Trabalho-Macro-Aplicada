@@ -1,0 +1,94 @@
+[
+  {
+    "file": "pink_sheet.xlsx",
+    "url": "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Historical-Data-Monthly.xlsx",
+    "bytes": 586735,
+    "sha256": "9fdcfa8a2aed9a1bb545a10c1a5ce036c6a0acd4766f450424ca800b4b5a0225",
+    "downloaded_utc": "2026-09-11T13:36:56.183665+00:00"
+  },
+  {
+    "file": "chen_rogoff_rossi.pdf",
+    "url": "https://scholar.harvard.edu/sites/scholar.harvard.edu/files/rogoff/files/125-3-1145.pdf",
+    "error": "403 Client Error: Forbidden for url: https://scholar.harvard.edu/sites/scholar.harvard.edu/files/rogoff/files/125-3-1145.pdf"
+  },
+  {
+    "file": "chen_update.pdf",
+    "url": "https://scholar.harvard.edu/files/rogoff/files/crr2014a.pdf",
+    "error": "403 Client Error: Forbidden for url: https://scholar.harvard.edu/files/rogoff/files/crr2014a.pdf"
+  },
+  {
+    "file": "imf_ctot_methodology.pdf",
+    "url": "https://www.imf.org/-/media/files/publications/wp/2019/wp1921.pdf",
+    "error": "403 Client Error: Forbidden for url: https://www.imf.org/-/media/files/publications/wp/2019/wp1921.pdf"
+  },
+  {
+    "file": "TX.VAL.FUEL.ZS.UN.json",
+    "url": "https://api.worldbank.org/v2/country/BRA;CAN;JPN;GBR;SWE;DEU/indicator/TX.VAL.FUEL.ZS.UN?format=json&date=1994:1996&per_page=1000",
+    "bytes": 4279,
+    "sha256": "de6f168cefb279699a66a2040577f704716d7cf33fe960c1b9a861b07d8480ef",
+    "downloaded_utc": "2026-09-11T13:36:56.920087+00:00"
+  },
+  {
+    "file": "TM.VAL.FUEL.ZS.UN.json",
+    "url": "https://api.worldbank.org/v2/country/BRA;CAN;JPN;GBR;SWE;DEU/indicator/TM.VAL.FUEL.ZS.UN?format=json&date=1994:1996&per_page=1000",
+    "bytes": 4275,
+    "sha256": "6de850a9ce1a427ae4bf186fabcb9d3e07070593bda0f403f2c30afe11644bcf",
+    "downloaded_utc": "2026-09-11T13:36:57.500203+00:00"
+  },
+  {
+    "file": "TX.VAL.FOOD.ZS.UN.json",
+    "url": "https://api.worldbank.org/v2/country/BRA;CAN;JPN;GBR;SWE;DEU/indicator/TX.VAL.FOOD.ZS.UN?format=json&date=1994:1996&per_page=1000",
+    "bytes": 4275,
+    "sha256": "d2c92c3df53ddc1bcf56bbb28464e3b9c48554ab4c063770b52ffc1f0280a41a",
+    "downloaded_utc": "2026-09-11T13:36:58.052233+00:00"
+  },
+  {
+    "file": "TM.VAL.FOOD.ZS.UN.json",
+    "url": "https://api.worldbank.org/v2/country/BRA;CAN;JPN;GBR;SWE;DEU/indicator/TM.VAL.FOOD.ZS.UN?format=json&date=1994:1996&per_page=1000",
+    "bytes": 4273,
+    "sha256": "e75be8e306f0f11217ae9e7effd1ba27afb0d2cc804408e59884fbcd54a9f610",
+    "downloaded_utc": "2026-09-11T13:36:59.067707+00:00"
+  },
+  {
+    "file": "TX.VAL.AGRI.ZS.UN.json",
+    "url": "https://api.worldbank.org/v2/country/BRA;CAN;JPN;GBR;SWE;DEU/indicator/TX.VAL.AGRI.ZS.UN?format=json&date=1994:1996&per_page=1000",
+    "bytes": 4676,
+    "sha256": "365133eaacfe1c09aba889041e98ed4440f1f82c20ebcd8f8b2b8989aa9a5365",
+    "downloaded_utc": "2026-09-11T13:36:59.012671+00:00"
+  },
+  {
+    "file": "TM.VAL.AGRI.ZS.UN.json",
+    "url": "https://api.worldbank.org/v2/country/BRA;CAN;JPN;GBR;SWE;DEU/indicator/TM.VAL.AGRI.ZS.UN?format=json&date=1994:1996&per_page=1000",
+    "bytes": 4669,
+    "sha256": "958cad6e8b676d48f4b061846e9ac47232e777a3f68573f3ca6d667472e93c3d",
+    "downloaded_utc": "2026-09-11T13:36:59.491927+00:00"
+  },
+  {
+    "file": "TX.VAL.MMTL.ZS.UN.json",
+    "url": "https://api.worldbank.org/v2/country/BRA;CAN;JPN;GBR;SWE;DEU/indicator/TX.VAL.MMTL.ZS.UN?format=json&date=1994:1996&per_page=1000",
+    "bytes": 4473,
+    "sha256": "c5eb1c28993560b060d88e9b2721fcc99923e8751d3d31df625026634aefd9de",
+    "downloaded_utc": "2026-09-11T13:36:59.504408+00:00"
+  },
+  {
+    "file": "TM.VAL.MMTL.ZS.UN.json",
+    "url": "https://api.worldbank.org/v2/country/BRA;CAN;JPN;GBR;SWE;DEU/indicator/TM.VAL.MMTL.ZS.UN?format=json&date=1994:1996&per_page=1000",
+    "bytes": 4473,
+    "sha256": "ecad5b95224db6f2b318c38d942aa56159308657a03939ee00fe697dffc034fd",
+    "downloaded_utc": "2026-09-11T13:36:59.607833+00:00"
+  },
+  {
+    "file": "TX.VAL.MRCH.CD.WT.json",
+    "url": "https://api.worldbank.org/v2/country/BRA;CAN;JPN;GBR;SWE;DEU/indicator/TX.VAL.MRCH.CD.WT?format=json&date=1994:1996&per_page=1000",
+    "bytes": 4089,
+    "sha256": "80c0ec6b55e4955df09982f7fe0cf58571b49123900a5bac99d64afc90194927",
+    "downloaded_utc": "2026-09-11T13:36:59.607833+00:00"
+  },
+  {
+    "file": "TM.VAL.MRCH.CD.WT.json",
+    "url": "https://api.worldbank.org/v2/country/BRA;CAN;JPN;GBR;SWE;DEU/indicator/TM.VAL.MRCH.CD.WT?format=json&date=1994:1996&per_page=1000",
+    "bytes": 4089,
+    "sha256": "b71f8c1a3661b91138fcfca4a206e4f845ac36f8e72e8b0d38098c7daf7ffbeb",
+    "downloaded_utc": "2026-09-11T13:37:00.044070+00:00"
+  }
+]

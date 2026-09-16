@@ -1,0 +1,10 @@
+{
+  "horizon_tests\\tables\\with_tot_forecasts.csv": "3597c26a926db58b77255c89923a4b522595cbed67ca580a86cf7e6a4570af49",
+  "secondary\\cache\\core.npz": "02450a62ab7fe99e1e27eddaa9b18df0ad90ecd5f5a9bb6781991eefb1cea423",
+  "ejr_trade_selected\\tables\\metrics.csv": "7180d34657b3740e7729d255bb4b9c36d9866683e225c1ddfc9ecc79bdd93705",
+  "ejr_trade\\tables\\metrics.csv": "c274168acbad8d9490273489b0b09a90e8fe800b80d661ca563bc9b9eb0ffae0",
+  "horizon_tests\\RESTRICTED_PROTOCOL.md": "e0e7e56caa8bee7272481037b1332d52f6b4edff8ec50b7589fa1c7ab9bc2757",
+  "horizon_tests\\run.py": "54be35bfdbe04c796a244abcf7657617ab493c4f7c0f37f83233e5e2f714a5a6",
+  "src\\models.py": "3906dbf9ea2aba37b27d026f9c950248ed6eebb1e41291b592fb798fb86fe6c6",
+  "horizon_tests\\restricted_countries.py": "904a355061fe861430df16f88560aca18d7da25fe80ffa909cd1880d70de320b"
+}

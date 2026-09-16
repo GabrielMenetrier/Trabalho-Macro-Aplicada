@@ -1,0 +1,23 @@
+check,status,detail
+EJR prefix invariance,PASS,
+Future corruption leaves past forecasts identical,PASS,
+ejr_audit strictly prior labels,PASS,844 origins
+prediction_audit strictly prior labels,PASS,2292 origins
+Minimum learning dates,PASS,
+Execution lag,PASS,
+Long-short neutrality,PASS,
+Forward interest and FX signs,PASS,
+Total hedge decision respects forward premium,PASS,
+CPI publication lag,PASS,
+Finite evaluated predictions,PASS,
+Probability bounds,PASS,
+Original carry reproduced,PASS,
+Original files unchanged,PASS,99 files
+Asset prices positive,PASS,
+Asset calendar unique,PASS,
+Source hash IMAB11.SA,PASS,
+Source hash VALE3.SA,PASS,
+Source hash ITUB4.SA,PASS,
+Source hash SUZB3.SA,PASS,
+Source hash BBAS3.SA,PASS,
+Source hash BOVA11.SA,PASS,

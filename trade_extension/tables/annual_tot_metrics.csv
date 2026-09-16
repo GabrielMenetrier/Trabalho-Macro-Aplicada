@@ -1,0 +1,4 @@
+model,n_years,n,first,last,ratio
+forecast,6,36,2018,2023,0.8558247013
+zero,6,36,2018,2023,1
+trend,6,36,2018,2023,2.682293097
