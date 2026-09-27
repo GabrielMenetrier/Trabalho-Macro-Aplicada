@@ -1,396 +1,255 @@
 \documentclass[11pt,a4paper]{article}
+
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[brazil]{babel}
-\usepackage{lmodern,microtype}
-\usepackage[margin=2.05cm,top=2.0cm,bottom=2.0cm]{geometry}
-\usepackage{amsmath,amssymb,booktabs,array,graphicx,float,caption,xcolor,enumitem,fancyhdr,hyperref}
-\definecolor{navy}{HTML}{164E63}
-\definecolor{muted}{HTML}{475569}
-\hypersetup{colorlinks=true,linkcolor=navy,urlcolor=navy,citecolor=navy,pdftitle={Câmbio previsível, retorno incerto},pdfauthor={Trabalho de Macroeconomia Aplicada}}
-\graphicspath{{../output/figures/}{output/figures/}}
-\captionsetup{font=small,labelfont={bf,color=navy},skip=5pt}
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{4pt}
-\setlength{\intextsep}{7pt}
-\setlength{\textfloatsep}{9pt}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+
+\geometry{top=2.5cm,bottom=2.5cm,left=3cm,right=2.5cm}
+\onehalfspacing
+\setlength{\parindent}{1.25cm}
+\setlength{\parskip}{0pt}
 \setlength{\emergencystretch}{2em}
-\setlength{\tabcolsep}{6pt}
-\renewcommand{\arraystretch}{1.05}
-\setlist{nosep,leftmargin=1.4em}
-\pagestyle{fancy}\fancyhf{}
-\fancyhead[L]{\small\color{muted}Câmbio previsível, retorno incerto}
-\fancyhead[R]{\small\color{muted}Macroeconomia Aplicada | 2026.2}
-\fancyfoot[C]{\small\thepage}
+\captionsetup{font=small,labelfont=bf}
+\setlist[itemize]{topsep=2pt,itemsep=1pt,parsep=0pt,leftmargin=1.8em}
+
+\titleformat{\section}{\normalfont\large\bfseries}{\thesection.}{0.55em}{}
+\titleformat{\subsection}{\normalfont\normalsize\bfseries}{\thesubsection.}{0.55em}{}
+\titlespacing*{\section}{0pt}{2.0ex plus .5ex minus .2ex}{1.0ex}
+\titlespacing*{\subsection}{0pt}{1.5ex plus .3ex minus .2ex}{0.7ex}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Macroeconomia Aplicada}
+\fancyhead[R]{\small Câmbio real, termos de troca e carry trade}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
 \setlength{\headheight}{14pt}
-\newcommand{\fig}[3]{\begin{figure}[H]\centering\includegraphics[width=#2\linewidth]{#1.pdf}\caption{#3}\end{figure}}
-\newcommand{\tab}[3]{\begin{table}[H]\centering\caption{#2}\small\IfFileExists{tables/#1.tex}{\input{tables/#1.tex}}{\input{report/tables/#1.tex}}\par\vspace{3pt}\begin{minipage}{.98\linewidth}\footnotesize\color{muted}#3\end{minipage}\end{table}}
-\newcommand{\page}{\clearpage}
+
+\newcommand{\rmser}{\textit{RMSE} relativo}
+
 \begin{document}
-\thispagestyle{empty}
-{\color{navy}\large EPGE/FGV \quad | \quad MACROECONOMIA APLICADA}
-\vspace{1.4cm}
 
-{\Huge\bfseries\color{navy}Câmbio previsível,\\[6pt] retorno incerto}
+\begin{titlepage}
+    \centering
+    \vspace*{1.6cm}
+    {\large FUNDAÇÃO GETULIO VARGAS\\[0.15cm]
+    ESCOLA BRASILEIRA DE ECONOMIA E FINANÇAS -- EPGE\\[1.7cm]}
 
-\vspace{.5cm}
-{\Large Replicação da aula 8 e uma extensão para\\carteiras internacionais long--short}
+    {\Large\bfseries CÂMBIO REAL, TERMOS DE TROCA E CARRY TRADE\\[0.4cm]}
+    {\large Replicação de Eichenbaum, Johannsen e Rebelo e aplicações com horizonte de cinco anos\\[2.0cm]}
 
-\vspace{.8cm}
-{\large Real, euro, iene, libra, dólar canadense e coroa sueca}
+    \begin{flushleft}
+    \hspace{7.2cm}\begin{minipage}{7.2cm}
+    Trabalho apresentado à disciplina de Macroeconomia Aplicada, no segundo semestre de 2026, como parte das atividades de avaliação da disciplina.
 
-\vspace{.5cm}
-\textbf{Disciplina:} Macroeconomia Aplicada, 2026.2\\
-\textbf{Referência didática:} Prof. Marcos Sonnervig, aula 8\\
-\textbf{Artigo-base:} Eichenbaum, Johannsen e Rebelo (2021)\\
-\textbf{Corte de mercado:} 31 de agosto de 2026\\
-\textbf{Coleta e execução:} 10 de setembro de 2026
+    \vspace{0.8cm}
+    \textbf{Professor:} Marcos Sonnervig\\
+    \textbf{Autor:} Gabriel Renato Menetrier Santi
+    \end{minipage}
+    \end{flushleft}
 
-\vspace{.7cm}
-{\large\bfseries Resumo}
+    \vfill
+    Rio de Janeiro\\
+    2026
+\end{titlepage}
 
-Este trabalho pergunta se o câmbio real ajuda a prever o câmbio nominal em horizontes longos e se essa informação melhora uma carteira financiada nas moedas negociadas. A replicação brasileira recupera o resultado da aula: em oito anos, o coeficiente é $-1{,}808$ e o $R^2$ é $0{,}883$. A extensão utiliza seis moedas, estimações recursivas, índices de preços defasados e execução posterior à formação do sinal. No agregado, o modelo não supera o passeio aleatório fora da amostra; em cinco anos, a razão dos erros quadráticos médios em raiz é $1{,}037$. Há heterogeneidade: Brasil, Canadá e área do euro apresentam melhora nesse horizonte.
+\begin{abstract}
+\noindent
+Este trabalho parte da relação entre câmbio real e câmbio nominal discutida em Eichenbaum, Johannsen e Rebelo (2021) e apresentada em aula. Primeiro, reproduzimos o resultado brasileiro de longo prazo e verificamos se a relação mantém capacidade preditiva fora da amostra em um painel de seis moedas. Em seguida, investigamos se essa informação pode melhorar estratégias de carry trade. Como extensão, incorporamos termos de troca à previsão cambial e testamos diferentes formas de converter os sinais em carteiras. A replicação brasileira é forte, mas o desempenho internacional é heterogêneo. A aplicação mensal da previsão de cinco anos não supera o carry puro. Termos de troca melhoram de forma importante a previsão brasileira, mas não geram melhora generalizada das carteiras. O resultado econômico mais interessante aparece em um recorte retrospectivo de Brasil, euro e Canadá, no qual o sinal EJR, com escolha anual e pesos de máximo Sharpe, apresenta retorno histórico superior ao carry no período analisado. Como a mesma amostra foi usada para selecionar e avaliar alternativas, esse resultado deve ser interpretado como exploratório, e não como evidência de arbitragem.
 
-Entre março de 2010 e agosto de 2026, a carteira principal rende 2,73\% ao ano em dólares, com volatilidade de 4,16\%, Sharpe de 0,31 e queda máxima de 7,01\%. O carry simples rende 4,11\% ao ano. O intervalo por bootstrap para o retorno excedente da estratégia principal inclui zero. Aplicações com BIL e SPY mostram que comprar um ativo em dólares acrescenta seu próprio retorno e risco; o sinal cambial não é uma previsão da bolsa americana. Os resultados sustentam uma relação econômica de longo prazo, mas não demonstram arbitragem nem um ganho incremental robusto de negociação.
+\vspace{0.35cm}
+\noindent\textbf{Palavras-chave:} câmbio real; previsão cambial; termos de troca; carry trade; Eichenbaum--Johannsen--Rebelo.
+\end{abstract}
 
-\vfill
-\colorbox{navy!7}{\parbox{.95\linewidth}{\textbf{Entrega reprodutível.} Relatório e fonte LaTeX, 10 figuras vetoriais, dados brutos com hashes, bases tratadas, scripts de coleta e estimação, retornos e posições mensais, auditoria temporal e testes automatizados.}}
-\vspace{.4cm}
+\section{Pergunta e motivação}
 
-\page
-\section{Pergunta, hipótese e vínculo com a disciplina}
+O ponto de partida do trabalho é uma ideia simples: se o câmbio real contém informação sobre o ajuste futuro do câmbio nominal, essa previsibilidade pode ter valor econômico. Em outras palavras, uma relação que funciona bem em uma regressão também pode ajudar a decidir quais moedas comprar e vender?
 
-A pergunta é: \textbf{a previsibilidade cambial de longo prazo oferece informação economicamente útil além do diferencial de juros?} O exercício segue a sugestão explícita das orientações do professor: replicar e estender Eichenbaum et al. (2021), comparar com passeio aleatório e enfrentar a objeção de persistência e sobreposição em horizontes longos. A extensão financeira tem uma função precisa: distinguir ajuste estatístico, previsão fora da amostra e retorno após financiamento.
+\section{Câmbio real e a hipótese de previsibilidade}
 
-A rota é empírica e preditiva. A variação que identifica os coeficientes vem das oscilações do câmbio real de cada país ao longo do tempo. Não há instrumento, experimento natural ou choque monetário exógeno. Logo, a regressão \emph{não identifica} o efeito causal de metas de inflação, juros ou política fiscal sobre o câmbio. Choques de prêmio de risco, produtividade, termos de troca e fluxos de capitais podem mover simultaneamente o regressor e o resultado. Essa limitação é central para cumprir a exigência de identificação das orientações, sem atribuir ao desenho uma interpretação que ele não comporta.
+Se $S_t$ representa a cotação em moeda local por dólar, uma alta de $S_t$ corresponde a uma depreciação da moeda local. Em logaritmos, o câmbio real pode ser escrito como
 
-\subsection{A teoria mínima}
-
-Seja $S_{i,t}$ a cotação em unidades da moeda do país $i$ por dólar. Uma alta de $S$ significa depreciação da moeda local. Com $P_i$ e $P_{US}$ como índices de preços ao consumidor,
-\begin{align}
- s_{i,t}&=\log S_{i,t}, & q_{i,t}&=s_{i,t}+p_{US,t}-p_{i,t},\\
- \Delta_h q_{i,t}&=\Delta_h s_{i,t}+\Delta_h(p_{US,t}-p_{i,t}).\label{eq:identity}
-\end{align}
-Um $q$ elevado representa moeda local relativamente barata. Se o câmbio real reverte, o nominal ou os preços relativos devem compensar o desvio. Sob inflação ancorada, o nominal pode absorver parcela maior do ajuste. Essa é a intuição apresentada na aula 8. A convenção é a brasileira; é o inverso da cotação em dólares por moeda estrangeira usada no artigo. A inversão simultânea dos dois câmbios preserva o sinal de $\beta$.
-
-As duas regressões descritivas são
-\begin{align}
- \Delta_h s_{i,t}&=\alpha^s_{i,h}+\beta^s_{i,h}q_{i,t}+\varepsilon^s_{i,t,h},\label{eq:is}\\
- \Delta_h(p_{US,t}-p_{i,t})&=\alpha^p_{i,h}+\beta^p_{i,h}q_{i,t}+\varepsilon^p_{i,t,h}.
-\end{align}
-O mecanismo sugere $\beta^s<0$, possivelmente mais negativo em horizontes maiores, e menor ajuste por inflação relativa quando ela está ancorada. A média histórica de $q$ serve de referência estatística, sem constituir uma cotação de equilíbrio estrutural. Uma mudança permanente nessa referência pode transformar uma aparente moeda barata em uma posição perdedora por muitos anos.
-
-\subsection{O que é replicado e o que é uma extensão}
-
-A replicação próxima dos slides usa Brasil, janeiro de 1995 a abril de 2026, câmbio médio mensal SGS 3698, IPCA encadeado SGS 433 e CPI americano dessazonalizado obtido diretamente no BLS. A extensão usa câmbio de fim de mês, preços sem ajuste sazonal e amostra a partir de outubro de 1999. Ela acrescenta cinco moedas, regimes posteriores ao limite inferior de juros, um desenho temporal conservador e carteiras com financiamento. Não se apresenta como reprodução numérica da Tabela 5 original, cuja amostra de referência, países e frequência trimestral são diferentes. O DSGE do artigo não é reestimado.
-
-\page
-\section{Dados, seleção de países e limites de mensuração}
-
-O universo foi fixado antes da execução dos resultados: BRL, EUR, JPY, GBP, CAD e SEK, sempre contra USD. Brasil, euro e Japão atendem ao foco proposto. Canadá, Reino Unido e Suécia acrescentam economias com câmbio flutuante, séries longas e preços mensais. Não se escolhem moedas pelo desempenho observado. Austrália e Nova Zelândia ficam fora desta extensão mensal porque a documentação do BIS informa que suas séries longas mensais de IPC foram interpoladas de dados trimestrais; evitar esse tratamento reduz um possível uso inadvertido de informação futura.
-
-\begin{table}[H]\centering\caption{Fontes e séries efetivamente utilizadas}\small
-\begin{tabular}{p{2.7cm}p{5.2cm}p{7.2cm}}\toprule
-Variável & Fonte / identificador & Tratamento \\\midrule
-Câmbio bilateral & BIS, WS\_XRU; M:país:moeda:E & Fim de mês; unidades de moeda local/USD. Sem inversão seletiva e sem média mensal no backtest.\\
-IPC nacional & BIS, WS\_LONG\_CPI; M:país:628 & Índice 2010=100; sem ajuste sazonal. Preços de EUA e de cada país entram simetricamente.\\
-Juro de curto prazo & BIS, WS\_CBPOL; M:país & BRL, CAD, GBP, SEK e USD: taxa de política de fim de mês, utilizada como proxy de caixa.\\
-Juro do euro & BCE, depósito overnight & Histórico da deposit facility, reconstruído pelas datas de vigência. Evita a troca de instrumento da série agregada do BIS.\\
-Juro do iene & BOJ, FM02'STRECLUCON & Call rate overnight de fim de mês; cobre o intervalo sem taxa de política definida.\\
-Replicação da aula & BCB/SGS 3698 e 433; BLS CUSR0000SA0 & Câmbio médio, IPCA encadeado e CPI dessazonalizado equivalente ao CPIAUCSL do FRED.\\
-Ativos em dólar & BIL e SPY, Yahoo Finance & Fechamentos diários ajustados por distribuições e desdobramentos, último disponível no mês. Usados apenas para retornos realizados.\\
-\bottomrule\end{tabular}\end{table}
-
-A base principal contém 323 meses, de outubro de 1999 a agosto de 2026. Câmbio e juros estão completos nesse intervalo. O IPC termina em julho de 2026, suficiente para construir o sinal de agosto com dois meses de defasagem. O IPCA reconstruído no SGS e a variação mensal do índice brasileiro do BIS coincidem até erro de arredondamento: diferença máxima de aproximadamente $1{,}1\times10^{-9}$ em retorno decimal na comparação disponível.
-
-\textbf{Uma ausência real foi preservada.} O CPI americano de outubro de 2025 não foi publicado por causa da paralisação do governo federal, conforme documentação do BLS. A base mantém essa célula ausente. Na previsão, utiliza-se a última observação passada por no máximo um mês de referência adicional, antes de aplicar a defasagem de divulgação. Não há interpolação com novembro. Nas regressões descritivas, observações incompatíveis são excluídas somente \emph{depois} de construir os horizontes no calendário regular.
-
-\textbf{Juros observados não equivalem a retornos de títulos.} Uma taxa de política não é um índice de retorno total de uma carteira de bonds nem uma taxa de captação garantida ao investidor. O painel long--short é uma simulação de aplicações e passivos curtos, remunerados por proxies oficiais e acrescidos de spread. Não incorpora duração de títulos longos, risco de crédito bancário, basis cambial ou preços históricos de forwards. Os ETFs fornecem uma implementação adicional com preços efetivamente negociados, mantendo a perna brasileira como proxy de caixa.
-
-Os arquivos brutos ficam congelados com URL, tamanho, data de download e SHA-256 em \path{data/raw/manifest.json}. Alterações futuras da fonte não modificam silenciosamente a entrega atual.
-
-\page
-\section{Previsão recursiva e cronologia da informação}
-
-Para previsão, o regressor disponível em $t$ é
 \begin{equation}
- q^A_{i,t}=s_{i,t}+p_{US,t-2}-p_{i,t-2},
+q_t = s_t + p_{US,t} - p_{local,t},
 \end{equation}
-com a regra de última observação passada descrita anteriormente. A média é calculada apenas com informação acumulada até a origem corrente:
-\begin{equation}
- \bar q^A_{i,t}=\frac{1}{t-t_0+1}\sum_{j=t_0}^{t}q^A_{i,j},\qquad
- \widehat{\Delta_h s}_{i,t}=\widehat\beta_{h,t}(q^A_{i,t}-\bar q^A_{i,t}).\label{eq:forecast}
-\end{equation}
-É a versão mensal da especificação de painel sem intercepto da equação (3.4) de Eichenbaum et al. (2021). A hipótese de variação nominal média nula é forte, sobretudo para países com inflação diferente; por isso, uma versão com interceptos por moeda também é avaliada.
 
-Em cada origem, o conjunto de treinamento é $\{j:j+h\leq t-1\}$. Portanto, uma observação com origem em 2018 e horizonte de cinco anos só entra quando seu desfecho de 2023 já está disponível. Exigem-se pelo menos 60 origens maduras por moeda. O coeficiente é comum no EJR; a média é específica por moeda. Todos os coeficientes são reestimados a cada mês, com janela expansiva. A versão móvel de 120 origens é apenas uma robustez.
+em que $s_t=\log S_t$ e $p$ representa o logaritmo do nível de preços. Quando $q_t$ está elevado em relação à sua referência histórica, a moeda local está relativamente barata em termos reais.
 
-\begin{table}[H]\centering\caption{Linha do tempo: sinal de janeiro de 2010, horizonte de cinco anos}\small
-\begin{tabular}{p{4.2cm}p{10.8cm}}\toprule
-Etapa & Informação / ação \\\midrule
-Origem: jan/2010 & Câmbio de jan/2010 e índices de preços de até nov/2009.\\
-Último alvo no treinamento & Dez/2009; última origem de treinamento: dez/2004.\\
-Formação do ranking & Previsão nominal dividida por 60, mais diferencial mensal de juros.\\
-Execução & Fim de fev/2010, um mês depois da origem.\\
-Primeiro resultado financeiro & Fev/2010 a mar/2010, registrado em mar/2010.\\
-Avaliação da previsão & Jan/2010 a jan/2015; distinta do primeiro mês da carteira.\\
-\bottomrule\end{tabular}\end{table}
+Se houver reversão desse desvio, o ajuste pode ocorrer pelo câmbio nominal, pelos preços relativos ou por uma combinação dos dois. A evidência discutida por Eichenbaum, Johannsen e Rebelo (2021) sugere que, em determinados regimes de inflação, parte importante do ajuste aparece no câmbio nominal em horizontes longos.
 
-Uma previsão de cinco anos não é contabilizada como lucro no mês seguinte. Os retornos do backtest são sempre de um mês, a preços observados entre as datas de execução. O horizonte de previsão informa o sinal; uma segunda carteira conserva os sinais por 60 meses por meio de coortes, sem multiplicar a alavancagem por 60.
+\section{Replicação brasileira}
 
-Os benchmarks de previsão são passeio aleatório sem drift ($\widehat{\Delta s}=0$), passeio com drift histórico, regressão individual com intercepto, painel com interceptos individuais e PPP com meia-vida fixa de cinco anos. O benchmark econômico principal é carry puro; momentum de 12 meses também é exibido. Não há seleção retrospectiva do melhor modelo para gerar a carteira principal.
+A primeira verificação usa o Brasil e reproduz a relação de longo prazo apresentada na aula. Cada observação associa o desvio do câmbio real em uma determinada data à variação do câmbio nominal nos oito anos seguintes.
 
-\textbf{Alcance da proteção temporal.} Os procedimentos eliminam uso de desfechos futuros no treinamento, média da amostra completa, execução simultânea ao sinal e compressão de meses faltantes. Porém, as bases macroeconômicas são versões disponíveis em setembro de 2026, não arquivos de todas as vintages históricas. O exercício é \emph{pseudo fora da amostra com defasagens}, e não uma reconstrução certificada de cada informação disponível em tempo real. Defasar preços reduz o problema de divulgação, mas não elimina revisões históricas, mudanças de composição ou de metodologia.
+O resultado é muito próximo ao apresentado em sala: a inclinação estimada no horizonte de oito anos é aproximadamente $-1{,}808$ e o $R^2$ é $0{,}883$.
 
-\page
-\section{Replicação brasileira: o resultado da aula aparece}
+\begin{table}[htbp]
+\centering
+\caption{Replicação brasileira: leitura do resultado principal}
+\begin{tabular}{p{3.1cm}ccc p{5.5cm}}
+\toprule
+\textbf{Exercício} & \textbf{Horizonte} & \textbf{Coeficiente} & \textbf{$R^2$} & \textbf{Interpretação} \\
+\midrule
+Brasil & 8 anos & $-1{,}808$ & $0{,}883$ & Forte relação histórica entre desvio do câmbio real e ajuste nominal posterior. \\
+\bottomrule
+\end{tabular}
+\end{table}
 
-\fig{classroom_scatter}{1}{Replicação das regressões da aula 8, jan/1995--abr/2026. Cada ponto é uma origem mensal; os horizontes se sobrepõem. Reta de MQO. Fonte: BCB/SGS e BLS; cálculos próprios.}
+O $R^2$ elevado mede ajuste dentro da amostra.
 
-\tab{replication}{Brasil: comparação com os coeficientes apresentados nos slides}{Erros-padrão Newey--West com $h$ defasagens e correção de graus de liberdade. O $N$ respeita o calendário antes da exclusão de ausências. Os coeficientes dos slides foram transcritos do material disponibilizado; o código original da nota não estava na pasta.}
+\section{Previsão fora da amostra}
 
-A proximidade é substantiva: em cinco anos, $\widehat\beta=-1{,}233$ e $R^2=0{,}611$; em oito, $\widehat\beta=-1{,}808$ e $R^2=0{,}883$. As diferenças pequenas em relação aos slides são compatíveis com arredondamento, atualização das séries e tratamento da observação ausente. Não é possível atribuir a diferença de $N$ a uma decisão específica do professor sem seu código: os slides registram 375 observações iniciais, enquanto jan/1995--abr/2026 tem 376 meses de calendário e um CPI ausente em uma data interna.
+A etapa seguinte verifica se a relação continua útil quando o modelo só utiliza informações disponíveis em cada data. Estimamos recursivamente a especificação EJR para real, euro, iene, libra, dólar canadense e coroa sueca e comparamos o erro com um passeio aleatório sem drift. O indicador é o RMSE relativo: valores abaixo de 1 significam desempenho melhor que o benchmark.
 
-Esse gráfico reproduz uma associação histórica forte. Ele não constitui um backtest: os coeficientes usam toda a amostra e o eixo vertical inclui retornos ocorridos depois de cada origem. A centralização na média completa é aceitável para descrição gráfica com intercepto; não é usada como insumo conhecido nas carteiras históricas. O $R^2$ crescente também não implica crescimento proporcional da informação independente, pois horizontes maiores geram sobreposição mais intensa.
+No artigo, o desempenho melhora com o horizonte: o RMSPE relativo cai de aproximadamente 1,08 em um ano para 0,93 em três anos, 0,62 em cinco anos e 0,50 em seis anos. No nosso painel agregado, esse padrão não aparece: os valores são 1,039 em um ano, 1,096 em três anos, 1,037 em cinco anos e 1,115 em oito anos.
 
-\page
-\section{A extensão internacional e a heterogeneidade de regimes}
+\begin{table}[htbp]
+\centering
+\caption{RMSE/RMSPE relativo ao passeio aleatório}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Horizonte} & \textbf{Eichenbaum et al.} & \textbf{Nosso painel EJR} \\
+\midrule
+1 ano  & $\approx$ 1,08 & 1,039 \\
+3 anos & $\approx$ 0,93 & 1,096 \\
+5 anos & $\approx$ 0,62 & 1,037 \\
+8 anos & -- & 1,115 \\
+\bottomrule
+\end{tabular}
+\end{table}
 
-\fig{country_betas}{1}{Coeficientes nominais e de preços relativos, out/1999--ago/2026. As faixas representam $\widehat\beta\pm1{,}96\,EP_{HAC}$, com $h$ defasagens. São intervalos assintóticos descritivos, vulneráveis à persistência do regressor. Fonte: fontes nacionais e BIS.}
+O agregado, porém, esconde diferenças importantes entre moedas. Em cinco anos, Brasil (0,792), Canadá (0,709) e euro (0,899) superam o passeio aleatório, enquanto libra, iene e coroa sueca ficam acima de 1. Brasil e Canadá também exibem o padrão qualitativo do artigo: o erro relativo diminui à medida que o horizonte aumenta.
 
-O painel torna visível por que extrapolar o exemplo brasileiro é arriscado. Uma inclinação nominal negativa não assegura que a intensidade da reversão seja estável, nem que o intercepto de longo prazo seja igual entre economias. A libra e a coroa sueca experimentam deslocamentos persistentes; o Japão combina deflação, juros próximos de zero, taxas negativas e mudanças no regime de política monetária. Ele entra como contraste solicitado, sem ser classificado como o mesmo regime monetário durante toda a amostra.
+A divergência agregada pode refletir principalmente diferenças de amostra e de regime. Nosso exercício inclui dados até 2026, Japão e episódios de juros próximos de zero ou negativos, pandemia e choque inflacionário recente, enquanto o artigo trabalha com outra composição de países e período. Além disso, usamos dados mensais, e as janelas avaliadas mudam conforme o horizonte. Assim, a previsibilidade de longo prazo não desaparece na extensão, mas se torna mais heterogênea entre países e períodos.
 
-A amostra de referência do artigo termina em 2008:T3 e contém Austrália, Canadá, Alemanha, Nova Zelândia, Suécia e Reino Unido em regimes selecionados. A presente extensão inclui o período de juros no limite inferior, a pandemia e o ciclo posterior de aperto monetário. EUR representa a área do euro a partir da moeda comum; não há emenda do marco alemão antes de 1999. Assim, uma divergência frente ao artigo não é automaticamente uma falha de replicação: pode refletir a mudança deliberada de pergunta, países, frequência, período ou regime.
+\section{Da previsão ao carry trade}
 
-O início comum em outubro de 1999 também evita misturar a âncora cambial brasileira de 1995--1998 com o período de flutuação/metas na análise principal. Essa restrição melhora a comparabilidade, mas encurta a amostra útil para horizontes de sete e oito anos. Não é possível contornar a perda de informação apenas adicionando observações mensais sobrepostas.
+Uma estratégia de carry trade escolhe posições a partir do diferencial de juros. Comprar uma moeda de juros altos pode ser lucrativo enquanto sua desvalorização cambial não consumir o ganho de juros. Por isso, uma previsão do câmbio pode, em princípio, ajudar a escolher melhores posições.
 
-As duas regressões respeitam a identidade \eqref{eq:identity}. Os índices de preço entram como preços relativos bilaterais, e não como taxa de câmbio real efetiva contra uma cesta. A rebase dos IPCs altera apenas constantes de $q$ e não muda as previsões centradas, propriedade verificada nos testes do código.
+Comparamos duas regras. A primeira classifica as moedas apenas pelo diferencial de juros. A segunda soma ao diferencial a valorização cambial prevista pelo modelo EJR. Em ambos os casos, os retornos realizados incorporam juros e variação cambial; o que muda é a informação usada para montar a carteira.
 
-\page
-\section{Fora da amostra: prever bem em alguns países não basta}
+Na primeira implementação, a previsão de cinco anos é convertida em um sinal mensal e a carteira é revisada a cada mês. Compramos as duas moedas com maior sinal e vendemos as duas com menor sinal, com pesos iguais. Esse é um exercício próprio do trabalho, e não uma estratégia proposta pelo artigo.
 
-\fig{forecast_heatmap}{.96}{RMSE relativo ao passeio aleatório sem drift. Azul indica melhora; vermelho, piora. Cada horizonte usa apenas origens com desfecho observado até ago/2026. O agregado reúne os erros em log das seis moedas; não é uma média simples dos quocientes por país.}
+\begin{table}[htbp]
+\centering
+\caption{Primeira aplicação de carteira}
+\begin{tabular}{lccp{5.4cm}}
+\toprule
+\textbf{Estratégia} & \textbf{Retorno anual} & \textbf{Sharpe} & \textbf{Resultado} \\
+\midrule
+Carry por juros & 4,11\% & 0,60 & Melhor desempenho na implementação mensal. \\
+EJR + carry & 2,73\% & 0,31 & Não supera o carry puro. \\
+\bottomrule
+\end{tabular}
+\end{table}
 
-\tab{accuracy}{Desempenho agregado do EJR fora da amostra}{Origens a partir de jan/2010, condicionadas a 60 observações maduras por país. ``Sem sobrep.'' é a quantidade de origens espaçadas por $h$ meses que caberia na janela, não uma estimativa formal de tamanho amostral efetivo. As seis moedas compartilham choques e não multiplicam esse número por seis.}
+Esse fracasso é informativo. Ele mostra que uma previsão de longo prazo não pode ser transformada mecanicamente em uma decisão mensal e esperar que o resultado estatístico seja preservado. A partir daqui, investigamos se parte da heterogeneidade entre moedas poderia ser explicada por mudanças em fundamentos externos.
 
-Na janela disponível de cada horizonte, a razão agregada é maior que um em todos os casos. Em cinco anos, o modelo reduz o RMSE em aproximadamente 20,8\% no Brasil, 29,1\% no Canadá e 10,1\% na área do euro. Entretanto, o erro aumenta em libra, iene e coroa sueca, e o ganho não se sustenta no agregado. A acurácia direcional conjunta em cinco anos é de 51,1\%, próxima de metade das observações.
+\section{Extensão: termos de troca}
 
-O $R^2_{OOS}=1-\sum e_{EJR}^2/\sum e_{RW}^2$ é negativo no agregado. Isso pode coexistir com $R^2$ alto dentro da amostra: parâmetros estimados com desfechos completos podem descrever o passado sem produzir boas decisões quando a relação precisa ser estimada antes de esses desfechos ocorrerem. Nem a escolha retrospectiva dos três países favoráveis nem a escolha do horizonte vencedor é usada para apresentar a estratégia principal.
+Os termos de troca medem a relação entre preços de exportação e preços de importação. Uma melhora permite que o país adquira mais importações para uma mesma quantidade exportada e pode alterar renda externa, fluxos e demanda pela moeda. A hipótese explorada é que uma moeda pode parecer ``barata'' pelo câmbio real não apenas porque irá reverter, mas porque seu fundamento econômico mudou.
 
-\page
-\section{Inferência: persistência, sobreposição e comparação justa}
+Os dados usados nessa extensão vêm do \textbf{World Bank}. Construímos uma medida anual de termos de troca de bens e serviços a partir dos deflatores implícitos de exportações e importações das contas nacionais. Para cada país, o deflator de exportações é obtido pela razão entre exportações a preços correntes (indicador \texttt{NE.EXP.GNFS.CN}) e exportações a preços constantes (\texttt{NE.EXP.GNFS.KN}); fazemos o mesmo para importações com \texttt{NE.IMP.GNFS.CN} e \texttt{NE.IMP.GNFS.KN}. Os termos de troca são então a razão entre esses dois deflatores. Para o euro, usamos a Alemanha como aproximação para a série anual de comércio. Para evitar usar informação ainda não conhecida na data da previsão, cada origem utiliza apenas o dado anual de dois anos antes.
 
-\fig{forecast_models}{1}{Comparação entre modelos. À esquerda, todas as origens maduras por horizonte; à direita, as mesmas 70 origens de nov/2012 a ago/2018. A linha horizontal marca o passeio aleatório sem drift.}
+Mantemos a previsão da variação do câmbio nominal em cinco anos e acrescentamos ao modelo o nível dos termos de troca e sua mudança anual. O objetivo é verificar se essa informação melhora a previsão além do câmbio real.
 
-Ao fixar as mesmas origens, o EJR melhora modestamente a previsão entre um e três anos, mas piora em cinco a oito anos. Logo, parte da comparação entre horizontes é também uma comparação entre períodos históricos. O painel com interceptos e o MQO individual não corrigem automaticamente a dificuldade: podem acrescentar variância de estimação em uma amostra curta.
+\subsection{Painel de seis moedas}
 
-\tab{bootstrap}{Bootstrap do erro de previsão sob a hipótese nula de câmbio nominal imprevisível}{999 simulações por hipótese nula; semente fixa 20260910. $p$ é a frequência de RMSE relativo simulado menor ou igual ao observado, com correção de uma contagem. Holm considera conjuntamente 12 testes (6 horizontes e 2 DGPs). O erro de Monte Carlo dos $p$-valores não ajustados é de até cerca de 0,016.}
+No painel completo, a extensão não funciona. O RMSE agregado passa de 1,037 no modelo EJR para 1,092 com termos de troca. Portanto, a nova variável não recupera a previsão agregada.
 
-O bootstrap gera mudanças nominais sem previsibilidade e câmbio real persistente. Uma especificação usa AR(1) estacionário, com coeficiente limitado a 0,995 para garantir estabilidade e 300 meses de aquecimento; a outra usa raiz unitária. Os vetores de inovações são sorteados conjuntamente, preservando covariâncias contemporâneas entre moedas e entre câmbio nominal e real. O modelo é novamente estimado em cada origem de cada amostra simulada. O procedimento é uma robustez própria; não é o bootstrap original de 10 mil simulações e escolha de até oito defasagens por AIC do artigo.
+\subsection{Onde aparece o ganho}
 
-Não se rejeita a hipótese nula no nível de 5\%. Isso não prova imprevisibilidade universal; indica que esta extensão não fornece evidência robusta para rejeitá-la. Os testes Clark--West unilaterais com HAC são exportados como diagnóstico complementar e recebem correção de Holm para todos os modelos, países e horizontes divulgados. Com poucas janelas independentes, seus resultados assintóticos merecem cautela. O bootstrap também é condicional ao DGP escolhido, não uma solução definitiva ao problema de persistência discutido por Boudoukh et al.
+A melhora se concentra principalmente no Brasil. Como Brasil, euro e Canadá eram os casos em que o EJR apresentava melhor desempenho em cinco anos, reestimamos o exercício nesse trio. O resultado agregado melhora, mas a decomposição por país mostra que o ganho é pouco uniforme.
 
-\page
-\section{Do sinal ao portfólio: ativo, financiamento e orçamento}
+\begin{table}[htbp]
+\centering
+\caption{Termos de troca e previsão em cinco anos}
+\begin{tabular}{p{4.2cm}ccp{6.0cm}}
+\toprule
+\textbf{Amostra / país} & \textbf{EJR} & \textbf{EJR + TT} & \textbf{Leitura} \\
+\midrule
+Seis moedas -- agregado & 1,037 & 1,092 & Termos de troca pioram o painel completo. \\
+BRL, EUR e CAD -- agregado & 0,802 & 0,628 & Melhora agregada no trio. \\
+Brasil & 0,804 & 0,544 & Maior parte do ganho está no Brasil. \\
+Agregação normalizada & 0,810 & 0,844 & O resultado agregado perde força quando o peso entre países é equilibrado. \\
+\bottomrule
+\end{tabular}
+\end{table}
 
-A estratégia principal usa $h=60$ meses, escolhido antes da execução para representar o horizonte longo da aula. Converte-se a previsão nominal em um sinal mensal de retorno excedente da aplicação na moeda local:
-\begin{equation}
- z_{i,t}=-\widehat{\Delta_{60}s}_{i,t}/60+
- \log(1+r^{c}_{i,t})-\log(1+r^{c}_{US,t}),\qquad
- r^c_{i,t}=(1+i_{i,t}/100)^{1/12}-1.\label{eq:signal}
-\end{equation}
-A divisão por 60 é uma regra de escala para ranking, não a afirmação de que a apreciação ocorre linearmente. Os juros contemporâneos também não são uma previsão de toda a curva dos próximos cinco anos. A simulação renova aplicações curtas e atualiza o ranking mensalmente.
+Assim, termos de troca parecem acrescentar informação relevante para a previsão brasileira, mas não oferecem uma melhora robusta e generalizada entre países. Essa distinção é importante para a aplicação financeira seguinte.
 
-Compram-se as duas moedas com maior $z$ e vendem-se as duas com menor $z$. Cada posição é 25\% do patrimônio: $\sum_i w_i=0$, $\sum_i|w_i|=1$, 50\% comprado e 50\% vendido. As duas moedas intermediárias ficam sem posição. O capital permanece em caixa remunerado em USD como colateral. O ranking é determinístico, inclusive em empates.
+\section{Aplicações de carteira com horizontes maiores}
 
-Se $t+1$ é a execução e $t+2$ o fechamento seguinte, o ativo estrangeiro em dólares rende
-\begin{equation}
- R^{USD}_{i,t+2}=(1+r^c_{i,t+1})\frac{S_{i,t+1}}{S_{i,t+2}}-1.
-\end{equation}
-O retorno da carteira é a remuneração do colateral mais o resultado das posições financiadas:
-\begin{equation}
- R^p_{t+2}=r^c_{US,t+1}+\sum_iw_{i,t+1}(R^{USD}_{i,t+2}-r^c_{US,t+1})
- -C_{t+2}-B_{t+2}.
-\end{equation}
-A venda representa um passivo na moeda vendida. O spread adicional de captação é cobrado sobre os nocionais vendidos e convertido pela variação cambial. Assim, uma alta dos juros no lado comprado ajuda o carry; uma apreciação inesperada da moeda vendida gera perda, ainda que o modelo preveja sua depreciação no longo prazo.
+A primeira estratégia revisava a carteira mensalmente, embora o sinal previsse cinco anos. Para aproximar melhor o horizonte econômico da previsão, testamos também decisões com intervalos de 12 e 60 meses. A previsão continua sendo de cinco anos; o que muda é a frequência com que a carteira é escolhida.
 
-\begin{table}[H]\centering\caption{Parâmetros definidos para a carteira principal}\small
-\begin{tabular}{p{5cm}p{10cm}}\toprule
-Horizonte / treinamento & 60 meses; mínimo de 60 origens maduras; janela expansiva.\\
-Calendário & Sinais desde jan/2010; resultados mar/2010--ago/2026 (198 meses).\\
-Exposição & 50\% comprado, 50\% vendido; colateral integral em caixa USD.\\
-Custo por giro de uma ponta & BRL 10 pb; SEK 3 pb; EUR, JPY, GBP e CAD 2 pb.\\
-Financiamento adicional & 50 pb ao ano sobre o nocional vendido, além do juro da moeda.\\
-Rebalanceamento & Mensal; inclui desvio dos pesos por marcação a mercado, entrada inicial e liquidação final.\\
-Impostos / capacidade & Não modelados; não há calibração de impacto por volume nem acesso garantido às taxas oficiais.\\
-\bottomrule\end{tabular}\end{table}
+Também comparamos duas formas de definir pesos. No ranking, as moedas escolhidas recebem pesos iguais. No máximo Sharpe, os pesos consideram retorno esperado e risco estimado em horizonte longo.
 
-Esses custos são cenários assumidos, não estimativas de spreads históricos executáveis. Em um mercado de forwards, o carry apareceria no preço a termo e não poderia ser acrescentado novamente. Comprar spot sem remunerar a aplicação e sem cobrar a perna de financiamento geraria uma interpretação econômica diferente.
+\subsection{Seis moedas}
 
-\page
-\section{Resultado financeiro principal}
+No universo completo de seis moedas, as alternativas que acrescentam previsão cambial ou termos de troca não superam de forma clara as estratégias baseadas em juros. O carry permanece a referência mais forte entre as alternativas exibidas.
 
-\fig{portfolio_wealth}{.96}{Patrimônio e queda acumulada desde o pico em USD. O índice começa em 100 no fim de fev/2010. Todos os retornos usam informação anterior à execução. Fonte: câmbio BIS, juros BIS/BCE/BOJ; cálculos próprios.}
+\subsection{Brasil, euro e Canadá}
 
-\tab{performance}{Carteiras em USD, mar/2010--ago/2026}{Retorno anual é CAGR; volatilidade anual é o desvio-padrão mensal multiplicado por $\sqrt{12}$. Sharpe usa retorno excedente sobre o caixa USD, e não retorno total dividido pela volatilidade. Retornos, volatilidade e queda máxima estão em \%; patrimônio final parte de 100. Custos-base e spread de 50 pb já descontados.}
+No recorte de Brasil, euro e Canadá, o resultado muda. A alternativa de maior retorno histórico é o modelo EJR com pesos de máximo Sharpe e nova escolha a cada 12 meses, com retorno anual composto de 3,29\%. Nessa mesma comparação, o carry apresenta 2,86\% ao ano.
 
-O sinal com câmbio real gera 2,73\% ao ano, mas o carry puro alcança 4,11\%. A diferença média aritmética de retornos é de $-1{,}35$ ponto percentual ao ano, com intervalo bootstrap de 95\% entre $-3{,}19$ e $+0{,}58$ p.p. Não há evidência de ganho incremental frente ao carry. A diferença de CAGR é uma medida distinta, de aproximadamente $-1{,}38$ p.p.
+\begin{table}[htbp]
+\centering
+\caption{Resultado selecionado no trio BRL--EUR--CAD}
+\begin{tabular}{lc}
+\toprule
+\textbf{Carteira} & \textbf{Retorno anual} \\
+\midrule
+EJR + máximo Sharpe + escolha anual & 3,29\% \\
+Carry de referência & 2,86\% \\
+\bottomrule
+\end{tabular}
+\end{table}
 
-\page
-\section{De onde vêm os ganhos e quais são os riscos}
+\section{Interpretação dos resultados}
 
-\fig{weights_contributions}{.98}{Posições efetivamente carregadas pela carteira principal e contribuição média anual de cada moeda ao retorno excedente. As contribuições descontam o spread da perna vendida, mas não alocam custos de giro nem a remuneração do caixa; por isso, não somam o CAGR.}
+Os resultados apontam para uma diferença importante entre previsibilidade econômica e exploração financeira. A relação de longo prazo entre câmbio real e nominal aparece com muita força na replicação brasileira. Fora da amostra, porém, essa capacidade varia bastante entre países e períodos.
 
-A volatilidade da carteira principal é 4,16\% ao ano, o pior mês perde 3,24\%, e a média dos piores 5\% dos meses é $-2{,}32\%$. A queda máxima de 7,01\% é medida desde o pico do patrimônio líquido; a maior sequência abaixo do pico dura 36 meses. Esses números são históricos e mensais: não capturam a pior perda intramês, chamadas de margem intradiárias ou uma crise fora da amostra observada.
+Termos de troca ajudam de forma relevante na previsão do Brasil, mas o ganho não se generaliza ao painel e não se transforma automaticamente em melhor carteira. Na aplicação financeira, a primeira tradução mensal do sinal EJR perde para o carry puro. Quando restringimos o universo a Brasil, euro e Canadá e usamos escolha anual com pesos de máximo Sharpe, o sinal EJR apresenta desempenho histórico melhor que o carry. Esse resultado, porém, foi obtido após explorar alternativas na própria amostra e deve ser tratado como evidência exploratória.
 
-O retorno excedente médio é 1,29\% ao ano. O bootstrap circular com 4.999 reamostragens e blocos de 12 meses produz intervalo de 95\% de $[-0{,}47;3{,}23]\%$; com blocos de 60 meses, $[-0{,}13;2{,}80]\%$. Ambos incluem zero. Os blocos longos preservam mais persistência, mas há poucos blocos distintos em 198 meses. Logo, nem o Sharpe observado nem uma faixa mais estreita são evidência definitiva de um prêmio estável.
+\section{Limitações}
 
-O iene subtrai aproximadamente 0,67 p.p. ao ano do retorno excedente; o real acrescenta 0,61 p.p. A carteira continua diversificada em nocionais, mas seus fatores de risco não são independentes. Retirar BRL da negociação reduz o CAGR para 1,97\%, e retirar JPY o eleva para 2,90\%. Esses resultados são diagnósticos divulgados integralmente, não justificativas para escolher retrospectivamente a carteira vencedora.
+As principais limitações do exercício são:
 
-O giro anual médio é 2,26 vezes o patrimônio. O custo de giro consome aproximadamente 0,065\% ao ano e o spread de financiamento, 0,249\%. O alfa anual de uma regressão do excesso da carteira sobre carry e momentum é 0,32\%, com erro-padrão HAC anual de 0,64\% e $p=0{,}612$. Não aparece alfa incremental estatisticamente sustentado por esse diagnóstico.
+\begin{itemize}
+    \item as observações de horizontes longos se sobrepõem fortemente, reduzindo a quantidade de informação independente;
+    \item os dados macroeconômicos usados são séries revisadas; o exercício não reconstrói todas as vintages disponíveis em cada data;
+    \item as aplicações de carteira usam proxies de juros e custos assumidos, não cotações executáveis de contratos a termo para cada período;
+    \item no momento da realização do trabalho, não foi considerada explicitamente a exposição associada a taxas de juros prefixadas, o que pode alterar a interpretação de risco e retorno das posições simuladas;
+    \item a escolha do trio BRL--EUR--CAD e de algumas especificações ocorreu após observar resultados da própria amostra;
+    \item os resultados de carteira são históricos e não implicam arbitragem, retorno garantido ou estabilidade futura dos coeficientes.
+\end{itemize}
 
-\page
-\section{Quando funciona e quando falha}
+\section{Conclusão}
 
-\fig{performance_regimes}{1}{Retorno excedente médio anual em subperíodos e média móvel de 36 meses. As janelas históricas descrevem os resultados; não são filtros usados para decidir as posições.}
+O trabalho reproduz a principal relação apresentada em aula e encontra previsibilidade de longo prazo relevante sobretudo no Brasil e no Canadá, embora o resultado agregado seja mais fraco que no artigo original. A extensão com termos de troca, construída a partir dos deflatores de exportações e importações do World Bank, melhora especialmente a previsão brasileira, mas não de forma generalizada. Na dimensão financeira, a aplicação mensal do sinal não supera o carry, enquanto um recorte exploratório de Brasil, euro e Canadá com decisões anuais apresenta desempenho histórico favorável ao EJR. Assim, os resultados sugerem que a relação econômica existe em alguns casos, mas sua transformação em estratégia de investimento depende fortemente do país, do período e da forma de implementação.
 
-\tab{subperiods}{Desempenho da carteira principal por período}{Retorno e excesso anualizados, em \%. O excesso é a média aritmética mensal multiplicada por 12; difere da diferença entre dois CAGRs. O recorte pós-publicação começa em jan/2021, ano da publicação final do artigo, mas não constitui holdout prospectivamente registrado para este projeto.}
-
-A fase de melhor desempenho prolongado é 2015--2019. Em 2020--2021, a estratégia perde aproximadamente 2,72\% ao ano e 2,96 p.p. anuais em excesso do caixa. Em 2024--2026, o retorno nominal de 4,54\% ao ano parece confortável, mas o excesso médio é de apenas 0,11 p.p.: grande parte da remuneração vem do colateral em dólar. No período desde 2021, o Sharpe cai para 0,16.
-
-\tab{regimes}{Condições observáveis antes da posição}{Volatilidade: mediana entre moedas da volatilidade dos últimos 12 meses, comparada à sua mediana expansiva; classificação defasada dois meses em relação ao retorno. Juro USD também defasado dois meses. Valores em \%. São associações condicionais, sem identificação causal.}
-
-O resultado foi melhor quando o juro americano estava em até 0,5\%, mas isso não prova que juros baixos causem lucratividade. Os recortes se sobrepõem a regimes cambiais e episódios históricos. A regra de volatilidade alta tampouco é uma recomendação de filtro: a rentabilidade condicional pode não se repetir. A janela principal não negocia durante 2008; uma robustez com treinamento inicial reduzido para 36 origens inclui mar/2008--dez/2009 e encontra CAGR de 6,97\% e queda de 7,60\%, com apenas 22 meses e sem poder para generalização.
-
-\page
-\section{Robustez, custos e manutenção de posições longas}
-
-\tab{robustness}{Sensibilidade da estratégia principal}{Todas as variações são divulgadas. Custos de giro são múltiplos do vetor-base; spread em pontos-base anuais. Retorno e queda máxima em \%. A mudança de atraso de execução mantém a mesma janela de avaliação, com caixa no início quando necessário.}
-
-Custos e spread maiores corroem o retorno excedente. No cenário de custos de giro cinco vezes maiores e captação adicional de 200 pb ao ano, o CAGR cai para 1,70\% e o Sharpe para 0,07, próximo de uma carteira cujo resultado depende quase integralmente do caixa. Isso mostra por que o resultado de uma estratégia com financiamento não pode ser inferido somente da direção do câmbio.
-
-O atraso adicional do IPC, a execução com dois meses de espera e a janela móvel não invertem a conclusão central. A exclusão do iene apenas do treinamento muda pouco o desempenho; a exclusão da negociação é um experimento diferente. Não se escolhe entre essas versões com base no Sharpe final.
-
-\tab{horizon_portfolio}{Troca do horizonte do sinal em janela financeira comum}{Jan/2013--ago/2026, 164 meses. Mesmas moedas, regra de ranking, custos e orçamento. Retornos e riscos em \%. A disponibilidade do modelo de oito anos determina o início comum.}
-
-\subsection{Sinais mantidos por cinco anos}
-
-Na carteira de coortes, cada mês cria um vetor com $1/60$ do orçamento de risco, que permanece no conjunto de sinais por 60 meses. A posição líquida é $w^{coorte}_t=(1/60)\sum_{j=0}^{59}w^{novo}_{t-j}$. Os pesos são reajustados mensalmente sobre o patrimônio corrente e posições opostas são compensadas. Isso não é a compra de 60 carteiras integralmente alavancadas, nem a manutenção de quantidades fixas de títulos por cinco anos. A exposição cresce gradualmente no início e pode ficar inferior a um após compensações.
-
-Essa versão rende 2,15\% ao ano, com volatilidade de 2,86\% e queda máxima de 7,87\%. Conservar sinais não elimina o risco de carregar uma moeda por anos até a convergência prevista; também pode manter opiniões que o modelo já teria atualizado. A comparação com a carteira de rebalanceamento mensal evidencia o custo de transformar uma relação de longo prazo em uma regra de posição rígida.
-
-\page
-\section{A perspectiva em reais e a escolha do ativo em dólar}
-
-\fig{brl_assets}{1}{Patrimônio em reais. À esquerda, proxies de caixa; à direita, BIL e SPY com retornos de mercado ajustados por distribuições, mantidos continuamente ou condicionados ao mesmo sinal cambial. Os eixos verticais têm escalas diferentes. Não se comparam essas trajetórias como se tivessem o mesmo risco.}
-
-Para um investidor em reais, comprar dólar envolve abrir mão da remuneração em reais. A vantagem esperada do caixa USD é $\widehat{\Delta_{60}s}_{BR,t}/60+\log(1+r^c_{US,t})-\log(1+r^c_{BR,t})$. A alocação compra USD quando essa expressão é positiva e mantém caixa BRL nos demais meses, com a mesma defasagem de execução. A regra sem juros considera apenas o sinal da previsão cambial.
-
-\tab{brl}{Resultados com numerário em BRL}{Mar/2010--ago/2026. Retorno, volatilidade e queda máxima em \%. O Sharpe usa caixa BRL como referência. A linha ``USD convertido'' é a carteira internacional convertida em reais, não a mesma estratégia com colateral brasileiro.}
-
-\tab{etfs}{Implementações com ativos americanos negociados, retorno em BRL}{BIL: títulos de 1 a 3 meses do Tesouro dos EUA; SPY: S\&P 500. Fechamentos ajustados fornecidos pelo Yahoo Finance, objetivos dos fundos verificados na State Street. Custo assumido de 12 pb por ponta (10 câmbio + 2 ETF), com entrada e saída. Despesas do fundo embutidas no preço; impostos individuais e retenções de dividendos não descontados.}
-
-Comprar SPY continuamente teve grande retorno, mas adicionou risco de ações; isso não valida uma previsão cambial. A regra cambial ficou em ativos USD em somente 13,1\% dos meses, perdendo grande parte da valorização do SPY. Para BIL, o sinal melhora o desempenho frente a manter o ativo sem condição, mas permanece abaixo do caixa brasileiro. Escolher SPY depois de observar esse resultado seria confundir prêmio acionário com informação do modelo.
-
-\page
-\section{Cenários atuais: magnitude e incerteza}
-
-\fig{latest_uncertainty}{.86}{Previsões formadas em ago/2026, horizonte de cinco anos. Faixas: cotação corrente multiplicada por $\exp(\widehat{\Delta s}\pm1{,}96\,RMSE_{OOS})$. São faixas ilustrativas de erro histórico, sem cobertura probabilística validada.}
-
-\tab{scenarios}{Cotações em moeda local por USD: cenário de cinco anos}{Origem ago/2026, preços relativos de até jun/2026. O cenário é a exponencial da previsão em log e pode ser interpretado como mediana apenas sob hipóteses adicionais sobre o erro; não é automaticamente a esperança da cotação em nível.}
-
-O cenário brasileiro de R\$4,46 por dólar em cinco anos tem faixa histórica de R\$2,13 a R\$9,33. O Japão mostra extrapolação intensa, com cenário próximo de 100 ienes por dólar e faixa ampla, coerente com a dificuldade de prever aquela moeda fora da amostra. Precisão numérica não equivale a precisão econômica.
-
-As faixas usam previsões recursivas maduras antes da origem atual, mas as observações se sobrepõem. Não acrescentam explicitamente incerteza dos parâmetros, assimetria, caudas pesadas ou mudança de regime. A ausência de ganho agregado frente ao passeio aleatório impede tratar esses pontos como alvos confiáveis para dimensionar alavancagem.
-
-Uma moeda aparentemente barata pode gerar perdas persistentes. A convergência pode ocorrer por inflação relativa, revisão do equilíbrio ou depois de a posição ser encerrada por margem. Sem lucro garantido, a operação é uma aposta em reversão condicionada ao modelo, e não uma arbitragem.
-
-\subsection{A mesma carteira em moedas diferentes}
-
-Se uma carteira tem retorno $R^{USD}$ em dólares, seu retorno sem hedge em reais é
-\begin{equation}
- 1+R^{BRL}_{t+1}=(1+R^{USD}_{t+1})\frac{S_{BR,t+1}}{S_{BR,t}}.
-\end{equation}
-Portanto, neutralidade entre moedas estrangeiras na carteira long--short não protege um investidor brasileiro da exposição em USD do colateral. A conversão do portfólio principal produz CAGR de 9,44\% em reais e volatilidade de 12,48\%, contra 10,04\% e 0,97\% da proxy de caixa BRL. O risco da moeda de referência precisa ser definido junto com a estratégia, não depois do backtest.
-
-\page
-\section{Auditoria, limitações e conclusão}
-
-\subsection{O que foi verificado no código}
-
-Os testes automatizados verificam invariância das previsões quando dados futuros são alterados, igualdade entre execução sobre amostra truncada e sobre o arquivo completo, maturação de todos os alvos antes da origem, invariância ao rebase dos IPCs, divulgação defasada, preservação do mês de CPI ausente, orçamento long--short, sinal correto de apreciação/depreciação, remuneração do caixa, atraso entre sinal e lucro, custos de entrada/rebalanceamento/saída, cobrança de financiamento, queda a partir do patrimônio inicial e integridade dos arquivos brutos. A auditoria exporta, para cada origem e horizonte, a última origem e o último desfecho usados no treinamento.
-
-Essas verificações são testes de implementação e consistência econômica. Não demonstram que todas as séries teriam exatamente os mesmos valores em suas vintages originais. O uso de preços ajustados dos ETFs é limitado ao cálculo de retornos realizados: níveis ajustados por dividendos futuros não entram em sinais, normalização, regressões ou ranking.
-
-\subsection{O que o exercício não identifica nem resolve}
-
-\begin{enumerate}
-\item \textbf{Causalidade e regime monetário.} Não se identifica um efeito exógeno de adoção de metas. A heterogeneidade é compatível com mecanismos do artigo, mas também com choques omitidos.
-\item \textbf{Tempo real completo.} Não há arquivo de vintages por data de decisão nem calendário histórico exaustivo de divulgações dos seis países. Os dois meses de defasagem são uma aproximação conservadora, testada também com três meses.
-\item \textbf{Poucas apostas longas independentes.} Em oito anos, 70 origens mensais não equivalem a 70 experimentos independentes. Oito anos de previsão também deixam poucas realizações recentes para validar o regime atual.
-\item \textbf{Execução e funding.} O painel usa proxies de aplicações curtas, não retornos de forwards reais, bid/ask históricos ou taxas de empréstimo contratáveis. As cotações cambiais de referência e o fechamento dos ETFs não são perfeitamente sincronizados. Tributos, restrições de venda, contraparte e liquidez não são simulados.
-\item \textbf{Pesquisa retrospectiva.} O protocolo foi fixado no código antes da primeira execução, mas o projeto não é um estudo prospectivamente registrado. O período desde 2021 é um diagnóstico histórico; escolha de tema, universo e modelos ainda pode refletir conhecimento dos episódios.
-\end{enumerate}
-
-\subsection{Resposta à pergunta}
-
-A relação entre câmbio real e nominal de longo prazo pode ser replicada com grande proximidade no exemplo brasileiro. Na extensão internacional, a capacidade preditiva depende de país e período, e não melhora automaticamente com o horizonte. O ranking que soma previsão cambial e juros produz retorno positivo no cenário-base, mas não supera o carry simples nem apresenta evidência robusta de alfa incremental. Custos maiores tornam o excesso pequeno; sustentar os sinais por cinco anos não resolve o problema.
-
-O resultado financeiramente defensável é, portanto, \textbf{uma evidência de reversão de longo prazo com utilidade de negociação limitada e incerta nesta implementação}. Um avanço exigiria testar uma hipótese adicional bem delimitada -- por exemplo, deslocamentos do câmbio real de referência por termos de troca -- em uma janela futura reservada, com vintages e instrumentos negociáveis documentados. Os resultados desfavoráveis à estratégia integram a resposta, em vez de serem excluídos para preservar uma narrativa de arbitragem.
-
-\page
-\section*{Apêndice: reprodução e dicionário da entrega}
-\addcontentsline{toc}{section}{Apêndice: reprodução}
-
-O projeto pode ser reexecutado a partir da raiz. Um Python portátil está disponível no ambiente de trabalho; o pacote de entrega contém as dependências fixadas e não depende desse caminho específico. Em outro computador, use Python 3.12 e instale \texttt{requirements-lock.txt}. Os scripts de análise não precisam de acesso à rede quando os dados brutos da entrega estão presentes.
-
-\begin{verbatim}
-python -m pip install -r requirements-lock.txt
-python src/prepare_data.py
-python src/analyze.py
-python -m pytest -q tests
-python src/make_figures.py
-python src/make_report_tables.py
-tectonic report/relatorio.tex --outdir output/pdf
-\end{verbatim}
-
-Para obter uma nova coleta, o script é \texttt{src/download\_data.py}. Por padrão, arquivos existentes são reutilizados para preservar o snapshot. A documentação explica como fazer uma atualização em outra cópia do projeto e modificar explicitamente a data de corte. O download é dispensável para reproduzir os resultados aqui apresentados.
-
-\begin{table}[H]\centering\caption{Arquivos principais da entrega}\small
-\begin{tabular}{p{5.8cm}p{9.2cm}}\toprule
-Caminho & Conteúdo \\\midrule
-\texttt{report/relatorio.tex} & Texto completo editável em LaTeX.\\
-\texttt{report/tables/} & Tabelas LaTeX geradas diretamente das saídas numéricas.\\
-\texttt{output/pdf/relatorio.pdf} & Versão compilada, conferida visualmente.\\
-\texttt{output/figures/} & Dez figuras em PDF vetorial e PNG.\\
-\texttt{data/raw/} & Dados originais, documentos de fonte e manifesto de hashes.\\
-\texttt{data/processed/} & Câmbio, IPC, taxas, preços ajustados, regressor e controle de qualidade.\\
-\texttt{output/tables/} & Regressões, previsões individuais, erros, retornos, pesos, contribuições, sensibilidades e cenários.\\
-\texttt{src/models.py} & Estimação recursiva, formação de carteiras e contabilidade financeira.\\
-\texttt{src/analyze.py} & Execução integral, bootstrap, comparações e tabelas numéricas.\\
-\texttt{tests/test\_integrity.py} & Testes de tempo, sinais, orçamento, dados e custos.\\
-\texttt{AUDITORIA.md} & Revisão explícita de vazamento, contabilidade e limitações.\\
-\texttt{README.md} & Instruções de execução, premissas e organização do projeto.\\
-\texttt{ROTEIRO\_APRESENTACAO.md} & Roteiro para apresentação e perguntas prováveis da banca.\\
-\bottomrule\end{tabular}\end{table}
-
-Os arquivos CSV de retornos são mensais. \texttt{net} é o retorno simples líquido; \texttt{cash}, a remuneração do colateral; \texttt{cost}, o custo de giro; \texttt{borrow}, o spread extra da venda; \texttt{turnover}, o nocional negociado dividido pelo patrimônio; e \texttt{nav}, o patrimônio acumulado com início em um. Em \texttt{weights\_main.csv}, valores positivos significam compra da moeda da coluna contra o financiamento em USD; valores negativos, venda. \texttt{forecast\_observations.csv} inclui linhas adicionais com país \texttt{POOL} exclusivamente para agregação: elas não são observações novas e não devem ser somadas às linhas individuais.
-
-\page
-\begin{thebibliography}{99}
+\begin{thebibliography}{9}
 \small
-\bibitem{ejr} Eichenbaum, M. S.; Johannsen, B. K.; Rebelo, S. T. (2021). Monetary Policy and the Predictability of Nominal Exchange Rates. \emph{Review of Economic Studies}, 88(1), 192--228. \href{https://doi.org/10.1093/restud/rdaa024}{doi:10.1093/restud/rdaa024}. Versão publicada fornecida no material da disciplina; equações e desenho de previsão consultados nas seções 3 e 4.
-\bibitem{sonnervig} Sonnervig, M. (2026). \emph{Tópico 5: Previsibilidade do câmbio. Eichenbaum, Johannsen e Rebelo (2021) e uma replicação para o Brasil}. Macroeconomia Aplicada, EPGE/FGV, aula 8. Arquivo local \texttt{Macro\_Aplicada\_aula\_8.pdf}. Ver também \emph{Trabalhos da primeira parte} e \emph{Ementa 2026}, fornecidos na pasta da disciplina.
-\bibitem{meese} Meese, R. A.; Rogoff, K. (1983). Empirical Exchange Rate Models of the Seventies: Do They Fit Out of Sample? \emph{Journal of International Economics}, 14, 3--24. \href{https://doi.org/10.1016/0022-1996(83)90017-X}{doi:10.1016/0022-1996(83)90017-X}.
-\bibitem{boudoukh} Boudoukh, J.; Richardson, M.; Whitelaw, R. F. (2008). The Myth of Long-Horizon Predictability. \emph{Review of Financial Studies}, 21(4), 1577--1605. \href{https://doi.org/10.1093/rfs/hhl042}{doi:10.1093/rfs/hhl042}. As orientações da disciplina referem-se à versão de 2006.
-\bibitem{nw} Newey, W. K.; West, K. D. (1987). A Simple, Positive Semi-definite, Heteroskedasticity and Autocorrelation Consistent Covariance Matrix. \emph{Econometrica}, 55(3), 703--708. \href{https://doi.org/10.2307/1913610}{doi:10.2307/1913610}.
-\bibitem{cw} Clark, T. E.; West, K. D. (2007). Approximately Normal Tests for Equal Predictive Accuracy in Nested Models. \emph{Journal of Econometrics}, 138(1), 291--311. \href{https://doi.org/10.1016/j.jeconom.2006.05.023}{doi:10.1016/j.jeconom.2006.05.023}. Diagnóstico complementar de previsão, sem interpretação exata em amostras pequenas.
-\bibitem{bis} Bank for International Settlements (2026). \emph{Bilateral exchange rates; Long consumer prices; Central bank policy rates}. Fontes nacionais e BIS. \href{https://data.bis.org/bulkdownload}{Downloads oficiais}. Documentação: \href{https://www.bis.org/statistics/cp/cp_long_documentation.pdf}{IPC de longo prazo}; \href{https://www.bis.org/statistics/cbpol/cbpol_doc.pdf}{juros de política}. Coleta: 10/09/2026.
-\bibitem{bcb} Banco Central do Brasil (2026). \emph{Sistema Gerenciador de Séries Temporais}, séries 3698 (câmbio comercial médio mensal) e 433 (IPCA mensal). \href{https://api.bcb.gov.br/dados/serie/bcdata.sgs.3698/dados?formato=json}{API SGS 3698}; \href{https://api.bcb.gov.br/dados/serie/bcdata.sgs.433/dados?formato=json}{API SGS 433}. Coleta: 10/09/2026.
-\bibitem{bls} U.S. Bureau of Labor Statistics (2026). \emph{Consumer Price Index}, CUSR0000SA0. \href{https://www.bls.gov/developers/}{API pública do BLS}. \href{https://www.bls.gov/cpi/additional-resources/2025-federal-government-shutdown-impact-cpi-faq.htm}{Nota sobre a ausência do CPI de outubro de 2025}. Coleta: 10/09/2026.
-\bibitem{ecb} European Central Bank (2026). \emph{Key ECB interest rates}. \href{https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html}{Histórico por data de vigência da deposit facility}. Coleta: 10/09/2026.
-\bibitem{boj} Bank of Japan (2026). \emph{Call Rate, Uncollateralized Overnight/End of Month}, FM02'STRECLUCON. \href{https://www.stat-search.boj.or.jp/ssi/mtshtml/fm02_m_1_en.html}{Série mensal oficial}. Coleta: 10/09/2026.
-\bibitem{funds} State Street Investment Management (2026). \href{https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-bloomberg-1-3-month-t-bill-etf-bil}{BIL: SPDR Bloomberg 1--3 Month T-Bill ETF}; \href{https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-500-etf-trust-spy}{SPY: SPDR S\&P 500 ETF Trust}. Objetivos e natureza dos ativos consultados em 10/09/2026.
-\bibitem{yahoo} Yahoo Finance (2026). Históricos de BIL e SPY, endpoint público Chart, fechamento ajustado e eventos de distribuição. \href{https://finance.yahoo.com/quote/BIL/history/}{Histórico BIL}; \href{https://finance.yahoo.com/quote/SPY/history/}{histórico SPY}. Os URLs exatos de download estão no manifesto. Coleta: 10/09/2026.
+\bibitem{ejr}
+EICHENBAUM, M. S.; JOHANNSEN, B. K.; REBELO, S. T. Monetary Policy and the Predictability of Nominal Exchange Rates. \textit{Review of Economic Studies}, v. 88, n. 1, p. 192--228, 2021.
+
+\bibitem{sonnervig}
+SONNERVIG, M. \textit{Tópico 5: Previsibilidade do câmbio -- Eichenbaum, Johannsen e Rebelo (2021) e uma replicação para o Brasil}. Macroeconomia Aplicada, EPGE/FGV, 2026.
+
+\bibitem{worldbank}
+WORLD BANK. \textit{World Development Indicators}. Séries de exportações e importações de bens e serviços a preços correntes e constantes: \texttt{NE.EXP.GNFS.CN}, \texttt{NE.EXP.GNFS.KN}, \texttt{NE.IMP.GNFS.CN} e \texttt{NE.IMP.GNFS.KN}. Dados coletados em setembro de 2026.
 \end{thebibliography}
+
 \end{document}
